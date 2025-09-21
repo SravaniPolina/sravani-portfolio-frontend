@@ -2,6 +2,9 @@
   "name": "sravani-executive-portfolio-frontend",
   "version": "1.0.0",
   "private": true,
+    "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "ajv": "6.12.6",
     "ajv-keywords": "3.5.2",
