@@ -11,6 +11,7 @@ import CoreCompetencies from "./components/CoreCompetencies";
 import PortfolioStats from "./components/PortfolioStats";
 import Projects from "./components/Projects";
 import ExecutiveCTA from "./components/ExecutiveCTA";
+import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <PortfolioStats />
         <Projects />
         <ExecutiveCTA />
+        <LeadershipPhilosophy />
         <Contact />
       </main>
       <Footer />
