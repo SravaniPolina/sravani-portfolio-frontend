@@ -15,7 +15,7 @@ export default function NavBar() {
       <div className="flex gap-6 text-base text-slate-700">
         <a href="#about" className="hover:text-indigo-600">About</a>
         <a href="#corecompetencies" className="hover:text-indigo-600">Expertise</a>
-        <a href="#Executive Impact" className="hover:text-indigo-600">Impact</a>
+        <a href="#projects" className="hover:text-indigo-600">Impact</a>
         <a href="#leadership" className="hover:text-indigo-600">Leadership</a>
         <a href="#testimonials" className="hover:text-indigo-600">Testimonials</a>
       </div>
