@@ -8,19 +8,19 @@ export default function DirectContact() {
         <div className="flex flex-col items-center">
           {/* Email */}
           <span className="text-lg font-bold text-blue-700 mb-1">Email</span>
-          <a href="mailto:your.email@example.com" className="text-slate-700 underline">your.email@example.com</a>
+          <a href="mailto:sravani.polina@iiml.org" className="text-slate-700 underline">sravani.polina@iiml.org</a>
         </div>
         <div className="flex flex-col items-center">
           {/* LinkedIn */}
           <span className="text-lg font-bold text-blue-700 mb-1">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/yourprofile" className="text-slate-700 underline" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/yourprofile
+          <a href="https://www.linkedin.com/in/sravani-polina" className="text-slate-700 underline" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/sravani-polina
           </a>
         </div>
         <div className="flex flex-col items-center">
           {/* Phone */}
           <span className="text-lg font-bold text-blue-700 mb-1">Phone</span>
-          <span className="text-slate-700">+91-XXXXXX1234</span>
+          <span className="text-slate-700">+91-9133091112</span>
         </div>
         <div className="flex flex-col items-center">
           {/* Location */}
