@@ -1,6 +1,6 @@
-// src/App.js
 import './index.css';
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';      
 import Hero from "./components/Hero";
 import StatsCards from "./components/StatsCards";
@@ -18,8 +18,9 @@ import CareerHighlights from "./components/CareerHighlights";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import DirectContact from "./components/DirectContact";
 import ExecutiveConsultation from "./components/ExecutiveConsultation";
+import ConsultationForm from "./components/ConsultationForm"; // Add your form component import
 
-function App() {
+function HomePage() {
   return (
     <div className="antialiased text-slate-800">
       <NavBar />
@@ -39,9 +40,20 @@ function App() {
         <StrategicLeadershipServices />
         <DirectContact />
         <ExecutiveConsultation />
-             </main>
+      </main>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/consultation" element={<ConsultationForm />} />
+      </Routes>
+    </Router>
   );
 }
 
