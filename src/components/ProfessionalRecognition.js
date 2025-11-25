@@ -10,7 +10,7 @@ export default function ProfessionalRecognition() {
           <span className="text-lg text-slate-700 text-center">Years Strategic Leadership</span>
         </div>
         <div className="rounded-2xl bg-gray-50 py-10 flex flex-col items-center shadow">
-          <span className="text-4xl font-bold text-slate-900 mb-2">₹750M+</span>
+          <span className="text-4xl font-bold text-slate-900 mb-2">₹1500M+</span>
           <span className="text-lg text-slate-700 text-center">Verified Value Creation</span>
         </div>
         <div className="rounded-2xl bg-gray-50 py-10 flex flex-col items-center shadow">
