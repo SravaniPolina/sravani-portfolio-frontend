@@ -7,6 +7,7 @@ import StatsCards from "./components/StatsCards";
 import Contact from "./components/Contact";
 import Footer from './components/Footer';
 import AboutMe from "./components/AboutMe";
+import CoreCompetencies from "./components/CoreCompetencies";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <StatsCards />
         <AboutMe />
+        <CoreCompetencies />
         <Contact />
       </main>
       <Footer />
