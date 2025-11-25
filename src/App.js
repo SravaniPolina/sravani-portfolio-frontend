@@ -5,6 +5,18 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from './components/Navbar'; // add this near other imports
+import Footer from './components/Footer';
+// ...in your structure add <Footer /> at the end:
+
+function App() {
+  return (
+    <div>
+      {/* ...other sections */}
+      <Footer />
+    </div>
+  )
+}
+
 
 function App() {
   return (
