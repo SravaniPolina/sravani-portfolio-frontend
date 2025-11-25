@@ -12,7 +12,7 @@ import PortfolioStats from "./components/PortfolioStats";
 import Projects from "./components/Projects";
 import ExecutiveCTA from "./components/ExecutiveCTA";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
-
+import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
         <Projects />
         <ExecutiveCTA />
         <LeadershipPhilosophy />
+        <ExecutiveTestimonials />
         <Contact />
       </main>
       <Footer />
