@@ -38,7 +38,7 @@ const cards = [
       </span>
     ),
     title: "Strategic Marketing & Brand Transformation",
-    company: "Noveltec Feeds Private Limited (Goldman Sachs)",
+    company: "Noveltech Feeds Private Limited (A Goldman Sachs Company)",
     highlight: "40% Brand Growth",
     challenge:
       "Low brand awareness in competitive market, declining customer engagement rates, and suboptimal customer retention affecting revenue growth.",
@@ -68,7 +68,7 @@ const cards = [
       "Underperforming production & sales operations, operational bottlenecks limiting growth, and inefficient resource allocation across business units affecting profitability.",
     result: {
       primary: "INR 750 Mn Annual Savings",
-      secondary: "75% Throughput Improvement", "90% reduction in capex requirement"
+      secondary: "75% Throughput Improvement, 90% reduction in capex requirement"
     },
   },
   {
