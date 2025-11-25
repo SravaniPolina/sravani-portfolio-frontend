@@ -7,6 +7,8 @@ import StatsCards from "./components/StatsCards";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from './components/Footer';
+import AboutMe from "./components/AboutMe";
+
 
 function App() {
   return (
