@@ -14,6 +14,7 @@ import ExecutiveCTA from "./components/ExecutiveCTA";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
 import ProfessionalRecognition from "./components/ProfessionalRecognition";
+import ProfessionalJourney from "./components/ProfessionalJourney";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <LeadershipPhilosophy />
         <ExecutiveTestimonials />
         <ProfessionalRecognition />
+        <ProfessionalJourney />
         <Contact />
       </main>
       <Footer />
