@@ -2,10 +2,11 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="py-20 bg-white scroll-smooth">
-      <h2 className="text-5xl font-bold text-center mb-8">About Me</h2>
-      <p className="max-w-4xl mx-auto text-justified text-xl text-slate-700 mb-12">
-        Result-oriented strategic manager with 11+ years of experience in roles of increasing responsibility, from Assistant Manager to Chief of Staff. Directed cross-functional teams to implement strategic initiatives encompassing Strategy development and Vision development, leading to a measurable results across companies. Expert in implementing process improvements and utilizing OKRs for Performance Management. Passionate about turning boardroom vision into execution to drive business transformation.
+    <section id="about" className="py-12 px-3 sm:px-8 bg-white">
+      <div className="max-w-2xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">About Me</h2>
+        <p className="text-lg text-slate-700 font-medium leading-relaxed text-center mb-8">
+          Result-oriented strategic manager with 11+ years of experience in roles of increasing responsibility, from Assistant Manager to Chief of Staff. Directed cross-functional teams to implement strategic initiatives encompassing Strategy development and Vision development, leading to a measurable results across companies. Expert in implementing process improvements and utilizing OKRs for Performance Management. Passionate about turning boardroom vision into execution to drive business transformation.
       </p>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 justify-center">
         {/* Education Box */}
