@@ -15,6 +15,10 @@ import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
 import ProfessionalRecognition from "./components/ProfessionalRecognition";
 import ProfessionalJourney from "./components/ProfessionalJourney";
+import CareerHighlights from "./components/CareerHighlights";
+import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
+import DirectContact from "./components/DirectContact";
+import 4.	ExecutiveConsultation from "./components/4.	ExecutiveConsultation";
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
         <ExecutiveTestimonials />
         <ProfessionalRecognition />
         <ProfessionalJourney />
+        <CareerHighlights />
+        <StrategicLeadershipServices />
+        <DirectContact />
+        <ExecutiveConsultation />
         <Contact />
       </main>
       <Footer />
