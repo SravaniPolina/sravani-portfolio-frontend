@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for routing
 
 export default function ProfessionalRecognition() {
   return (
@@ -25,7 +26,7 @@ export default function ProfessionalRecognition() {
         </div>
       </div>
 
-      {/* Major Achievements - visually boxed and punchy */}
+      {/* Major Achievements */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
         <div className="bg-white rounded-2xl border p-7 shadow flex flex-col items-start">
           <span className="font-bold text-slate-900 mb-2">Built PMO Frameworks That Accelerate Execution</span>
@@ -65,12 +66,12 @@ export default function ProfessionalRecognition() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:gap-6 gap-4 justify-center flex-1">
-            <a
-              href="#contact"
+            <Link
+              to="/consultation"
               className="inline-block px-8 py-3 rounded-lg bg-white text-slate-800 font-semibold text-lg shadow hover:bg-slate-100 transition"
             >
               Schedule Executive Meeting
-            </a>
+            </Link>
           </div>
         </div>
       </div>
