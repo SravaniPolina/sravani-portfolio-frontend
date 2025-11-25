@@ -13,18 +13,23 @@ export default function CoreCompetencies() {
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">Core Competencies</h2>
         <p className="max-w-3xl mx-auto text-center text-xl text-slate-700 mb-12 px-2 sm:px-6">
-          Comprehensive expertise across strategic management, operational excellence, financial analysis, and business transformation—driving sustainable growth, efficiency, and cross-functional impact in every sector I've touched. I don’t just build plans—I deliver outcomes, optimize teams, and ensure results resonate across the organization.
+          Comprehensive expertise across strategic management, operational excellence, financial analysis, and business transformation—driving sustainable growth, efficiency, and cross-functional impact in every sector I've touched. I don’t just build plans; I deliver outcomes, optimize teams, and ensure results resonate across the organization.
         </p>
       </div>
 
       {/* Cards grid: stack on mobile, 3/2 cols on larger screens */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-        {/* Business Strategy */}
+        {/* Business Strategy: Chart Icon */}
         <div className="bg-white rounded-2xl shadow border py-8 px-7 flex flex-col">
           <div className="flex items-center mb-4">
             <span className="text-3xl bg-blue-100 text-blue-700 rounded-xl p-2 mr-3">
-              {/* Upward Arrow Icon */}
-              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 19V6m0 0l-7 7m7-7l7 7"></path></svg>
+              {/* Chart Icon */}
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="5" y="21" width="3" height="6" rx="1" fill="#2563eb" />
+                <rect x="12" y="16" width="3" height="11" rx="1" fill="#2563eb" />
+                <rect x="19" y="12" width="3" height="15" rx="1" fill="#2563eb" />
+                <rect x="26" y="7" width="3" height="20" rx="1" fill="#2563eb" />
+              </svg>
             </span>
             <h3 className="text-xl font-bold text-slate-900">Business Strategy</h3>
           </div>
