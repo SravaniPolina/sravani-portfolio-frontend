@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import AboutMe from "./components/AboutMe";
 import CoreCompetencies from "./components/CoreCompetencies";
 import PortfolioStats from "./components/PortfolioStats";
+import Projects from "./components/Projects";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <AboutMe />
         <CoreCompetencies />
         <PortfolioStats />
+        <Projects />
         <Contact />
       </main>
       <Footer />
