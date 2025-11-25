@@ -17,8 +17,8 @@ export default function Hero() {
           </h2>
           {/* Justified summary section */}
           <p className="text-lg text-slate-700 mb-8 font-semibold text-justify">
-           Think BIG, deliver bigger. Over 12 years leading transformations, scaling teams, and driving results in EPC, banking, and agribusiness—I've built value that sticks: ₹750M+, five business turnarounds, 75% leaps in efficiency, and real culture shifts everyone in the company can feel. 
-  Whether it's jumping in with CEOs and Boards or rolling up my sleeves in PMO rooms, I make strategy actionable. My superpowers? Cutting through silos, making OKRs work in real life (not just slides), and rallying people behind growth. If you want someone who can decode analytics, spot cross-functional risks, and energize an org to move—let's talk.
+           Think BIG, deliver bigger. Over 12 years leading transformations, scaling teams, and driving results in EPC, banking, and agribusiness; I've built value that sticks: ₹750M+, five business turnarounds, 75% leaps in efficiency, and real culture shifts everyone in the company can feel. 
+  Whether it's jumping in with CEOs and Boards or rolling up my sleeves in PMO rooms, I make strategy actionable. My superpowers? Cutting through silos, making OKRs work in real life (not just slides), and rallying people behind growth. If you want someone who can decode analytics, spot cross-functional risks, and energize an org to move — let's have a chat.
           </p>
           {/* Executive Impact Summary Card */}
           <div className="bg-white border rounded-xl px-6 py-5 mb-6 w-full max-w-xl shadow">
