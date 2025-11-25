@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from './components/Footer';
 import AboutMe from "./components/AboutMe";
 import CoreCompetencies from "./components/CoreCompetencies";
+import PortfolioStats from "./components/PortfolioStats";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <StatsCards />
         <AboutMe />
         <CoreCompetencies />
+        <PortfolioStats />
         <Contact />
       </main>
       <Footer />
