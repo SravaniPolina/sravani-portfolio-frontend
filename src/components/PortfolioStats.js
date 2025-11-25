@@ -17,7 +17,7 @@ export default function PortfolioStats() {
           <div className="text-lg text-slate-700 font-medium">Years Applied</div>
         </div>
         <div>
-          <span className="text-4xl font-bold text-orange-700 mb-2 block">₹750M</span>
+          <span className="text-4xl font-bold text-orange-700 mb-2 block">₹1500M</span>
           <div className="text-lg text-slate-700 font-medium">Value Created</div>
         </div>
       </div>
