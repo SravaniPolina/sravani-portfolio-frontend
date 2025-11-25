@@ -10,6 +10,7 @@ import AboutMe from "./components/AboutMe";
 import CoreCompetencies from "./components/CoreCompetencies";
 import PortfolioStats from "./components/PortfolioStats";
 import Projects from "./components/Projects";
+import ExecutiveCTA from "./components/ExecutiveCTA";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <CoreCompetencies />
         <PortfolioStats />
         <Projects />
+        <ExecutiveCTA />
         <Contact />
       </main>
       <Footer />
