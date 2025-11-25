@@ -9,7 +9,7 @@ const Tag = ({ children }) => (
 
 export default function CoreCompetencies() {
   return (
-    <section id="competencies" className="py-20 px-4 sm:px-8 bg-white">
+    <section id="corecompetencies" className="py-20 px-4 sm:px-8 bg-white">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">Core Competencies</h2>
         <p className="max-w-3xl mx-auto text-center text-xl text-slate-700 mb-12 px-2 sm:px-6">
