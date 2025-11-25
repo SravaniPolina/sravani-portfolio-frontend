@@ -12,7 +12,7 @@ export default function CoreCompetencies() {
     <section id="competencies" className="py-20 bg-white">
       <h2 className="text-5xl font-bold text-center mb-6">Core Competencies</h2>
       <p className="max-w-3xl mx-auto text-center text-xl text-slate-700 mb-12">
-        Comprehensive expertise across strategic management, operational excellence, financial analysis, and business transformation—driving sustainable growth, efficiency, and cross-functional impact in every sector I've touched. I don’t just build plans—I deliver outcomes, optimize teams, and ensure results resonate across the organization.
+        Comprehensive expertise across strategic management, operational excellence, financial analysis, and business transformation driving sustainable growth, efficiency, and cross-functional impact in every sector I've touched. I don’t just build plans; I deliver outcomes, optimize teams, and ensure results resonate across the organization.
       </p>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Business Strategy */}
@@ -40,8 +40,11 @@ export default function CoreCompetencies() {
         <div className="bg-white rounded-2xl shadow border py-8 px-7">
           <div className="flex items-center mb-4">
             <span className="text-3xl bg-green-100 text-green-700 rounded-xl p-2 mr-3">
-              {/* Chart Icon */}
-              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 17v-2a4 4 0 014 4v0a4 4 0 01-4-4zm0-2l9-9m9 9V7a4 4 0 00-4-4h-1.5a4 4 0 00-4 4v6a4 4 0 004 4h5z"></path></svg>
+              {/* Dollar/Money Icon */}
+              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M12 22V2M17 6.5a5 5 0 00-10 0c0 1.23.95 2.31 2.17 2.64l5.66 1.42c1.22.31 2.17 1.41 2.17 2.64a5 5 0 11-10 0" />
+                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+              </svg>
             </span>
             <h3 className="text-xl font-bold text-slate-900">Financial Management</h3>
           </div>
@@ -61,9 +64,13 @@ export default function CoreCompetencies() {
         <div className="bg-white rounded-2xl shadow border py-8 px-7">
           <div className="flex items-center mb-4">
             <span className="text-3xl bg-purple-100 text-purple-700 rounded-xl p-2 mr-3">
-              {/* Team Leader Icon */}
-              <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-3-3.87m6 3.87A4.003 4.003 0 0017 17.13M17 17.13C16.87 16.42 16.45 15.84 15.93 15.49M12 21v-2a4 4 0 00-3-3.87M8.07 15.49A4.003 4.003 0 007 17.13M12 17.13C10.13 16.42 8.45 15.84 8.07 15.49M7 17.13C7.13 16.42 7.55 15.84 8.07 15.49"></path></svg>
-            </span>
+            {/* Project/Tasks/Checklist Icon */}
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="6" y="6" width="12" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+              <path d="M9 10h6M9 14h6" stroke="currentColor" strokeWidth="2"/>
+              <path d="M9 6V4c0-.552.447-1 1-1h4c.553 0 1 .448 1 1v2" fill="none" stroke="currentColor" strokeWidth="2"/>
+            </svg>
+          </span>
             <h3 className="text-xl font-bold text-slate-900">Project & Program Management</h3>
           </div>
           <div>
