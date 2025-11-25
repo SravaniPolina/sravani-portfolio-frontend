@@ -2,15 +2,16 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="py-12 px-3 sm:px-8 bg-white">
+    <section id="about" className="py-12 px-4 sm:px-8 bg-white scroll-smooth">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">About Me</h2>
-        <p className="text-lg text-slate-700 font-medium leading-relaxed text-center mb-8">
+        <p className="text-lg text-slate-700 font-medium leading-relaxed text-center mb-8 px-2 sm:px-6">
           Result-oriented strategic manager with 11+ years of experience in roles of increasing responsibility, from Assistant Manager to Chief of Staff. Directed cross-functional teams to implement strategic initiatives encompassing Strategy development and Vision development, leading to a measurable results across companies. Expert in implementing process improvements and utilizing OKRs for Performance Management. Passionate about turning boardroom vision into execution to drive business transformation.
-      </p>
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 justify-center">
+        </p>
+      </div>
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Education Box */}
-        <div className="flex-1 bg-white rounded-2xl shadow border py-8 px-8">
+        <div className="bg-white rounded-2xl shadow border py-8 px-7 flex flex-col">
           <div className="flex items-center mb-5">
             <span className="text-3xl bg-slate-100 text-slate-800 rounded-xl p-2 mr-4">
               {/* Mortar Board Icon */}
@@ -29,9 +30,8 @@ export default function AboutMe() {
             <div className="text-gray-500 text-sm">Indian Institute of Management - Lucknow, Uttar Pradesh</div>
           </div>
         </div>
-
         {/* Certifications Box */}
-        <div className="flex-1 bg-white rounded-2xl shadow border py-8 px-8">
+        <div className="bg-white rounded-2xl shadow border py-8 px-7 flex flex-col">
           <div className="flex items-center mb-5">
             <span className="text-3xl bg-slate-100 text-slate-800 rounded-xl p-2 mr-4">
               {/* Certificate Icon */}
