@@ -54,7 +54,7 @@ export default function ProfessionalRecognition() {
         </div>
       </div>
 
-      {/* Dark Band with Call to Action */}
+      {/* Dark Band with Call to Action - Large Blue Button */}
       <div className="max-w-6xl mx-auto mt-10">
         <div className="rounded-2xl bg-slate-800 px-4 py-12 text-center flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="flex-1">
@@ -65,10 +65,11 @@ export default function ProfessionalRecognition() {
               Join the executives who have benefited from strategic collaboration and transformational leadership.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row md:gap-6 gap-4 justify-center flex-1">
+          <div className="flex justify-center flex-1">
             <Link
               to="/consultation"
-              className="inline-block px-8 py-3 rounded-lg bg-white text-slate-800 font-semibold text-lg shadow hover:bg-slate-100 transition"
+              className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-xl text-lg hover:bg-blue-700 transition w-full md:w-auto"
+              style={{ textAlign: "center" }}
             >
               Schedule Executive Meeting
             </Link>
