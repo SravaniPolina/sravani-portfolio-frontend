@@ -15,7 +15,7 @@ const experiences = [
   },
   {
     title: "Head Marketing",
-    company: "Noveltec Feeds Private Limited (A Goldman Sachs company)",
+    company: "Noveltech Feeds Private Limited (A Goldman Sachs company)",
     date: "Jun 2022 - Apr 2023",
     location: "Hyderabad, Telangana",
     items: [
@@ -42,7 +42,7 @@ const experiences = [
     location: "Hyderabad, Telangana",
     items: [
       "Drove pricing excellence program with INR 500 Mn revenue impact",
-      "Led strategic decision-making for INR 500 Mn revenue impact",
+      "Led strategic decision-making for INR 200 Mn cost optimization",
     ]
   },
   {
@@ -53,7 +53,7 @@ const experiences = [
     items: [
       "Managed operational aspects of 6 major events ensuring seamless execution",
       "Conducted due diligence of 110+ early-stage startups increasing investment efficiency by 15%",
-      "Led fundraising campaign attracting 5 angel investors within first week"
+      "Led fundraising campaign attracting 5 angel investors within first quarter"
     ]
   },
   {
