@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function NavBar() {
   return (
     <nav className="w-full flex items-center justify-between py-5 px-8 bg-transparent">
       {/* Left side: Name and Subheadline */}
@@ -17,12 +18,13 @@ export default function Navbar() {
         <a href="#testimonials" className="hover:text-indigo-600">Testimonials</a>
       </div>
       {/* Right: Executive Consultation Button */}
-      <a
-        href="#contact"
-        className="px-6 py-2 rounded bg-slate-900 text-white font-semibold shadow hover:bg-indigo-700 transition"
-      >
-        Executive Consultation
-      </a>
+   <Link
+          to="/consultation"
+          className="px-4 py-2 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition"
+        >
+          Executive Consultation
+        </Link>
+      </div>
     </nav>
   );
 }
