@@ -76,7 +76,7 @@ export default function CoreCompetencies() {
           <div>
             <Tag>Project Optimization</Tag>
             <Tag>Process Improvement</Tag>
-            <Tag>Agile Cadence</Tag>
+            <Tag>Agile Systems Implementation</Tag>
             <Tag>PMO Governance</Tag>
             <Tag>Resource Allocation</Tag>
             <Tag>Cross-Functional Teams</Tag>
@@ -100,7 +100,7 @@ export default function CoreCompetencies() {
             <Tag>Process Automation</Tag>
             <Tag>Supply Chain</Tag>
             <Tag>Performance Metrics</Tag>
-            <Tag>Cost Reduction</Tag>
+            <Tag>Cost Optimization</Tag>
             <Tag>Change Management</Tag>
           </div>
         </div>
