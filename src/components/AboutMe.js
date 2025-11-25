@@ -51,6 +51,10 @@ export default function AboutMe() {
               <span className="mr-3 text-indigo-500">&#9679;</span>
               Power Query &amp; DAX
             </li>
+            <li className="flex items-center text-lg text-gray-700">
+              <span className="mr-3 text-indigo-500">&#9679;</span>
+              Financial Modelling
+            </li>
           </ul>
         </div>
       </div>
