@@ -1,33 +1,32 @@
-// src/components/Projects.jsx
 import React from "react";
 
-const sampleProjects = [
-  {
-    title: "EPC Project Tracker (Power BI & ERP)",
-    desc: "Schedule L2–L6 tracking template for EPC projects, integrated with ERP and project controls.",
-    link: "#",
-  },
-  {
-    title: "Strategy Execution Dashboard",
-    desc: "C-suite dashboard that converts strategy targets to OKRs and PMO execution view.",
-    link: "#",
-  },
-];
-
 export default function Projects() {
+  // Add your own project list below!
+  const projectList = [
+    {
+      name: "Chief of Staff @ Technique Solaire",
+      desc: "Driving strategy and operations in renewable energy sector.",
+    },
+    {
+      name: "Financial Analyst @ IDBI Bank Limited",
+      desc: "Led infrastructure financing and operational excellence.",
+    },
+    {
+      name: "Trading & Analysis",
+      desc: "Developing skills on financial markets and agile investment strategies.",
+    },
+  ];
+
   return (
-    <section id="projects" className="py-16 bg-gray-50">
+    <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-semibold">Selected projects</h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {sampleProjects.map((p, i) => (
-            <article key={i} className="p-6 bg-white rounded-lg shadow">
-              <h3 className="text-xl font-medium">{p.title}</h3>
-              <p className="mt-3 text-gray-600">{p.desc}</p>
-              <a href={p.link} className="mt-4 inline-block text-indigo-600">
-                Read more →
-              </a>
-            </article>
+        <h2 className="text-4xl font-bold text-slate-900 mb-10 text-center">Selected Projects</h2>
+        <div className="grid lg:grid-cols-3 gap-8">
+          {projectList.map((proj, i) => (
+            <div key={i} className="bg-indigo-50 border border-indigo-100 rounded-xl p-8 shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-indigo-800 mb-2">{proj.name}</h3>
+              <p className="text-slate-600">{proj.desc}</p>
+            </div>
           ))}
         </div>
       </div>
