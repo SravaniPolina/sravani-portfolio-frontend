@@ -13,6 +13,7 @@ import Projects from "./components/Projects";
 import ExecutiveCTA from "./components/ExecutiveCTA";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
+import ProfessionalRecognition from "./components/ProfessionalRecognition";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <ExecutiveCTA />
         <LeadershipPhilosophy />
         <ExecutiveTestimonials />
+        <ProfessionalRecognition />
         <Contact />
       </main>
       <Footer />
