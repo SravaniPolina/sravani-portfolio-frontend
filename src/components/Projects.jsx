@@ -118,7 +118,7 @@ const cards = [
 
 export default function ProjectCards() {
   return (
-    <section id="Executive Impact" className="py-12 px-4 sm:px-8 bg-white">
+    <section id="projects" className="py-12 px-4 sm:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Executive Impact </h2>
         <div className="space-y-10">
