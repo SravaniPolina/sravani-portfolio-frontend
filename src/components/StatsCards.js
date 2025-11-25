@@ -18,6 +18,5 @@ export default function StatsCards() {
         <span className="text-4xl font-bold text-purple-700 mb-2">C-Suite</span>
         <span className="text-md font-medium text-purple-500">READY EXECUTIVE</span>
       </div>
-    </div>
   );
 }
