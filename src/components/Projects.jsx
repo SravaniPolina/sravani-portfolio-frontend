@@ -120,7 +120,7 @@ export default function ProjectCards() {
   return (
     <section id="projects" className="py-12 px-4 sm:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Executive Impact & Case Studies</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Executive Impact </h2>
         <div className="space-y-10">
           {cards.map((card, idx) => (
             <div key={idx} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col gap-3 border transition hover:shadow-xl">
