@@ -11,7 +11,7 @@ export default function CoreCompetencies() {
   return (
     <section id="competencies" className="py-20 bg-white">
       <h2 className="text-5xl font-bold text-center mb-6">Core Competencies</h2>
-      <p className="max-w-3xl mx-auto text-center text-xl text-slate-700 mb-12">
+      <p className="max-w-3xl mx-auto text-justified text-xl text-slate-700 mb-12">
         Comprehensive expertise across strategic management, operational excellence, financial analysis, and business transformation driving sustainable growth, efficiency, and cross-functional impact in every sector I've touched. I don’t just build plans; I deliver outcomes, optimize teams, and ensure results resonate across the organization.
       </p>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
