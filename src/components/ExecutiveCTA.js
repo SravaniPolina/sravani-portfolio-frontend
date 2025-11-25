@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ExecutiveCTA() {
   return (
@@ -9,16 +10,17 @@ export default function ExecutiveCTA() {
             Ready to Drive Similar Results?
           </h3>
           <p className="text-lg text-slate-200 mb-6 max-w-2xl mx-auto">
-            Let's discuss how strategic leadership and operational excellence can transform your organization's performance.
+            Let's discuss your organization's goals and how strategic leadership can deliver measurable outcomes.
           </p>
-          <a
-            href="#contact" // Change to mailto: or external link if needed!
-            className="inline-block mt-2 px-8 py-3 rounded-lg bg-white text-slate-800 font-semibold text-lg shadow hover:bg-slate-100 transition"
+          <Link
+            to="/consultation"
+            className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-xl hover:bg-blue-700 transition"
           >
             Schedule Executive Consultation
-          </a>
+          </Link>
         </div>
       </div>
     </section>
   );
 }
+
