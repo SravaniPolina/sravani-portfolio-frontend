@@ -19,9 +19,9 @@ const cards = [
     company: "IDBI Bank Limited",
     highlight: "₹20Bn Projects Success",
     challenge:
-      "Complex infrastructure project compliance requirements, regulatory risk management, and need for zero non-compliance across INR 20 Bn portfolio.",
+      "Complex infrastructure project compliance requirements, regulatory risk management, and need for non-compliance across INR 20 Bn portfolio.",
     result: {
-      primary: "Zero Non-compliance Penalties",
+      primary: "Minimum Non-compliance Penalties",
       secondary: "INR 400 Mn Additional Revenue",
     },
   },
@@ -65,10 +65,10 @@ const cards = [
     company: "Srinivasa Farms Private Limited",
     highlight: "₹750M Value Creation",
     challenge:
-      "Underperforming sales operations, operational bottlenecks limiting growth, and inefficient resource allocation across business units affecting profitability.",
+      "Underperforming production & sales operations, operational bottlenecks limiting growth, and inefficient resource allocation across business units affecting profitability.",
     result: {
       primary: "INR 750 Mn Annual Savings",
-      secondary: "75% Throughput Improvement",
+      secondary: "75% Throughput Improvement", "90% reduction in capex requirement"
     },
   },
   {
@@ -89,7 +89,7 @@ const cards = [
       "Inefficient processes across 5 operational units leading to cost overruns and delayed project delivery; impacting overall organizational performance and client satisfaction.",
     result: {
       primary: "18% ROI Improvement",
-      secondary: "30% Higher Return on Investment",
+      secondary: "30% Capex Allocation efficiency",
     },
   },
   {
