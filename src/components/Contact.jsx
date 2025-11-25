@@ -7,10 +7,10 @@ export default function Contact() {
         <h2 className="text-4xl font-bold text-slate-900 mb-6">Contact</h2>
         <p className="mb-8 text-lg text-slate-700">
           Interested in working together or have a question?<br />
-          Email me at <a href="mailto:sravani@email.com" className="text-indigo-700 underline">sravani@email.com</a>
+          Email me at <a href="mailto:sravani.polina@iiml.org" className="text-indigo-700 underline">sravani.polina@iiml.org</a>
         </p>
         <a
-          href="mailto:sravani@email.com"
+          href="mailto:sravani.polina@iiml.org"
           className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full text-base font-semibold shadow"
         >
           Email Sravani
