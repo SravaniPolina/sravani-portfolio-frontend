@@ -4,6 +4,16 @@ import React from "react";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Navbar from './components/Navbar'; // add this near other imports
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      {/* The rest of your content/components go below... */}
+    </div>
+  );
+}
 
 function App() {
   return (
