@@ -1,4 +1,5 @@
 // src/App.js
+import './index.css';
 import React from "react";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
