@@ -117,7 +117,6 @@ export default function CoreCompetencies() {
             <Tag>Data Visualization</Tag>
             <Tag>CRM Analytics</Tag>
             <Tag>Financial Reporting (Excel, Power BI, Tableau)</Tag>
-            <Tag>Kite (Trading) Platform</Tag>
             <Tag>Spreadsheet Modelling</Tag>
             <Tag>Automation Tools</Tag>
           </div>
