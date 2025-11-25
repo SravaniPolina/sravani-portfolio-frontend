@@ -149,7 +149,7 @@ export default function LeadershipPhilosophy() {
             <span className="bg-purple-100 rounded-xl p-4 mb-4">
               <svg width="32" height="32"><circle cx="16" cy="16" r="8" fill="#a78bfa" /><circle cx="16" cy="16" r="4" fill="#fff" /></svg>
             </span>
-            <span className="text-3xl font-bold text-slate-900 mb-2">₹750M</span>
+            <span className="text-3xl font-bold text-slate-900 mb-2">₹1500M</span>
             <span className="text-lg text-slate-700 text-center">Value Through Leadership</span>
           </div>
           {/* Business Transformations */}
