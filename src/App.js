@@ -6,6 +6,11 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from './components/Footer';
+import StatsCards from "./components/StatsCards"; // at the top with other imports
+
+// ... inside your App render/return...
+<Hero />
+<StatsCards />
 
 function App() {
   return (
