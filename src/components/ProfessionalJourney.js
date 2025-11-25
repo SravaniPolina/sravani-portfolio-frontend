@@ -88,4 +88,41 @@ export default function ProfessionalJourney() {
             <div key={idx} className={`relative flex md:flex-row ${idx % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
               {/* Timeline dot */}
               <div className="hidden md:block absolute top-8 left-1/2 -translate-x-1/2 bg-slate-800 rounded-full h-3 w-3 z-20"></div>
-              <div className
+              <div className={`w-full md:w-1/2 flex ${idx % 2 === 0 ? 'justify-end pr-8' : 'justify-start pl-8'} z-10`}>
+                <div className="bg-white border rounded-2xl shadow-xl p-8 w-full max-w-xl">
+                  <div className="flex items-center mb-4">
+                    <span className="bg-slate-800 text-white rounded-xl p-3 mr-4">
+                      {/* Briefcase icon */}
+                      <svg width="32" height="32" fill="none" stroke="#fff" strokeWidth="2"><rect x="8" y="12" width="16" height="12" rx="3" /><rect x="12" y="8" width="8" height="4" rx="1" /></svg>
+                    </span>
+                    <div>
+                      <div className="text-xl font-bold">{exp.title}</div>
+                      <div className="text-slate-700">{exp.company}</div>
+                    </div>
+                  </div>
+                  <div className="flex gap-3 mb-3 text-sm">
+                    <span className="inline-flex items-center bg-gray-100 px-2 py-1 rounded text-slate-700">
+                      <svg width="16" height="16" fill="none" stroke="#555" className="mr-1"><rect x="2" y="4" width="12" height="10" rx="2" /><path d="M2 8h12" /></svg>
+                      {exp.date}
+                    </span>
+                    <span className="inline-flex items-center bg-gray-100 px-2 py-1 rounded text-slate-700">
+                      <svg width="16" height="16" fill="none" stroke="#555" className="mr-1"><circle cx="8" cy="8" r="6" /><circle cx="8" cy="8" r="2" /></svg>
+                      {exp.location}
+                    </span>
+                  </div>
+                  <ul className="text-slate-800 ml-2 space-y-2">
+                    {exp.items.map((item, i) => (
+                      <li key={i} className="list-disc marker:text-indigo-600 ml-4">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {/* Spacer on opposite side for responsive balance */}
+              <div className="hidden md:block w-1/2"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
