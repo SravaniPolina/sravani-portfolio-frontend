@@ -17,11 +17,31 @@ export default function ConsultationForm() {
   };
 
   // Optional: Prevent page reload on submit
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // You can add API call, alert, or email code here!
-    alert("Your request has been submitted!");
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch('https://api.sravanipolina.in/api/enquiries', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form)
+    });
+    if (response.ok) {
+      alert("Your request has been submitted!");
+      setForm({
+        name: "",
+        email: "",
+        company: "",
+        title: "",
+        type: "",
+        objectives: ""
+      }); // Reset form
+    } else {
+      alert("Sorry, there was a problem. Please try again.");
+    }
+  } catch (err) {
+    alert("There was an error sending your request.");
+  }
+};
 
   return (
     <section className="max-w-4xl mx-auto py-12 px-4">
