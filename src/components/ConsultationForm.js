@@ -1,64 +1,59 @@
 import React, { useState } from "react";
 
 export default function ConsultationForm() {
-<select
-  name="type"
-  value={form.type}
-  onChange={handleChange}
-  className="border rounded-lg px-4 py-3 mb-4 w-full focus:outline-none focus:ring"
-  required
->
-  <option value="">Type of Consultation</option>
-  <option value="advisory">C-Suite Advisory</option>
-  <option value="interim">Interim Leadership</option>
-  <option value="transformation">Transformation Consulting</option>
-  <option value="board">Board Advisory</option>
-  <option value="consulting">Other (Consulting/Custom)</option>
-</select>
+  // State for form fields
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    company: "",
+    title: "",
+    type: "",
+    objectives: ""
+  });
 
-  // Optional: Simple change handler
+  // Handles changes in form fields
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Optional: Prevent page reload on submit
- const handleSubmit = async (e) => {
-  e.preventDefault();
+  // Handles form submission, sends data to your backend
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const data = {
-    name: form.name,
-    email: form.email,
-    company: form.company,
-    title: form.title,
-    inquiry_type: form.type, // type for backend
-    message: form.objectives  // objectives for backend
-  };
+    // Prepare data for backend (make sure keys match backend)
+    const data = {
+      name: form.name,
+      email: form.email,
+      company: form.company,
+      title: form.title,
+      inquiry_type: form.type, // backend expects "advisory", "interim", etc.
+      message: form.objectives // backend expects this with your objectives
+    };
 
-  try {
-    const response = await fetch('https://api.sravanipolina.in/api/consultation', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    const result = await response.json();
-    if (response.ok && result.success) {
-      alert("Your request has been submitted!");
-      setForm({
-        name: "",
-        email: "",
-        company: "",
-        title: "",
-        type: "",
-        objectives: ""
+    try {
+      const response = await fetch('https://api.sravanipolina.in/api/consultation', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
       });
-    } else {
-      alert(result.message || "There was an error. Please try again.");
+      const result = await response.json();
+      if (response.ok && result.success) {
+        alert("Your request has been submitted!");
+        setForm({
+          name: "",
+          email: "",
+          company: "",
+          title: "",
+          type: "",
+          objectives: ""
+        }); // reset after successful submit
+      } else {
+        alert(result.message || "There was an error. Please try again.");
+      }
+    } catch (err) {
+      alert("There was an error sending your request.");
     }
-  } catch (err) {
-    alert("There was an error sending your request.");
-  }
-};
-
+  };
 
   return (
     <section className="max-w-4xl mx-auto py-12 px-4">
@@ -111,10 +106,11 @@ export default function ConsultationForm() {
           required
         >
           <option value="">Type of Consultation</option>
-          <option value="C-Suite Advisory">C-Suite Advisory</option>
-          <option value="Interim Leadership">Interim Leadership</option>
-          <option value="Transformation Consulting">Transformation Consulting</option>
-          <option value="Board Advisory">Board Advisory</option>
+          <option value="advisory">C-Suite Advisory</option>
+          <option value="interim">Interim Leadership</option>
+          <option value="transformation">Transformation Consulting</option>
+          <option value="board">Board Advisory</option>
+          <option value="consulting">Other (Consulting/Custom)</option>
         </select>
         <textarea
           name="objectives"
