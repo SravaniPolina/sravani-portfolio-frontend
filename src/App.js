@@ -1,14 +1,14 @@
 import './index.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from './components/NavBar';      
+import NavBar from './components/NavBar';
+import Projects from "./components/Projects";
 import Hero from "./components/Hero";
 import StatsCards from "./components/StatsCards";
 import Footer from './components/Footer';
 import AboutMe from "./components/AboutMe";
 import CoreCompetencies from "./components/CoreCompetencies";
 import PortfolioStats from "./components/PortfolioStats";
-import Projects from "./components/Projects";
 import ExecutiveCTA from "./components/ExecutiveCTA";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
