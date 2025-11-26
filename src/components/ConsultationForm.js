@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 
 export default function ConsultationForm() {
-  // Optional: Form field states (add logic if you want to process or validate)
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    company: "",
-    title: "",
-    type: "",
-    objectives: ""
-  });
+<select
+  name="type"
+  value={form.type}
+  onChange={handleChange}
+  className="border rounded-lg px-4 py-3 mb-4 w-full focus:outline-none focus:ring"
+  required
+>
+  <option value="">Type of Consultation</option>
+  <option value="advisory">C-Suite Advisory</option>
+  <option value="interim">Interim Leadership</option>
+  <option value="transformation">Transformation Consulting</option>
+  <option value="board">Board Advisory</option>
+  <option value="consulting">Other (Consulting/Custom)</option>
+</select>
 
   // Optional: Simple change handler
   const handleChange = (e) => {
@@ -17,15 +22,26 @@ export default function ConsultationForm() {
   };
 
   // Optional: Prevent page reload on submit
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
+
+  const data = {
+    name: form.name,
+    email: form.email,
+    company: form.company,
+    title: form.title,
+    inquiry_type: form.type, // type for backend
+    message: form.objectives  // objectives for backend
+  };
+
   try {
-    const response = await fetch('https://api.sravanipolina.in/api/enquiries', {
+    const response = await fetch('https://api.sravanipolina.in/api/consultation', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form)
+      body: JSON.stringify(data)
     });
-    if (response.ok) {
+    const result = await response.json();
+    if (response.ok && result.success) {
       alert("Your request has been submitted!");
       setForm({
         name: "",
@@ -34,14 +50,15 @@ export default function ConsultationForm() {
         title: "",
         type: "",
         objectives: ""
-      }); // Reset form
+      });
     } else {
-      alert("Sorry, there was a problem. Please try again.");
+      alert(result.message || "There was an error. Please try again.");
     }
   } catch (err) {
     alert("There was an error sending your request.");
   }
 };
+
 
   return (
     <section className="max-w-4xl mx-auto py-12 px-4">
