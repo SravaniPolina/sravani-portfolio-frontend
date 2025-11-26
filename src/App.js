@@ -19,6 +19,7 @@ import StrategicLeadershipServices from "./components/StrategicLeadershipService
 import DirectContact from "./components/DirectContact";
 import ExecutiveConsultation from "./components/ExecutiveConsultation";
 import ConsultationForm from "./components/ConsultationForm";
+import BackToTop from "./components/BackToTop";
 
 function HomePage() {
   return (
@@ -40,6 +41,7 @@ function HomePage() {
         <StrategicLeadershipServices />
         <DirectContact />
         <ExecutiveConsultation />
+        <BackToTop />
       </main>
       <Footer />
     </div>
