@@ -2,9 +2,8 @@ import React from "react";
 
 export default function PortfolioStats() {
   return (
-   <section id="portfoliostats" className="py-12 px-4 sm:px-8 bg-white">
-  <section className="my-14">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+    <section id="portfoliostats" className="py-12 px-4 sm:px-8 bg-white">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center my-14">
         <div>
           <span className="text-4xl font-bold text-blue-700 mb-2 block">40+</span>
           <div className="text-lg text-slate-700 font-medium">Technical Skills</div>
