@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PortfolioStats() {
   return (
-   <section id="PortfolioStats" className="py-12 px-4 sm:px-8 bg-white">
+   <section id="portfoliostats" className="py-12 px-4 sm:px-8 bg-white">
   <section className="my-14">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         <div>
