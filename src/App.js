@@ -18,7 +18,7 @@ import CareerHighlights from "./components/CareerHighlights";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import DirectContact from "./components/DirectContact";
 import ExecutiveConsultation from "./components/ExecutiveConsultation";
-import ConsultationForm from "./components/ConsultationForm"; // Add your form component import
+import ConsultationForm from "./components/ConsultationForm";
 
 function HomePage() {
   return (
