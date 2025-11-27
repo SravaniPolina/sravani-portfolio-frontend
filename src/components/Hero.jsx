@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="bg-white border rounded-xl px-6 py-5 mb-6 w-full max-w-xl shadow">
             <h3 className="text-lg font-semibold mb-2">Executive Impact Summary</h3>
             <div className="flex flex-wrap gap-5 text-slate-600 text-base">
-              <span>₹750M+ Value Creation</span>
+              <span>₹1500M+ Value Creation</span>
               <span>75% Efficiency Gains</span>
               <span>5 Business Transformations</span>
               <span>20% Cost Reductions</span>
