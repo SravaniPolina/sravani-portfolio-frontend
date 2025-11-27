@@ -10,7 +10,7 @@ export default function StatsCards() {
       </div>
       {/* Card 2 */}
       <div className="bg-green-50 border border-green-200 rounded-xl shadow flex flex-col items-center justify-center w-[220px] h-[140px]">
-        <span className="text-3xl font-bold text-green-900 mb-2">₹750M</span>
+        <span className="text-3xl font-bold text-green-900 mb-2">₹1500M</span>
         <span className="text-base font-semibold text-green-700">VALUE DELIVERED</span>
       </div>
       {/* Card 3 */}
