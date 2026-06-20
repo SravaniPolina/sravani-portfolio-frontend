@@ -22,25 +22,20 @@ export default function Hero() {
             12+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
           </p>
           <div className="flex flex-wrap gap-4">
-            
-              href="https://topmate.io/sravani_polina"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 rounded-lg bg-indigo-800 text-white font-medium hover:bg-indigo-900 transition"
-            >
+            <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-indigo-800 text-white font-medium hover:bg-indigo-900 transition">
               Book a 30-min intro call
             </a>
-            
-              href="#impact"
-              className="inline-block px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition"
-            >
+            <a href="#impact" className="inline-block px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
               See recent work
             </a>
           </div>
         </div>
-        {/* Right: Profile Photo */}
         <div className="flex-1 flex flex-col items-center mt-10 lg:mt-0">
           <div className="relative">
-            <img
-              src="/Aragon-Headshot-70.jpg"
-              alt="Sravani Polina"
+            <img src="/Aragon-Headshot-70.jpg" alt="Sravani Polina" className="w-72 h-72 object-cover object-top rounded-xl border-4 border-white shadow-lg" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
