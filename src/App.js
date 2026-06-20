@@ -2,24 +2,17 @@ import './index.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
-import Projects from "./components/Projects";
 import Hero from "./components/Hero";
-import StatsCards from "./components/StatsCards";
-import Footer from './components/Footer';
 import AboutMe from "./components/AboutMe";
-import CoreCompetencies from "./components/CoreCompetencies";
-import PortfolioStats from "./components/PortfolioStats";
-import ExecutiveCTA from "./components/ExecutiveCTA";
+import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
+import Projects from "./components/Projects";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
-import ProfessionalRecognition from "./components/ProfessionalRecognition";
 import ProfessionalJourney from "./components/ProfessionalJourney";
-import CareerHighlights from "./components/CareerHighlights";
-import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import DirectContact from "./components/DirectContact";
-import ExecutiveConsultation from "./components/ExecutiveConsultation";
-import ConsultationForm from "./components/ConsultationForm";
+import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
+import ConsultationForm from "./components/ConsultationForm";
 
 function HomePage() {
   return (
@@ -27,20 +20,13 @@ function HomePage() {
       <NavBar />
       <main>
         <Hero />
-        <StatsCards />
         <AboutMe />
-        <CoreCompetencies />
-        <PortfolioStats />
+        <StrategicLeadershipServices />
         <Projects />
-        <ExecutiveCTA />
         <LeadershipPhilosophy />
         <ExecutiveTestimonials />
-        <ProfessionalRecognition />
         <ProfessionalJourney />
-        <CareerHighlights />
-        <StrategicLeadershipServices />
         <DirectContact />
-        <ExecutiveConsultation />
         <BackToTop />
       </main>
       <Footer />
