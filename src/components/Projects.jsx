@@ -2,114 +2,155 @@ import React from "react";
 
 const cards = [
   {
-    year: "Apr 2026 - present",
-    tag: "Fractional CFO",
-    title: "Financial backbone for a 3-property serviced apartment business",
-    company: "Hospitality client, Hyderabad",
-    highlight: "Engagement ongoing",
-    problem: "An asset-light hospitality operator running three serviced apartment properties needed an integrated financial view (consolidated P&L, cash flow, DSCR) and was approaching key tax and funding thresholds without a model that could show the implications.",
-    didItems: [
-      "Built a five-year multi-property financial model covering P&L, cash flow, balance sheet, and DSCR",
-      "Prepared the bank funding note for the third property",
-      "Stress-tested tax structuring (Section 44AD vs. 44AB) under multiple growth scenarios",
-      "Set up budget vs. actual trackers for the under-construction property"
-    ],
-    outcome: "Surfaced a Section 44AD threshold consideration in FY27 and a tight DSCR window in FY30 tied to bullet repayment. Both flagged early enough to inform structuring choices."
+    year: "2012-2015",
+    tag: "Risk Management",
+    icon: (
+      // Chart/Bar-graph icon
+      <span className="text-3xl bg-blue-50 text-blue-700 rounded-xl p-2">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <rect x="5" y="21" width="3" height="6" rx="1" fill="#2563eb" />
+          <rect x="12" y="16" width="3" height="11" rx="1" fill="#2563eb" />
+          <rect x="19" y="12" width="3" height="15" rx="1" fill="#2563eb" />
+          <rect x="26" y="7" width="3" height="20" rx="1" fill="#2563eb" />
+        </svg>
+      </span>
+    ),
+    title: "Infrastructure Investment & Risk Management",
+    company: "IDBI Bank Limited",
+    highlight: "₹20Bn Projects Success",
+    challenge:
+      "Complex infrastructure project compliance requirements, regulatory risk management, and need for non-compliance across INR 20 Bn portfolio.",
+    result: {
+      primary: "Minimum Non-compliance Penalties",
+      secondary: "INR 400 Mn Additional Revenue",
+    },
   },
   {
-    year: "2019 - 2023",
+    year: "2022-2023",
+    tag: "Marketing Strategy",
+    icon: (
+      // User/Management icon
+      <span className="text-3xl bg-blue-50 text-blue-700 rounded-xl p-2">
+        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/>
+          <path d="M15.22 16.87A8.94 8.94 0 0 0 12 16c-2.5 0-4.71 1.06-6.21 2.87C6.62 21.74 9.22 23 12 23s5.38-1.26 6.21-3.13z"/>
+        </svg>
+      </span>
+    ),
+    title: "Strategic Marketing & Brand Transformation",
+    company: "Noveltech Feeds Private Limited (A Goldman Sachs Company)",
+    highlight: "40% Brand Growth",
+    challenge:
+      "Low brand awareness in competitive market, declining customer engagement rates, and suboptimal customer retention affecting revenue growth.",
+    result: {
+      primary: "40% Brand Awareness Increase",
+      secondary: "15% Customer Retention Improvement",
+    },
+  },
+  {
+    year: "2021-2022",
     tag: "Business Strategy",
-    title: "Pricing reset and operating model overhaul",
-    company: "Agribusiness, Andhra Pradesh",
-    highlight: "₹750M+ value creation",
-    problem: "A poultry and feed business with operational losses, weak pricing discipline, and capex-heavy expansion plans.",
-    didItems: [
-      "Rebuilt the pricing engine and ran margin analysis by SKU and channel",
-      "Led the shift to an asset-light contract farming model",
-      "Retrained the sales team on margin-led selling",
-      "Built dashboards for pricing sensitivity monitoring"
-    ],
-    outcome: "₹500M revenue impact through pricing alone. ₹200M operational loss reduction. 75% throughput improvement on a 90% lower capex base."
+    icon: (
+      // Target icon
+      <span className="text-3xl bg-blue-50 text-blue-700 rounded-xl p-2">
+        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+          <circle cx="12" cy="12" r="6" stroke="currentColor" strokeWidth="2" />
+          <circle cx="12" cy="12" r="2" fill="#2563eb" />
+          <path d="M20 20l-6-6" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      </span>
+    ),
+    title: "Revenue Optimization & Business Transformation",
+    company: "Srinivasa Farms Private Limited",
+    highlight: "₹750M Value Creation",
+    challenge:
+      "Underperforming production & sales operations, operational bottlenecks limiting growth, and inefficient resource allocation across business units affecting profitability.",
+    result: {
+      primary: "INR 750 Mn Annual Savings",
+      secondary: "75% Throughput Improvement, 90% reduction in capex requirement"
+    },
   },
   {
-    year: "2024 - 2025",
-    tag: "Strategy & PMO",
-    title: "PMO setup across five business units",
-    company: "Infrastructure EPC, Hyderabad",
-    highlight: "18% ROI improvement",
-    problem: "Five operating units, no shared cadence, capex decisions made in isolation, project delays cascading into cost overruns.",
-    didItems: [
-      "Designed a unified PMO framework across all five units",
-      "Set up weekly project reviews with live dashboards",
-      "Restructured capex governance and approval workflows",
-      "Ran a cost-optimisation programme across all five units"
-    ],
-    outcome: "18% ROI improvement. 30% better capex allocation efficiency. 20% reduction in operational cost base. Frameworks remained in use post-engagement."
+    year: "2024",
+    tag: "Process Optimization",
+    icon: (
+      // Upward Arrow icon
+      <span className="text-3xl bg-blue-50 text-blue-700 rounded-xl p-2">
+        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M4 17l6-6 6 6" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      </span>
+    ),
+    title: "Operational Excellence Transformation",
+    company: "Mahathi Infra Services Pvt Ltd",
+    highlight: "₹50M+ Annual Savings",
+    challenge:
+      "Inefficient processes across 5 operational units leading to cost overruns and delayed project delivery; impacting overall organizational performance and client satisfaction.",
+    result: {
+      primary: "18% ROI Improvement",
+      secondary: "30% Capex Allocation efficiency",
+    },
   },
   {
-    year: "2018 - 2019",
-    tag: "Deal Advisory",
-    title: "Angel investment diligence at scale",
-    company: "Startup ecosystem, Andhra Pradesh",
-    highlight: "110+ startups evaluated",
-    problem: "An angel network with deal flow but no structured way to evaluate or prioritise it.",
-    didItems: [
-      "Built and ran the diligence process for 110+ early-stage startups across sectors",
-      "Designed evaluation scorecards and founder interview frameworks",
-      "Presented investment recommendations to the investor panel",
-      "Advised the Andhra Pradesh IT Ministry on startup ecosystem policy"
-    ],
-    outcome: "15% improvement in investment efficiency. 5 angel investors onboarded in the first quarter. Advisory engagement with the AP IT Ministry."
+    year: "2019-2021",
+    tag: "Financial Strategy",
+    icon: (
+      // Dollar icon
+      <span className="text-3xl bg-blue-50 text-blue-700 rounded-xl p-2">
+        <svg height="28" width="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <rect x="4" y="4" width="16" height="16" rx="4" stroke="#2563eb" strokeWidth="2"/>
+          <text x="9" y="18" fontSize="12" fill="currentColor">$</text>
+        </svg>
+      </span>
+    ),
+    title: "Pricing Excellence & Data-Driven Strategy",
+    company: "Srinivasa Farms Private Limited",
+    highlight: "₹500M Revenue Growth",
+    challenge:
+      "Pricing inefficiencies impacting profitability margins, lack of data-driven pricing strategies, and operational losses affecting business sustainability.",
+    result: {
+      primary: "INR 500 Mn Revenue Impact",
+      secondary: "INR 200 Mn Operational Loss Reduction",
+    },
   },
-  {
-    year: "2012 - 2017",
-    tag: "Debt & Capital",
-    title: "Infrastructure project finance, ₹20Bn portfolio",
-    company: "IDBI Bank & ICICI Bank, Hyderabad",
-    highlight: "Zero non-compliance penalties",
-    problem: "A ₹20Bn infrastructure portfolio with complex compliance requirements and tight regulatory oversight, plus a parallel SME book to manage.",
-    didItems: [
-      "Led financial diligence and ongoing monitoring across 15+ infrastructure projects",
-      "Built a real-time compliance reporting system",
-      "Managed a parallel SME book of 45+ clients totaling ₹3,000M AUM",
-      "Developed comprehensive PSL strategy"
-    ],
-    outcome: "Zero non-compliance penalties across the portfolio. ₹400M additional revenue through fee income and NII. SME book exceeded targets by 15%."
-  }
 ];
 
 export default function ProjectCards() {
   return (
-    <section id="impact" className="py-16 px-4 sm:px-8 bg-white">
+    <section id="projects" className="py-12 px-4 sm:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Selected Work</h2>
-        <div className="space-y-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Executive Impact </h2>
+        <div className="space-y-10">
           {cards.map((card, idx) => (
-            <div key={idx} className="bg-white shadow-lg rounded-2xl p-7 border transition hover:shadow-xl">
-              <div className="mb-4">
-                <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.year}</span>
-                <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.tag}</span>
+            <div key={idx} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col gap-3 border transition hover:shadow-xl">
+              <div className="flex items-center gap-4">
+                {card.icon}
+                <div>
+                  <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.year}</span>
+                  <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.tag}</span>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row items-start justify-between gap-3 mb-5">
+              <div className="flex flex-col sm:flex-row items-start justify-between gap-2">
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900">{card.title}</h3>
-                  <div className="text-base text-slate-600 italic">{card.company}</div>
+                  <div className="text-lg text-slate-600">{card.company}</div>
                 </div>
-                <div className="text-lg font-bold text-indigo-800 sm:text-right whitespace-nowrap">{card.highlight}</div>
+                <div className="text-xl font-bold text-green-700 sm:text-right">{card.highlight}</div>
               </div>
-              <div className="mb-4">
-                <span className="font-semibold text-slate-900 block mb-1">The problem</span>
-                <span className="text-gray-700">{card.problem}</span>
+              <div className="mt-1">
+                <span className="font-semibold text-slate-700 block mb-1">Executive Challenge</span>
+                <span className="text-gray-600">{card.challenge}</span>
               </div>
-              <div className="mb-4">
-                <span className="font-semibold text-slate-900 block mb-1">What I did</span>
-                <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                  {card.didItems.map((item, i) => (<li key={i}>{item}</li>))}
-                </ul>
-              </div>
-              <div className="bg-indigo-50 rounded-xl p-4 mt-2">
-                <span className="font-semibold text-indigo-900 block mb-1">Outcome</span>
-                <span className="text-gray-800">{card.outcome}</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div className="bg-green-50 rounded-xl p-4">
+                  <span className="font-semibold text-green-800 block mb-1">Primary Result</span>
+                  <span className="text-lg font-bold text-green-900">{card.result.primary}</span>
+                </div>
+                <div className="bg-blue-50 rounded-xl p-4">
+                  <span className="font-semibold text-blue-800 block mb-1">Secondary Impact</span>
+                  <span className="text-lg font-bold text-blue-900">{card.result.secondary}</span>
+                </div>
               </div>
             </div>
           ))}
