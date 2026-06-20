@@ -44,11 +44,3 @@ export default function Hero() {
             <img
               src="/Aragon-Headshot-70.jpg"
               alt="Sravani Polina"
-              className="w-72 h-72 object-cover object-top rounded-xl border-4 border-white shadow-lg"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
