@@ -82,7 +82,7 @@ export default function ProjectCards() {
   return (
     <section id="impact" className="py-16 px-4 sm:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Selected Work</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Impact Stories</h2>
         <div className="space-y-8">
           {cards.map((card, idx) => (
             <div key={idx} className="bg-white shadow-lg rounded-2xl p-7 border transition hover:shadow-xl">
