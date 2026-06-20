@@ -1,154 +1,153 @@
-```javascript
 export const executiveMockData = {
   caseStudies: [
     {
       id: 1,
-      title: "Operational Excellence Transformation",
-      company: "Mahathi Infra Services Pvt Ltd",
-      year: "2024",
-      category: "Process Optimization",
-      challenge: "Inefficient processes across 5 operational units leading to cost overruns and delayed project delivery, impacting overall organizational performance and client satisfaction.",
+      title: "Financial backbone for a 3-property serviced apartment business",
+      company: "Hospitality client, Hyderabad",
+      year: "Apr 2026 - present",
+      category: "Fractional CFO",
+      challenge: "An asset-light hospitality operator running three serviced apartment properties needed an integrated financial view — consolidated P&L, cash flow, DSCR — and was approaching key tax and funding thresholds without a model that could show the implications.",
       approach: [
-        "Conducted comprehensive analysis of existing operational workflows",
-        "Identified redundant processes and underutilized resources",
-        "Implemented lean management principles and process optimization",
-        "Developed new project management framework with clear KPIs",
+        "Built a five-year multi-property financial model covering P&L, cash flow, balance sheet, and DSCR",
+        "Prepared the bank funding note for the third property",
+        "Stress-tested tax structuring (Section 44AD vs. 44AB) under multiple growth scenarios",
+        "Set up budget vs. actual trackers for the under-construction property",
+        "Advised on consolidated tax and funding structure"
+      ],
+      results: {
+        primary: "Section 44AD threshold surfaced in FY27",
+        secondary: "Tight DSCR window identified in FY30",
+        financial: "Flagged early enough to inform structuring choices",
+        operational: "Integrated multi-property reporting framework in place"
+      },
+      skillsApplied: [
+        "Financial Modelling",
+        "Tax Structuring",
+        "Debt Advisory",
+        "Cash Flow Planning",
+        "Scenario Analysis"
+      ],
+      impact: "Engagement ongoing",
+      testimonial: ""
+    },
+    {
+      id: 2,
+      title: "Pricing reset and operating model overhaul",
+      company: "Agribusiness, Andhra Pradesh",
+      year: "2019 - 2023",
+      category: "Business Strategy",
+      challenge: "A poultry and feed business with operational losses, weak pricing discipline, and capex-heavy expansion plans.",
+      approach: [
+        "Rebuilt the pricing engine and ran margin analysis by SKU and channel",
+        "Led the shift to an asset-light contract farming model",
+        "Retrained the sales team on margin-led selling",
+        "Built dashboards for pricing sensitivity monitoring",
+        "Established KPIs for performance monitoring and continuous improvement"
+      ],
+      results: {
+        primary: "INR 500 Mn revenue impact through pricing",
+        secondary: "INR 200 Mn operational loss reduction",
+        financial: "75% throughput improvement on a 90% lower capex base",
+        operational: "Asset-light operating model established"
+      },
+      skillsApplied: [
+        "Pricing Strategy",
+        "Margin Analysis",
+        "Operating Model Design",
+        "Sales Enablement",
+        "Strategic Planning"
+      ],
+      impact: "₹750M+ Value Creation",
+      testimonial: "The transformation Sravani led fundamentally changed how we operate, delivering unprecedented efficiency gains."
+    },
+    {
+      id: 3,
+      title: "PMO setup across five business units",
+      company: "Infrastructure EPC, Hyderabad",
+      year: "2024 - 2025",
+      category: "Strategy & PMO",
+      challenge: "Five operating units, no shared cadence, capex decisions made in isolation, project delays cascading into cost overruns.",
+      approach: [
+        "Designed a unified PMO framework across all five units",
+        "Set up weekly project reviews with live dashboards",
+        "Restructured capex governance and approval workflows",
+        "Ran a cost-optimisation programme across all five units",
         "Established cross-functional collaboration protocols"
       ],
       results: {
         primary: "18% ROI Improvement",
-        secondary: "30% Higher Return on Investment",
-        financial: "Cost optimization across 5 units",
-        operational: "Streamlined project management framework"
+        secondary: "30% better capex allocation efficiency",
+        financial: "20% reduction in operational cost base",
+        operational: "PMO frameworks remained in use post-engagement"
       },
       skillsApplied: [
-        "Strategic Planning",
-        "Process Optimization", 
-        "Change Management",
+        "PMO Design",
+        "Governance Frameworks",
+        "Capex Optimisation",
         "Cross-functional Leadership",
-        "Performance Management"
+        "Change Management"
       ],
       impact: "₹50M+ Annual Savings",
       testimonial: "Sravani's strategic approach to operational excellence delivered immediate and sustained improvements across our organization."
     },
     {
-      id: 2,
-      title: "Revenue Optimization & Business Transformation", 
-      company: "Srinivasa Farms Private Limited",
-      year: "2021-2022",
-      category: "Business Strategy",
-      challenge: "Underperforming sales operations, operational bottlenecks limiting growth, and inefficient resource allocation across business units affecting profitability.",
-      approach: [
-        "Leveraged CRM analytics to identify high-potential leads and optimize sales processes",
-        "Spearheaded comprehensive process optimization initiatives using data analytics",
-        "Implemented asset-light business model with strategic equipment leasing",
-        "Established KPIs for performance monitoring and continuous improvement",
-        "Mentored project managers to enhance team capabilities"
-      ],
-      results: {
-        primary: "INR 750 Mn Annual Savings",
-        secondary: "75% Throughput Improvement", 
-        financial: "30% increase in sales productivity",
-        operational: "20 weeks improvement in project timelines"
-      },
-      skillsApplied: [
-        "Business Strategy",
-        "Data Analytics",
-        "Process Optimization",
-        "Team Leadership",
-        "Performance Management"
-      ],
-      impact: "₹750M Value Creation",
-      testimonial: "The transformation Sravani led fundamentally changed how we operate, delivering unprecedented efficiency gains."
-    },
-    {
-      id: 3,
-      title: "Pricing Excellence & Data-Driven Strategy",
-      company: "Srinivasa Farms Private Limited", 
-      year: "2019-2021",
-      category: "Financial Strategy",
-      challenge: "Pricing inefficiencies impacting profitability margins, lack of data-driven pricing strategies, and operational losses affecting business sustainability.",
-      approach: [
-        "Built 10 comprehensive dashboards for pricing sensitivity monitoring",
-        "Developed data-driven pricing strategies using advanced analytics",
-        "Led cross-functional teams in strategic decision-making processes",
-        "Implemented robust pricing excellence program with C-level reporting",
-        "Transformed core business processes through strategic workflow optimization"
-      ],
-      results: {
-        primary: "INR 500 Mn Revenue Impact",
-        secondary: "INR 200 Mn Operational Loss Reduction",
-        financial: "Substantial revenue improvement through pricing optimization",
-        operational: "20% reduction in operational costs"
-      },
-      skillsApplied: [
-        "Financial Analysis",
-        "Pricing Strategy",
-        "Data Analytics", 
-        "Strategic Planning",
-        "Cross-functional Leadership"
-      ],
-      impact: "₹500M Revenue Growth",
-      testimonial: "Sravani's pricing excellence program delivered immediate financial impact while establishing sustainable competitive advantages."
-    },
-    {
       id: 4,
-      title: "Strategic Marketing & Brand Transformation",
-      company: "Noveltech Feeds Private Limited (Goldman Sachs)",
-      year: "2022-2023", 
-      category: "Marketing Strategy",
-      challenge: "Low brand awareness in competitive market, declining customer engagement rates, and suboptimal customer retention affecting revenue growth.",
+      title: "Angel investment diligence at scale",
+      company: "Startup ecosystem, Andhra Pradesh",
+      year: "2018 - 2019",
+      category: "Deal Advisory",
+      challenge: "An angel network with deal flow but no structured way to evaluate or prioritise it.",
       approach: [
-        "Developed comprehensive targeted marketing strategies for B2B and B2C segments",
-        "Implemented personalized customer offer system using purchase history analytics",
-        "Created data-driven customer engagement and retention programs",
-        "Established brand positioning strategy to enhance market presence",
-        "Optimized value proposition through customer behavior analysis"
+        "Built and ran the diligence process for 110+ early-stage startups across sectors",
+        "Designed evaluation scorecards and founder interview frameworks",
+        "Presented investment recommendations to the investor panel",
+        "Led fundraising campaigns and investor onboarding",
+        "Advised the Andhra Pradesh IT Ministry on startup ecosystem policy"
       ],
       results: {
-        primary: "40% Brand Awareness Increase",
-        secondary: "15% Customer Retention Improvement",
-        financial: "30% increase in overall profit margins",
-        operational: "Enhanced customer engagement across segments"
+        primary: "110+ startups evaluated",
+        secondary: "15% improvement in investment efficiency",
+        financial: "5 angel investors onboarded in the first quarter",
+        operational: "Advisory engagements with the AP IT Ministry"
       },
       skillsApplied: [
-        "Marketing Strategy",
-        "Brand Management",
-        "Customer Analytics",
-        "Retention Programs",
-        "Performance Optimization"
+        "Deal Diligence",
+        "Investment Evaluation",
+        "Investor Relations",
+        "Policy Advisory",
+        "Ecosystem Strategy"
       ],
-      impact: "40% Brand Growth",
-      testimonial: "The marketing transformation Sravani orchestrated positioned us as a market leader with sustainable competitive advantages."
+      impact: "110+ Startups Evaluated",
+      testimonial: ""
     },
     {
       id: 5,
-      title: "Infrastructure Investment & Risk Management",
-      company: "IDBI Bank Limited",
-      year: "2012-2015",
-      category: "Risk Management", 
-      challenge: "Complex infrastructure project compliance requirements, regulatory risk management, and need for zero non-compliance across INR 20 Bn portfolio.",
+      title: "Infrastructure project finance, ₹20Bn portfolio",
+      company: "IDBI Bank & ICICI Bank, Hyderabad",
+      year: "2012 - 2017",
+      category: "Debt & Capital Advisory",
+      challenge: "A ₹20Bn infrastructure portfolio with complex compliance requirements and tight regulatory oversight, plus a parallel SME book to manage.",
       approach: [
-        "Led comprehensive financial diligence for large-scale infrastructure projects",
-        "Implemented robust regulatory compliance framework",
-        "Developed real-time reporting system for project status insights",
-        "Established preemptive decision-making protocols",
-        "Created stakeholder consensus-building strategies"
+        "Led financial diligence and ongoing monitoring across 15+ infrastructure projects",
+        "Built a real-time compliance reporting system",
+        "Managed a parallel SME book of 45+ clients totaling INR 3,000 Mn AUM",
+        "Developed comprehensive PSL strategy",
+        "Established stakeholder consensus-building protocols"
       ],
       results: {
-        primary: "Zero Non-compliance Penalties",
-        secondary: "INR 400 Mn Additional Revenue",
-        financial: "Revenue through fee income and Net Interest Income",
-        operational: "15+ projects delivered on time and within budget"
+        primary: "Zero non-compliance penalties across the portfolio",
+        secondary: "INR 400 Mn additional revenue through fee income and NII",
+        financial: "SME book exceeded targets by 15%",
+        operational: "Real-time reporting system across 15+ projects"
       },
       skillsApplied: [
+        "Project Finance",
         "Risk Management",
-        "Financial Diligence",
         "Regulatory Compliance",
-        "Project Management",
+        "Portfolio Management",
         "Stakeholder Management"
       ],
-      impact: "₹20Bn Projects Success",
+      impact: "₹20Bn Portfolio · Zero Penalties",
       testimonial: "Sravani's meticulous approach to risk management and compliance ensured flawless execution of our largest infrastructure portfolio."
     }
   ],
@@ -156,36 +155,36 @@ export const executiveMockData = {
   leadershipPhilosophy: {
     coreValues: [
       {
-        title: "Results-Driven Excellence",
-        description: "Every strategic initiative must deliver measurable business impact with clear ROI and sustainable competitive advantages.",
-        icon: "target"
+        title: "One advisor, not a team behind a slide",
+        description: "You get me, not a junior associate doing the work.",
+        icon: "user"
       },
       {
-        title: "Data-Informed Decision Making", 
-        description: "Leveraging analytics, business intelligence, and performance metrics to guide strategic choices and operational improvements.",
-        icon: "bar-chart"
+        title: "Models you'll actually use",
+        description: "Every spreadsheet I hand over is structured for the person who'll open it next month, not just for the deliverable.",
+        icon: "file-spreadsheet"
       },
       {
-        title: "Cross-Functional Collaboration",
-        description: "Building consensus across departments, fostering innovation through diverse perspectives, and aligning stakeholder objectives.",
-        icon: "users"
+        title: "Tech-fluent across the stack",
+        description: "From Power BI dashboards to AI-driven analysis, I use the tools that deliver results 50% faster — without making them the headline.",
+        icon: "cpu"
       },
       {
-        title: "Continuous Process Optimization",
-        description: "Identifying inefficiencies, implementing lean methodologies, and creating frameworks for sustained operational excellence.", 
-        icon: "trending-up"
+        title: "The joined-up view",
+        description: "Finance, operations, and strategy together — because the answer rarely sits in just one function.",
+        icon: "link"
       }
     ],
-    approachSummary: "My leadership philosophy centers on transformation through strategic thinking, operational excellence, and measurable results. I believe in empowering cross-functional teams, leveraging data-driven insights, and building sustainable competitive advantages that deliver long-term value for all stakeholders.",
-    managementStyle: "Collaborative yet decisive, focusing on clear communication, accountability, and empowerment. I build high-performing teams by establishing clear objectives, providing strategic guidance, and fostering an environment of innovation and continuous improvement."
+    approachSummary: "I take on engagements where the answer needs more than one lens — finance, operations, and strategy together. Most engagements run 3–6 months on retainer; some are scoped projects.",
+    managementStyle: "Direct, hands-on, and pragmatic. I work alongside founder teams rather than from a distance, and I structure every deliverable so it remains useful long after the engagement ends."
   },
 
   executiveTestimonials: [
     {
       name: "Mahesh K Gupta",
       title: "COO",
-      company: "Srinivasa Farms Private Limited", 
-      testimonial: "Sravani comes across as a professional with sharp intellectual, who works with data and generates deep insights into how a business is performing and what are the tactical and strategic actions required. The people around her view her as an extremely friendly, humane and understanding lady, who becomes a part of the team in no time. She is flexible, adaptable and quick learner of even subjects unfamiliar to her. All the best to her in her roles in strategy formulation area.",
+      company: "Srinivasa Farms Private Limited",
+      testimonial: "Sravani is a professional with sharp intellect, who works with data and generates deep insights into how a business is performing and what tactical and strategic actions are required. The people around her view her as extremely friendly, humane, and understanding — she becomes part of the team in no time. She is flexible, adaptable, and a quick learner of subjects unfamiliar to her.",
       rating: 5,
       relationship: "Direct Supervisor"
     },
@@ -193,12 +192,9 @@ export const executiveMockData = {
       name: "Amreen Begum",
       title: "Colleague",
       company: "Mahathi Infra Services Pvt Ltd",
-      testimonial: "I had the privilege of working closely with Ms. Sravani during her tenure as Chief of Staff at Mahathi, and I can confidently say she is an exceptional professional. Ms. Sravani possesses a rare blend of strategic thinking, organizational excellence, and people management skills. She played a pivotal role in streamlining processes, aligning cross-functional teams, and ensuring that leadership priorities were executed seamlessly. Her ability to handle complex situations with clarity and professionalism has always been impressive. What stands out most about Ms. Sravani is her proactive approach and commitment to delivering excellence. She not only anticipates challenges but also brings well-thought-out solutions, ensuring that projects move forward smoothly. Her strong interpersonal skills, combined with her dedication, make her a natural leader and a trusted partner to the management team. I highly recommend Ms. Sravani for any leadership or strategic role. Any organization would be fortunate to have her driving its initiatives forward.",
-      rating: 5, 
+      testimonial: "I had the privilege of working closely with Sravani during her tenure as Chief of Staff at Mahathi. She possesses a rare blend of strategic thinking, organisational excellence, and people management skills. She played a pivotal role in streamlining processes, aligning cross-functional teams, and ensuring that leadership priorities were executed seamlessly. What stands out most is her proactive approach — she anticipates challenges and brings well-thought-out solutions.",
+      rating: 5,
       relationship: "Professional Colleague"
     }
   ]
 };
-```
-
----
