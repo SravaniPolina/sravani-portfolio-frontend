@@ -20,7 +20,7 @@ export default function NavBar() {
         </button>
         <div className="hidden sm:flex gap-6 text-base text-slate-700">
           <a href="#about" className="hover:text-indigo-600">About</a>
-          <a href="#services" className="hover:text-indigo-600">Services</a>
+          <a href="#services" className="hover:text-indigo-600">What I do</a>
           <a href="#impact" className="hover:text-indigo-600">Work</a>
           <a href="#testimonials" className="hover:text-indigo-600">Testimonials</a>
           <a href="#contact" className="hover:text-indigo-600">Contact</a>
@@ -30,7 +30,7 @@ export default function NavBar() {
       {isOpen && (
         <div className="sm:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-3">
           <a href="#about" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>About</a>
-          <a href="#services" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Services</a>
+          <a href="#services" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>What I do</a>
           <a href="#impact" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Work</a>
           <a href="#testimonials" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Testimonials</a>
           <a href="#contact" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Contact</a>
