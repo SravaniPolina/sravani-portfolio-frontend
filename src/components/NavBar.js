@@ -7,9 +7,7 @@ export default function NavBar() {
       <div className="flex items-center justify-between py-5 px-4 sm:px-8">
         <div>
           <div className="font-bold text-xl text-slate-900">Sravani Polina</div>
-          <div className="text-xs text-gray-500 mt-1 hidden sm:block">
-            Independent Strategy &amp; Finance Advisor
-          </div>
+          <div className="text-xs text-gray-500 mt-1 hidden sm:block">Independent Strategy &amp; Finance Advisor</div>
         </div>
         <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden text-slate-900 focus:outline-none">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,14 +25,7 @@ export default function NavBar() {
           <a href="#testimonials" className="hover:text-indigo-600">Testimonials</a>
           <a href="#contact" className="hover:text-indigo-600">Contact</a>
         </div>
-        
-          href="https://topmate.io/sravani_polina"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden sm:block px-4 py-2 rounded bg-indigo-800 text-white font-bold hover:bg-indigo-900 transition"
-        >
-          Book a Call
-        </a>
+        <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="hidden sm:block px-4 py-2 rounded bg-indigo-800 text-white font-bold hover:bg-indigo-900 transition">Book a Call</a>
       </div>
       {isOpen && (
         <div className="sm:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-3">
@@ -43,15 +34,7 @@ export default function NavBar() {
           <a href="#impact" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Work</a>
           <a href="#testimonials" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Testimonials</a>
           <a href="#contact" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Contact</a>
-          
-            href="https://topmate.io/sravani_polina"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full text-center px-4 py-2 rounded bg-indigo-800 text-white font-bold hover:bg-indigo-900 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Book a Call
-          </a>
+          <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="block w-full text-center px-4 py-2 rounded bg-indigo-800 text-white font-bold hover:bg-indigo-900 transition" onClick={() => setIsOpen(false)}>Book a Call</a>
         </div>
       )}
     </nav>
