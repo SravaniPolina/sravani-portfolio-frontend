@@ -83,11 +83,52 @@ const cards = [
   }
 ];
 
+const sectorMix = [
+  { icon: "🏨", label: "Hospitality" },
+  { icon: "🌾", label: "Agribusiness" },
+  { icon: "🏗️", label: "Infrastructure" },
+  { icon: "🚀", label: "Startups" },
+  { icon: "🏦", label: "Banking" }
+];
+
 export default function ProjectCards() {
   return (
     <section id="impact" className="py-16 px-4 sm:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Impact Stories</h2>
+
+        <div className="bg-slate-50 rounded-2xl border p-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-indigo-800">5</div>
+              <div className="text-xs md:text-sm text-slate-600 mt-1">Engagements featured</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-indigo-800">5</div>
+              <div className="text-xs md:text-sm text-slate-600 mt-1">Sectors spanned</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-indigo-800">Since 2012</div>
+              <div className="text-xs md:text-sm text-slate-600 mt-1">Track record</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-indigo-800">₹20Bn</div>
+              <div className="text-xs md:text-sm text-slate-600 mt-1">Largest portfolio</div>
+            </div>
+          </div>
+          <div className="border-t pt-6">
+            <div className="text-xs text-slate-500 text-center mb-4 uppercase tracking-wide">Sectors covered</div>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-12">
+              {sectorMix.map((s, i) => (
+                <div key={i} className="flex flex-col items-center">
+                  <div className="text-3xl md:text-4xl">{s.icon}</div>
+                  <div className="text-xs text-slate-700 mt-2">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-8">
           {cards.map((card, idx) => (
             <div key={idx} className="bg-white shadow-lg rounded-2xl p-7 border transition hover:shadow-xl">
