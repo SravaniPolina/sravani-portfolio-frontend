@@ -28,6 +28,7 @@ export default function StrategicLeadershipServices() {
           <p className="text-slate-700">Curriculum, pitch decks, and program design for school and corporate learning. Currently building Financial Literacy and Cyber Security programs for Grades 8 to 10 under the FutureSmart brand.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 }
