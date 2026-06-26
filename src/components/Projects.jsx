@@ -2,6 +2,7 @@ import React from "react";
 
 const cards = [
   {
+    icon: "🏨",
     year: "Apr 2026 - present",
     tag: "Fractional CFO",
     title: "Financial backbone for a 3-property serviced apartment business",
@@ -17,6 +18,7 @@ const cards = [
     outcome: "Surfaced a Section 44AD threshold consideration in FY27 and a tight DSCR window in FY30 tied to bullet repayment. Both flagged early enough to inform structuring choices."
   },
   {
+    icon: "🌾",
     year: "2019 - 2023",
     tag: "Business Strategy",
     title: "Pricing reset and operating model overhaul",
@@ -32,6 +34,7 @@ const cards = [
     outcome: "₹500M revenue impact through pricing alone. ₹200M operational loss reduction. 75% throughput improvement on a 90% lower capex base."
   },
   {
+    icon: "🏗️",
     year: "2024 - 2025",
     tag: "Strategy & PMO",
     title: "PMO setup across five business units",
@@ -47,6 +50,7 @@ const cards = [
     outcome: "18% ROI improvement. 30% better capex allocation efficiency. 20% reduction in operational cost base. Frameworks remained in use post-engagement."
   },
   {
+    icon: "🚀",
     year: "2018 - 2019",
     tag: "Deal Advisory",
     title: "Angel investment diligence at scale",
@@ -62,6 +66,7 @@ const cards = [
     outcome: "15% improvement in investment efficiency. 5 angel investors onboarded in the first quarter. Advisory engagement with the AP IT Ministry."
   },
   {
+    icon: "🏦",
     year: "2012 - 2017",
     tag: "Debt & Capital",
     title: "Infrastructure project finance, ₹20Bn portfolio",
@@ -86,9 +91,12 @@ export default function ProjectCards() {
         <div className="space-y-8">
           {cards.map((card, idx) => (
             <div key={idx} className="bg-white shadow-lg rounded-2xl p-7 border transition hover:shadow-xl">
-              <div className="mb-4">
-                <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.year}</span>
-                <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.tag}</span>
+              <div className="flex items-start gap-4 mb-4">
+                <div className="text-4xl">{card.icon}</div>
+                <div className="flex-1">
+                  <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.year}</span>
+                  <span className="inline-block text-xs bg-gray-100 text-slate-700 px-3 py-1 rounded-lg mr-2">{card.tag}</span>
+                </div>
               </div>
               <div className="flex flex-col sm:flex-row items-start justify-between gap-3 mb-5">
                 <div>
