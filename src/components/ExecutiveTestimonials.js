@@ -23,7 +23,7 @@ const testimonials = [
 
 export default function ExecutiveTestimonials() {
   return (
-    <section id="testimonials" className="py-16 px-4 sm:px-8 bg-slate-50">
+    <section id="testimonials" className="py-16 px-4 sm:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">What people say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
