@@ -6,9 +6,9 @@ export default function StrategicLeadershipServices() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-center">
           <img
-            src="/What_I_Do_Infographic.jpg"
-            alt="What I do: Fractional CFO, Debt and Capital Advisory, M&A and Deal Diligence, Strategy and PMO, Educational Program Design"
-            className="w-full max-w-5xl rounded-2xl shadow-lg"
+            src="/What_I_Do_Venn.jpg"
+            alt="What I do: a Venn diagram showing Fractional CFO, Debt and Capital Advisory, M&A and Deal Diligence, and Strategy and PMO across Finance, Operations, and Strategy, plus Educational Program Design"
+            className="w-full max-w-4xl rounded-2xl shadow-lg"
           />
         </div>
       </div>
