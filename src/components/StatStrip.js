@@ -1,7 +1,7 @@
 import React from "react";
 
 const stats = [
-  { value: "12+", label: "Years across banking, agribusiness, infrastructure, hospitality" },
+  { value: "14+", label: "Years across banking, agribusiness, infrastructure, hospitality" },
   { value: "₹750M+", label: "Value delivered for clients" },
   { value: "110+", label: "Startups evaluated for angel investment" },
   { value: "₹20Bn", label: "Infrastructure debt structured" }
