@@ -19,7 +19,7 @@ export default function Hero() {
             I work with founders and CEOs on the problems that don't fit neatly into one function: financial models that need to inform real decisions, PMOs that need to actually deliver, and debt and deal structures that need to hold up under scrutiny.
           </p>
           <p className="text-base text-slate-600 mb-8">
-            12+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
+            14+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-indigo-800 text-white font-medium hover:bg-indigo-900 transition">
