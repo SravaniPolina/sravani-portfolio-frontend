@@ -7,40 +7,32 @@ export default function Hero() {
         {/* Left: Main Text */}
         <div className="flex-1 lg:pr-12">
           <span className="inline-block px-4 py-2 mb-3 rounded-full bg-white border text-gray-700 font-medium">
-            Strategic Business Leader
+            Independent Strategy & Finance Advisor
           </span>
-          <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-2 leading-tight">
-            Sravani <span className="block text-indigo-800">Polina</span>
+          <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-3 leading-tight whitespace-nowrap">
+            Sravani Polina
           </h1>
-          <h2 className="text-2xl font-light text-slate-700 mb-5">
-            Transformation Architect | Results Driver
+          <h2 className="text-2xl font-light text-slate-700 mb-6">
+            Fractional CFO. Deal advisor. Strategy &amp; PMO.
           </h2>
-          {/* Justified summary section */}
-          <p className="text-lg text-slate-700 mb-8 font-semibold text-justify">
-           Think BIG, deliver bigger. Over 12 years leading transformations, scaling teams, and driving results in EPC, banking, and agribusiness; I've built value that sticks: ₹1500M+, five business turnarounds, 75% leap in efficiency, and real culture shifts everyone in the company can see & feel. 
-  Whether it's jumping in with CEOs and Boards or rolling up my sleeves in PMO rooms, I make strategy actionable. 
-            My superpowers? Cutting through silos, making OKRs work in real life (not just slides), and rallying people behind growth. If you want someone who can decode analytics, spot cross-functional risks, and energize an org to move — let's have a chat.
+          <p className="text-lg text-slate-700 mb-6 text-justify">
+            I work with founders and CEOs on the problems that don't fit neatly into one function: financial models that need to inform real decisions, PMOs that need to actually deliver, and debt and deal structures that need to hold up under scrutiny.
           </p>
-          {/* Executive Impact Summary Card */}
-          <div className="bg-white border rounded-xl px-6 py-5 mb-6 w-full max-w-xl shadow">
-            <h3 className="text-lg font-semibold mb-2">Executive Impact Summary</h3>
-            <div className="flex flex-wrap gap-5 text-slate-600 text-base">
-              <span>₹1500M+ Value Creation</span>
-              <span>75% Efficiency Gains</span>
-              <span>5 Business Transformations</span>
-              <span>20% Cost Reductions</span>
-            </div>
+          <p className="text-base text-slate-600 mb-8">
+            14+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-indigo-800 text-white font-medium hover:bg-indigo-900 transition">
+              Book a 30-min intro call
+            </a>
+            <a href="#impact" className="inline-block px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
+              See recent work
+            </a>
           </div>
         </div>
-        {/* Right: Profile Photo (no badge) */}
-        <div className="flex-1 flex flex-col items-center">
+        <div className="flex-1 flex flex-col items-center mt-10 lg:mt-0">
           <div className="relative">
-            <img
-              src="/Aragon-Headshot-70.jpg"
-              alt="Sravani Polina"
-              className="w-72 h-72 object-cover rounded-xl border-4 border-white shadow-lg"
-            />
-            {/* 20Bn badge removed */}
+            <img src="/Aragon-Headshot-70.jpg" alt="Sravani Polina" className="w-72 h-72 object-cover object-top rounded-xl border-4 border-white shadow-lg" />
           </div>
         </div>
       </div>

@@ -1,135 +1,103 @@
-import React from "react";
+import React, { useState } from "react";
 
-const metrics = [
-  {
-    count: "2",
-    title: "Executive Testimonials",
-    color: "bg-green-50",
-    icon: (
-      <span className="bg-green-100 rounded-xl p-4">
-        {/* Ribbon/Medal Icon */}
-        <svg width="32" height="32" fill="none" stroke="#22c55e" strokeWidth="2">
-          <circle cx="16" cy="12" r="8" />
-          <path d="M16 20v6M12 20l-2 6M20 20l2 6" />
-        </svg>
-      </span>
-    ),
-  },
-  {
-    count: "2",
-    title: "Organizations",
-    color: "bg-blue-50",
-    icon: (
-      <span className="bg-blue-100 rounded-xl p-4">
-        {/* Building Icon */}
-        <svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2">
-          <rect x="8" y="8" width="16" height="16" rx="3" />
-          <path d="M12 12h2v2h-2zM18 12h2v2h-2zM12 18h2v2h-2zM18 18h2v2h-2z" />
-        </svg>
-      </span>
-    ),
-  },
-  {
-    count: "5.0",
-    title: "Professional Rating",
-    color: "bg-yellow-50",
-    icon: (
-      <span className="bg-yellow-100 rounded-xl p-4">
-        {/* Star Icon */}
-        <svg width="32" height="32" fill="none" stroke="#f59e42" strokeWidth="2">
-          <polygon points="16,4 20,14 31,14 22,20 25,30 16,24 7,30 10,20 1,14 12,14" />
-        </svg>
-      </span>
-    ),
-  },
-  {
-    count: "100%",
-    title: "Would Recommend",
-    color: "bg-purple-50",
-    icon: (
-      <span className="bg-purple-100 rounded-xl p-4">
-        {/* Quote Icon */}
-        <svg width="32" height="32" fill="none" stroke="#a78bfa" strokeWidth="2">
-          <rect x="10" y="10" width="12" height="12" rx="3" />
-          <path d="M12 18h8M12 14h8" />
-        </svg>
-      </span>
-    ),
-  },
-];
+const LinkedInIcon = () => (
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 19h-3v-9h3v9zm-1.5-10.27c-0.97 0-1.75-0.79-1.75-1.76s0.78-1.76 1.75-1.76c0.97 0 1.75 0.79 1.75 1.76s-0.78 1.76-1.75 1.76zm13.25 10.27h-3v-4.5c0-1.07-0.02-2.45-1.5-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h0.04c0.4-0.76 1.39-1.56 2.86-1.56 3.06 0 3.63 2.02 3.63 4.64v4.69z"/></svg>
+);
 
 const testimonials = [
   {
-    stars: 5,
-    type: "Direct Supervisor",
-    quote: `Sravani comes across as a professional with sharp intellectual, who works with data and generates deep insights into how a business is performing and what are the tactical and strategic actions required. The people around her view her as an extremely friendly, humane and understanding lady, who becomes a part of the team in no time. She is flexible, adaptable and quick learner of even subjects unfamiliar to her. All the best to her in her roles in strategy formulation area.`,
-    name: "Mahesh K Gupta",
-    role: "COO",
-    company: "Srinivasa Farms Private Limited",
+    quote: "Sravani's expertise in financial strategy, cash flow management, and forecasting has been instrumental in strengthening our financial operations. She also developed investor-ready financial models and presentations for our fundraising efforts. Most notably, she goes well beyond scope, personally helping us reach out to financial institutions and HNIs to drive our business growth.",
+    name: "Sirisha Rudraraju",
+    role: "Co-Founder, Nivara Stays",
+    initials: "SR",
+    linkedin: "https://www.linkedin.com/in/sirishars/"
   },
   {
-    stars: 5,
-    type: "Professional Colleague",
-    quote: `I had the privilege of working closely with Ms. Sravani during her tenure as Chief of Staff at Mahathi, and I can confidently say she is an exceptional professional. Ms. Sravani possesses a rare blend of strategic thinking, organizational excellence, and people management skills. She played a pivotal role in streamlining processes, aligning cross-functional teams, and ensuring that leadership priorities were executed seamlessly. Her ability to handle complex situations with clarity and professionalism has always been impressive. What stands out most about Ms. Sravani is her proactive approach and commitment to delivering excellence. She not only anticipates challenges but also brings well-thought-out solutions, ensuring that projects move forward smoothly. Her strong interpersonal skills, combined with her dedication, make her a natural leader and a trusted partner to the management team. I highly recommend Ms. Sravani for any leadership or strategic role. Any organization would be fortunate to have her driving its initiatives forward.`,
-    name: "Amreen Begum",
-    role: "Colleague",
-    company: "Mahathi Infra Services Pvt Ltd",
+    quote: "Sravani is a professional with sharp intellect, who works with data and generates deep insights into how a business is performing and what tactical and strategic actions are required. The people around her view her as extremely friendly, humane, and understanding. She is flexible, adaptable, and a quick learner of subjects unfamiliar to her.",
+    name: "Mahesh K Gupta",
+    role: "COO, Srinivasa Farms Private Limited",
+    initials: "MG",
+    linkedin: "https://www.linkedin.com/in/mahesh-kumar-g-796b856/"
   },
+  {
+    quote: "I had the privilege of working closely with Sravani during her tenure as Chief of Staff at Mahathi. She possesses a rare blend of strategic thinking, organisational excellence, and people management skills. What stands out most is her proactive approach. She anticipates challenges and brings well-thought-out solutions.",
+    name: "Amreen Begum",
+    role: "Colleague, Mahathi Infra Services Pvt Ltd",
+    initials: "AB",
+    linkedin: "https://www.linkedin.com/in/amreenkhanadmnexec/"
+  },
+  {
+    quote: "Sravani demonstrated a strong grasp of banking and financial services, particularly client relationship management and credit assessment. She built trust with clients while managing internal processes effectively, a balance that's not easy to strike in BFSI. She was diligent, proactive, and a quick learner with genuine intellectual curiosity, always asking the right questions to understand business context.",
+    name: "Sharada Sundaram",
+    role: "GM, IDBI Bank (Retired)",
+    initials: "SS",
+    linkedin: null
+  }
 ];
 
-export default function ExecutiveTestimonials() {
+function Avatar({ initials }) {
   return (
-    <section id="testimonials" className="py-16 px-4 sm:px-8 bg-white">
-      {/* Heading & Description */}
-      <div className="max-w-3xl mx-auto text-center mb-8">
-        <h2 className="text-5xl font-bold mb-4">Executive Testimonials</h2>
-        <p className="text-xl text-slate-600">
-          Authentic testimonials from senior executives and colleagues who have directly experienced my strategic leadership and business transformation capabilities.
-        </p>
+    <div className="w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 font-bold flex items-center justify-center text-sm flex-shrink-0">
+      {initials}
+    </div>
+  );
+}
+
+function Card({ t }) {
+  return (
+    <div style={{ width: "340px" }} className="flex-shrink-0 bg-slate-50 rounded-2xl shadow p-6 border flex flex-col">
+      <p className="italic text-sm text-slate-700 leading-relaxed mb-5 flex-1">"{t.quote}"</p>
+      <div className="flex items-center gap-3 pt-4 border-t">
+        <Avatar initials={t.initials} />
+        <div className="flex-1 min-w-0">
+          {t.linkedin ? (
+            <a href={t.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 font-bold text-slate-900 hover:text-indigo-700 text-sm">
+              {t.name}
+              <LinkedInIcon />
+            </a>
+          ) : (
+            <div className="font-bold text-slate-900 text-sm">{t.name}</div>
+          )}
+          <div className="text-xs text-slate-600">{t.role}</div>
+        </div>
       </div>
-      {/* Stats Row */}
-      <div className="max-w-6xl mx-auto mb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-2xl border bg-gradient-to-r from-green-50 via-yellow-50 via-purple-50 to-blue-50 p-6">
-        {metrics.map((stat, i) => (
-          <div key={i} className={`flex flex-col items-center px-4 py-6 rounded-xl ${stat.color}`}>
-            {stat.icon}
-            <span className="text-3xl font-bold text-slate-900 mt-2 mb-2">{stat.count}</span>
-            <span className="text-lg text-slate-700 text-center">{stat.title}</span>
-          </div>
-        ))}
+    </div>
+  );
+}
+
+export default function ExecutiveTestimonials() {
+  const [paused, setPaused] = useState(false);
+  const doubled = [...testimonials, ...testimonials];
+
+  return (
+    <section id="testimonials" className="py-16 bg-white">
+      <style>{`
+        @keyframes scroll-left {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+      `}</style>
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">What people say</h2>
+        <p className="text-center text-slate-600">Direct feedback from clients and colleagues.</p>
       </div>
-      {/* Testimonials Cards */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        {testimonials.map((t, idx) => (
-          <div key={idx} className="bg-white rounded-2xl shadow p-8 flex flex-col gap-2 border">
-            {/* Stars and Type */}
-            <div className="flex items-center justify-between mb-2">
-              <div className="flex gap-1">
-                {[...Array(t.stars)].map((_, i) => (
-                  <svg key={i} width="20" height="20" fill="#f59e42">
-                    <polygon points="10,2 13,8 20,8 14.5,12.5 16,19 10,15.5 4,19 5.5,12.5 0,8 7,8" />
-                  </svg>
-                ))}
-              </div>
-              <span className="inline-block bg-gray-100 text-slate-700 px-3 py-1 rounded-lg">{t.type}</span>
-            </div>
-            {/* Quote Icon */}
-            <span className="bg-slate-800 text-white rounded-xl p-3 inline-block w-fit mb-4">
-              <svg width="28" height="28" fill="none" stroke="#fff" strokeWidth="2">
-                <rect x="10" y="10" width="12" height="12" rx="3" />
-                <path d="M12 18h8M12 14h8" />
-              </svg>
-            </span>
-            {/* Quote */}
-            <p className="italic text-lg text-slate-700">"{t.quote}"</p>
-            {/* Attribution */}
-            <div className="mt-6">
-              <div className="text-xl font-bold text-slate-900">{t.name}</div>
-              <div className="text-base text-slate-600">{t.role}</div>
-              <div className="text-base text-slate-600">{t.company}</div>
-            </div>
-          </div>
-        ))}
+      <div
+        className="overflow-hidden w-full"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div
+          className="flex gap-6 px-4"
+          style={{
+            width: "max-content",
+            animation: "scroll-left 40s linear infinite",
+            animationPlayState: paused ? "paused" : "running"
+          }}
+        >
+          {doubled.map((t, i) => (<Card key={i} t={t} />))}
+        </div>
       </div>
+      <p className="text-center text-sm text-slate-500 mt-10 italic">More client references available on request.</p>
     </section>
   );
 }
