@@ -18,7 +18,7 @@ import ConsultationForm from "./components/ConsultationForm";
 
 function HomePage() {
   return (
-    <div className="antialiased text-slate-800">
+    <div className="antialiased" style={{background: "var(--background)", color: "var(--text)"}}>
       <NavBar />
       <main>
         <Hero />
