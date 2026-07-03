@@ -2,7 +2,7 @@ import React from "react";
 
 const stats = [
   {
-    value: "12+",
+    value: "14+",
     label: "Years of Cross-Industry Leadership",
   },
   {
