@@ -1,116 +1,133 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function NavBar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenu, setMobileMenu] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const navItems = [
-    { label: "Services", href: "#services" },
-    { label: "Work", href: "#projects" },
-    { label: "About", href: "#about" },
-    { label: "Insights", href: "#insights" },
-    { label: "Contact", href: "#contact" },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled
-            ? "backdrop-blur-xl bg-[#061B1B]/75 border-b border-white/10"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto h-20 flex items-center justify-between px-6 lg:px-10">
+    <header className="sticky top-0 z-50 bg-[#050505]/95 backdrop-blur border-b border-[#D4A63A]/15">
+      <div className="max-w-7xl mx-auto px-8">
+
+        <div className="flex items-center justify-between h-24">
 
           {/* Logo */}
 
           <a
             href="/"
-            className="text-white text-xl lg:text-2xl font-semibold tracking-wide hover:text-[var(--gold)] transition"
+            className="flex items-center gap-5"
           >
-            Sravani Polina
+            <div className="text-[#D4A63A] font-serif text-6xl leading-none">
+              Sp
+            </div>
+
+            <div>
+
+              <div
+                className="uppercase text-white tracking-[2px] font-serif text-3xl leading-none"
+              >
+                SRAVANI POLINA
+              </div>
+
+              <div
+                className="uppercase text-[#D4A63A] tracking-[3px] text-xs mt-2 font-medium"
+              >
+                STRATEGY. FINANCE. IMPACT.
+              </div>
+
+            </div>
+
           </a>
 
           {/* Desktop Menu */}
 
-          <div className="hidden lg:flex items-center gap-10">
-
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-white/75 hover:text-white transition duration-300 text-sm tracking-wide"
-              >
-                {item.label}
-              </a>
-            ))}
+          <nav className="hidden lg:flex items-center gap-14">
 
             <a
-              href="https://topmate.io/sravani_polina"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="primary-btn"
+              href="/"
+              className="text-[#D4A63A] uppercase tracking-wide text-sm font-medium relative"
             >
-              Let's Talk
+              HOME
+
+              <span className="absolute left-0 -bottom-4 h-[2px] w-full bg-[#D4A63A]" />
+
             </a>
 
-          </div>
+            <a
+              href="#about"
+              className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition"
+            >
+              ABOUT
+            </a>
 
-          {/* Mobile Button */}
+            <a
+              href="#services"
+              className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition"
+            >
+              SERVICES
+            </a>
+
+            <a
+              href="#projects"
+              className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition"
+            >
+              WORK
+            </a>
+
+            <a
+              href="#testimonials"
+              className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition"
+            >
+              TESTIMONIALS
+            </a>
+
+            <a
+              href="#contact"
+              className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition"
+            >
+              CONTACT
+            </a>
+
+          </nav>
+
+          {/* CTA */}
+
+          <a
+            href="https://topmate.io/sravani_polina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-8 py-4 rounded-full hover:scale-105 transition"
+          >
+            Let's Talk
+          </a>
+
+          {/* Mobile */}
 
           <button
-            className="lg:hidden text-white text-3xl"
-            onClick={() => setMobileMenu(!mobileMenu)}
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden text-white"
           >
             ☰
           </button>
 
         </div>
-      </nav>
 
-      {/* Mobile Menu */}
+      </div>
 
-      {mobileMenu && (
-        <div className="fixed top-20 left-0 w-full bg-[#061B1B] border-t border-white/10 z-40 lg:hidden">
+      {isOpen && (
+        <div className="lg:hidden bg-[#111111] border-t border-[#D4A63A]/20">
 
-          <div className="flex flex-col px-6 py-8 gap-6">
+          <a href="#about" className="block px-8 py-4 text-white">About</a>
 
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-white/90 text-lg"
-                onClick={() => setMobileMenu(false)}
-              >
-                {item.label}
-              </a>
-            ))}
+          <a href="#services" className="block px-8 py-4 text-white">Services</a>
 
-            <a
-              href="https://topmate.io/sravani_polina"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="primary-btn text-center"
-              onClick={() => setMobileMenu(false)}
-            >
-              Let's Talk
-            </a>
+          <a href="#projects" className="block px-8 py-4 text-white">Work</a>
 
-          </div>
+          <a href="#testimonials" className="block px-8 py-4 text-white">Testimonials</a>
+
+          <a href="#contact" className="block px-8 py-4 text-white">Contact</a>
 
         </div>
       )}
-    </>
+
+    </header>
   );
 }
