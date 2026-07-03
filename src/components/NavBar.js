@@ -2,24 +2,23 @@ import React, { useEffect, useState } from "react";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 40);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 30);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
+  const navItems = [
     { label: "Services", href: "#services" },
-    { label: "Impact", href: "#impact" },
-    { label: "Case Studies", href: "#projects" },
-    { label: "AI", href: "#ai" },
+    { label: "Work", href: "#projects" },
     { label: "About", href: "#about" },
+    { label: "Insights", href: "#insights" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -28,36 +27,30 @@ export default function NavBar() {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#061B1B]/85 backdrop-blur-xl border-b border-white/10"
+            ? "backdrop-blur-xl bg-[#061B1B]/75 border-b border-white/10"
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto h-20 flex items-center justify-between px-6 lg:px-10">
 
           {/* Logo */}
 
           <a
             href="/"
-            className="text-white leading-tight"
+            className="text-white text-xl lg:text-2xl font-semibold tracking-wide hover:text-[var(--gold)] transition"
           >
-            <div className="font-semibold tracking-[4px] text-lg">
-              SRAVANI POLINA
-            </div>
-
-            <div className="text-xs text-[var(--gold)] tracking-[2px] uppercase mt-1">
-              Strategy • Transformation • AI
-            </div>
+            Sravani Polina
           </a>
 
-          {/* Desktop */}
+          {/* Desktop Menu */}
 
           <div className="hidden lg:flex items-center gap-10">
 
-            {links.map((item) => (
+            {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm tracking-wide text-white/80 hover:text-[var(--gold)] transition"
+                className="text-white/75 hover:text-white transition duration-300 text-sm tracking-wide"
               >
                 {item.label}
               </a>
@@ -77,27 +70,28 @@ export default function NavBar() {
           {/* Mobile Button */}
 
           <button
-            onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden text-white text-3xl"
+            onClick={() => setMobileMenu(!mobileMenu)}
           >
             ☰
           </button>
+
         </div>
       </nav>
 
       {/* Mobile Menu */}
 
-      {mobileOpen && (
+      {mobileMenu && (
         <div className="fixed top-20 left-0 w-full bg-[#061B1B] border-t border-white/10 z-40 lg:hidden">
 
-          <div className="flex flex-col p-6 gap-6">
+          <div className="flex flex-col px-6 py-8 gap-6">
 
-            {links.map((item) => (
+            {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white/90"
-                onClick={() => setMobileOpen(false)}
+                className="text-white/90 text-lg"
+                onClick={() => setMobileMenu(false)}
               >
                 {item.label}
               </a>
@@ -108,11 +102,13 @@ export default function NavBar() {
               target="_blank"
               rel="noopener noreferrer"
               className="primary-btn text-center"
+              onClick={() => setMobileMenu(false)}
             >
               Let's Talk
             </a>
 
           </div>
+
         </div>
       )}
     </>
