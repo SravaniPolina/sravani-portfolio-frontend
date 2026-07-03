@@ -11,23 +11,21 @@ export default function Hero() {
 
         {/* LEFT */}
 
-        <div>
+<div className="mb-8">
+  <p className="uppercase tracking-[5px] text-[var(--gold)] text-sm font-semibold">
+    STRATEGY ADVISOR
+  </p>
 
-          <span className="uppercase tracking-[4px] text-sm text-[var(--gold)] font-semibold">
-            Strategy Advisor
-          </span>
+  <h2 className="text-4xl font-bold text-white mt-2">
+    Sravani Polina
+  </h2>
+</div>
 
-          <h1 className="text-5xl lg:text-7xl font-serif leading-[1.05] tracking-tight text-white">
-            Strategy.
-            <br />
-            Execution.
-            <br />
-            <span className="text-[var(--gold)]">
-            Transformation.
-            </span>
-
-          </h1>
-
+          <h1 className="mt-10 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif leading-[0.95] tracking-tight">
+  <span className="block text-white">Strategy.</span>
+  <span className="block text-white">Execution.</span>
+  <span className="block text-[var(--gold)]">Transformation.</span>
+</h1>
           <p className="mt-8 max-w-xl text-lg">
 
             Helping founders, investors and business leaders turn complex
