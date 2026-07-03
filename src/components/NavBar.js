@@ -30,7 +30,7 @@ export default function NavBar() {
               <div
                 className="uppercase text-[#D4A63A] tracking-[3px] text-xs mt-2 font-medium"
               >
-                STRATEGY. FINANCE. IMPACT.
+                STRATEGY. FINANCE. PMO. TRANSFORMATION.
               </div>
 
             </div>
