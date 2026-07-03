@@ -4,7 +4,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0A1628]/95 backdrop-blur border-b border-[#D4A63A]/15">
+    className="sticky top-0 z-50 bg-[#0D3B2E]/95 backdrop-blur border-b border-[#D4A63A]/15"
       <div className="max-w-7xl mx-auto px-8">
 
         <div className="flex items-center justify-between h-24">
@@ -113,7 +113,7 @@ export default function NavBar() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-[##0A1628] border-t border-[#D4A63A]/20">
+        className="lg:hidden bg-[#0D3B2E] border-t border-[#D4A63A]/20"
 
           <a href="#about" className="block px-8 py-4 text-white">About</a>
 
