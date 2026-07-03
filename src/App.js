@@ -8,7 +8,7 @@ import StatStrip from "./components/StatStrip";
 import AboutMe from "./components/AboutMe";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import Projects from "./components/Projects";
-import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
+import LeadershipPhilosophy from "./components/MyAdvisoryApproach";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
 import ProfessionalJourney from "./components/ProfessionalJourney";
 import DirectContact from "./components/DirectContact";
@@ -27,7 +27,7 @@ function HomePage() {
         <AboutMe />
         <StrategicLeadershipServices />
         <Projects />
-        <LeadershipPhilosophy />
+        <MyAdvisoryApproach />
         <ExecutiveTestimonials />
         <ProfessionalJourney />
         <DirectContact />
