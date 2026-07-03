@@ -4,7 +4,7 @@ export default function DirectContact() {
   return (
     <section
       id="contact"
-      className="py-28 bg-gradient-to-b from-[#111111] to-[#0A0A0A]"
+      className="py-28 bg-gradient-to-b from-[#0D1E35] to-[#0A1628]"
     >
       <div className="max-w-5xl mx-auto px-6">
 
@@ -14,7 +14,7 @@ export default function DirectContact() {
             LET'S CONNECT
           </p>
 
-          <h2 className="text-5xl text-white mt-4 mb-6">
+          <h2 className="font-serif text-5xl text-white mt-4 mb-6">
             Let's build something meaningful.
           </h2>
 
