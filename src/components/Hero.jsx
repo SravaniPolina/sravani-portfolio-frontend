@@ -2,139 +2,126 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[var(--background)]">
+    <section className="relative overflow-hidden bg-[#050505]">
 
-      {/* Background Glow */}
-      <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-[var(--gold)] opacity-10 blur-3xl"></div>
+      {/* Gold Background Lines */}
+      <div className="absolute inset-0 opacity-20">
+        <div
+          className="absolute right-0 top-0 w-[900px] h-[900px]"
+          style={{
+            background:
+              "radial-gradient(circle at 100% 50%, rgba(212,166,58,.35), transparent 65%)",
+          }}
+        />
+      </div>
 
-      <div className="container mx-auto px-8 lg:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="container mx-auto px-8 lg:px-16 pt-24 pb-20 relative z-10">
 
-        {/* LEFT */}
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-<div className="mb-8">
-  <p className="uppercase tracking-[5px] text-[var(--gold)] text-sm font-semibold">
-    STRATEGY ADVISOR
-  </p>
+          {/* LEFT */}
 
-  <h2 className="text-4xl font-bold text-white mt-2">
-    Sravani Polina
-  </h2>
-</div>
+          <div>
 
-          <h1 className="mt-10 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif leading-[0.95] tracking-tight">
-  <span className="block text-white">Strategy.</span>
-  <span className="block text-white">Execution.</span>
-  <span className="block text-[var(--gold)]">Transformation.</span>
-</h1>
-          <p className="mt-8 max-w-xl text-lg">
+            <div className="flex">
 
-            Helping founders, investors and business leaders turn complex
-            business challenges into measurable business outcomes through
-            strategy, finance, operational excellence and AI-enabled execution.
+              <div className="w-[3px] bg-[#D4A63A] mr-8 rounded-full"></div>
 
-          </p>
+              <div>
 
-          <div className="mt-10 flex flex-wrap gap-5">
+                <h1 className="font-serif leading-[1.1] text-white text-5xl lg:text-7xl">
 
-            <a
-              href="https://topmate.io/sravani_polina"
-              target="_blank"
-              rel="noreferrer"
-              className="primary-btn"
-            >
-              Let's Talk
-            </a>
+                  Helping businesses and leaders
 
-            <a
-              href="#impact"
-              className="secondary-btn"
-            >
-              Explore My Work
-            </a>
+                  <br />
 
-          </div>
+                  make better decisions,
 
-          <div className="grid grid-cols-2 gap-5 mt-16">
+                  <br />
 
-            <div className="glass p-6">
+                  <span className="text-[#D4A63A]">
+                    build value,
+                  </span>
 
-              <h3 className="text-4xl font-bold gold-text">
+                  {" "}and scale with clarity.
 
-                ₹750M+
+                </h1>
 
-              </h3>
+                <p className="mt-10 text-xl leading-9 text-gray-300 max-w-xl">
 
-              <p className="mt-2 text-sm">
+                  Strategy. Finance. Business Transformation.
+                  AI-enabled execution.
 
-                Revenue Impact
+                  Helping founders, investors and leadership
+                  teams solve complex business challenges.
 
-              </p>
+                </p>
 
-            </div>
+                <div className="mt-12 flex gap-5 flex-wrap">
 
-            <div className="glass p-6">
+                  <a
+                    href="https://topmate.io/sravani_polina"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="primary-btn"
+                  >
+                    LET'S CONNECT →
+                  </a>
 
-              <h3 className="text-4xl font-bold gold-text">
+                  <a
+                    href="#projects"
+                    className="secondary-btn"
+                  >
+                    EXPLORE MY WORK
+                  </a>
 
-                14+
+                </div>
 
-              </h3>
+                <div className="grid grid-cols-2 gap-6 mt-20">
 
-              <p className="mt-2 text-sm">
+                  <div className="glass p-8">
 
-                Years Experience
+                    <h3 className="gold-text text-5xl font-serif">
+                      ₹750M+
+                    </h3>
 
-              </p>
+                    <p className="mt-3 text-gray-300">
+                      Business Value Delivered
+                    </p>
 
-            </div>
+                  </div>
 
-            <div className="glass p-6">
+                  <div className="glass p-8">
 
-              <h3 className="text-4xl font-bold gold-text">
+                    <h3 className="gold-text text-5xl font-serif">
+                      14+
+                    </h3>
 
-                80%
+                    <p className="mt-3 text-gray-300">
+                      Years Experience
+                    </p>
 
-              </h3>
+                  </div>
 
-              <p className="mt-2 text-sm">
+                </div>
 
-                CapEx Reduction
-
-              </p>
-
-            </div>
-
-            <div className="glass p-6">
-
-              <h3 className="text-4xl font-bold gold-text">
-
-                110+
-
-              </h3>
-
-              <p className="mt-2 text-sm">
-
-                Startups Evaluated
-
-              </p>
+              </div>
 
             </div>
 
           </div>
 
-        </div>
+          {/* RIGHT */}
 
-        {/* RIGHT */}
+          <div className="flex justify-center">
 
-        <div className="relative flex justify-center">
+            <img
+              src="/Aragon-Headshot-70.jpg"
+              alt="Sravani Polina"
+              className="w-full max-w-[560px] rounded-[36px] object-cover shadow-2xl border border-[#D4A63A]/20"
+            />
 
-          <div className="absolute w-[420px] h-[420px] rounded-full bg-[var(--gold)] opacity-15 blur-3xl"></div>
-
-          <img
-            src="/Aragon-Headshot-70.jpg"
-            alt="Sravani Polina"
-            className="relative w-[360px] lg:w-[460px] rounded-[30px] shadow-2xl border border-white/10"
-          />
+          </div>
 
         </div>
 
