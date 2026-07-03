@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative bg-[#050505] overflow-hidden">
+    <section className="relative bg-[#0A1628] overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0">
