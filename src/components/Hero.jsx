@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
         {/* Left: Main Text */}
         <div className="flex-1 lg:pr-12">
-          <span className="inline-block px-4 py-2 mb-3 rounded-full bg-white border text-gray-700 font-medium">
+          <span className="inline-block px-6 py-3 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 transition">
             Independent Strategy & Finance Advisor
           </span>
           <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-3 leading-tight whitespace-nowrap">
