@@ -1,40 +1,83 @@
 import React from "react";
 
 const services = [
-  { emoji: "📊", title: "Fractional CFO", desc: "Monthly MIS, budgets, cash flow, tax structuring. For founders who've outgrown their accountant but don't yet need a full-time CFO." },
-  { emoji: "🏦", title: "Debt & Capital Advisory", desc: "Bank funding notes, lender pitch packs, debt syndication, term sheet review." },
-  { emoji: "🤝", title: "M&A and Deal Diligence", desc: "Commercial and financial diligence for acquirers. IT services and SaaS targets, private credit deals for NRI investors." },
-  { emoji: "🎯", title: "Strategy & PMO", desc: "Strategic planning, OKR rollout, PMO setup, governance cadence." },
-  { emoji: "🎓", title: "Educational Program Design — FutureSmart", desc: "Curriculum, pitch decks, and program design for school and corporate learning." }
+  {
+    title: "Business Strategy",
+    description:
+      "Develop growth strategies, operating models and business roadmaps that align vision with measurable execution.",
+  },
+  {
+    title: "Capital & Deal Advisory",
+    description:
+      "Support debt syndication, fundraising, commercial due diligence, valuation discussions and transaction execution.",
+  },
+  {
+    title: "Business Transformation",
+    description:
+      "Improve operational performance, optimise processes and build scalable organisations ready for the next stage of growth.",
+  },
+  {
+    title: "Fractional Chief of Staff",
+    description:
+      "Partner with founders and leadership teams to drive strategic initiatives, governance, cross-functional alignment and execution.",
+  },
+  {
+    title: "AI-Enabled Business",
+    description:
+      "Identify practical opportunities to integrate AI into operations, decision-making, reporting and business workflows.",
+  },
+  {
+    title: "Board & Leadership Advisory",
+    description:
+      "Facilitate strategic planning, performance reviews, business diagnostics and executive decision support.",
+  },
 ];
 
 export default function StrategicLeadershipServices() {
   return (
-    <section id="services" className="bg-slate-50 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="hidden md:flex justify-center">
-          <img
-            src="/WhatIDo_Final.jpg"
-            alt="What I do: five services delivered as one system across finance, operations, and strategy"
-            className="w-full max-w-5xl rounded-2xl shadow-lg"
-          />
+    <section
+      id="services"
+      className="py-28 bg-[var(--background)] border-t border-white/5"
+    >
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="max-w-3xl mb-20">
+
+          <p className="uppercase tracking-[3px] text-[var(--gold)] text-sm font-semibold">
+            SERVICES
+          </p>
+
+          <h2 className="text-5xl text-white mt-4 leading-tight">
+            Strategic support across the business lifecycle.
+          </h2>
+
+          <p className="mt-6 text-lg max-w-2xl">
+            Every engagement is designed around solving business problems—not
+            delivering presentations. I work alongside founders, investors and
+            leadership teams to create measurable outcomes.
+          </p>
+
         </div>
-        <div className="md:hidden">
-          <h3 className="text-3xl font-bold text-center mb-2">What I do</h3>
-          <p className="text-xs text-indigo-800 font-semibold text-center mb-3 uppercase tracking-wide">Finance, operations, and strategy as one system</p>
-          <div className="space-y-4">
-            {services.map((s, i) => (
-              <div key={i} className="bg-white rounded-xl p-5 shadow-sm border flex gap-4 items-start">
-                <div className="text-3xl flex-shrink-0">{s.emoji}</div>
-                <div>
-                  <div className="font-bold text-indigo-800 text-base mb-1">{s.title}</div>
-                  <div className="text-slate-600 text-sm leading-relaxed">{s.desc}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-sm text-slate-500 italic mt-6">Most engagements run 3 to 6 months on retainer; some are scoped projects.</p>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="glass p-10 hover:border-[var(--gold)] transition duration-300"
+            >
+              <h3 className="text-2xl text-white mb-5">
+                {service.title}
+              </h3>
+
+              <p>
+                {service.description}
+              </p>
+            </div>
+          ))}
+
         </div>
+
       </div>
     </section>
   );
