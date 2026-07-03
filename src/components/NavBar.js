@@ -20,7 +20,7 @@ export default function NavBar() {
               <div className="uppercase text-[#D4A63A] tracking-[3px] text-xs mt-2 font-medium">STRATEGY. FINANCE. PMO. TRANSFORMATION.</div>
             </div>
           </a>
-          <nav className="hidden lg:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-6">
             <a href="#top" onClick={scrollToTop} className="text-[#D4A63A] uppercase tracking-wide text-sm font-medium relative">
               HOME
               <span className="absolute left-0 -bottom-4 h-[2px] w-full bg-[#D4A63A]" />
@@ -33,7 +33,7 @@ export default function NavBar() {
             <a href="#testimonials" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">TESTIMONIALS</a>
             <a href="#contact" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">CONTACT</a>
           </nav>
-          <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-8 py-4 rounded-full hover:scale-105 transition">Let's Talk</a>
+          <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-5 py-2 rounded-lg text-sm hover:scale-105 transition whitespace-nowrap">Let's Talk</a>
           <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white">☰</button>
         </div>
       </div>
