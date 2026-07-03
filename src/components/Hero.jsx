@@ -45,13 +45,9 @@ export default function Hero() {
 
             <div>
 
-              <h1 className="font-serif text-white text-[34px] md:text-[40px] lg:text-[46px] leading-[1.18] font-normal max-w-[560px]">
+              <h1 className="font-serif text-white text-[28px] md:text-[36px] lg:text-[40px] leading-[1.18] font-normal max-w-[360px]">
 
-                Helping businesses and leaders
-
-                <br />
-
-                make better decisions,
+                Helping businesses and leaders make better decisions,
 
                 <br />
 
