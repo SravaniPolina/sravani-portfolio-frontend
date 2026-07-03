@@ -14,7 +14,7 @@ export default function Hero() {
         <div>
 
           <span className="uppercase tracking-[4px] text-sm text-[var(--gold)] font-semibold">
-            Independent Strategy Advisor
+            Strategy Advisor
           </span>
 
           <h1 className="mt-6 text-5xl lg:text-7xl leading-tight">
