@@ -21,7 +21,7 @@ const stats = [
 
 export default function ProjectCards() {
   return (
-    <section id="impact" className="py-28 bg-[#0A0A0A]">
+    <section id="impact" className="py-28" style={{background: "var(--background)"}}>
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-20">
