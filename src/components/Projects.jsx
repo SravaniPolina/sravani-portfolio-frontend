@@ -3,7 +3,7 @@ import React from "react";
 const engagements = [
   {
     title: "Business Model Transformation",
-    outcome: "₹200M+ incremental bottom line and 80% CapEx reduction.",
+    outcome: "₹750M+ incremental revenue and 80% CapEx reduction.",
   },
   {
     title: "Chief of Staff Advisory",
