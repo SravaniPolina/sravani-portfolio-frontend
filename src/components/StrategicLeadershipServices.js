@@ -14,7 +14,7 @@ export default function StrategicLeadershipServices() {
       <div className="max-w-6xl mx-auto">
         <div className="hidden md:flex justify-center">
           <img
-            src="/what-i-do-venn.jpg"
+            src="/What-I-Do-Venn.jpg"
             alt="What I do: a Venn diagram showing services across Finance, Operations, and Strategy"
             className="w-full max-w-4xl rounded-2xl shadow-lg"
           />
