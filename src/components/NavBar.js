@@ -2,13 +2,20 @@ import React, { useState } from "react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsOpen(false);
+  };
+
   return (
     <nav className="w-full bg-white shadow sticky top-0 z-50">
       <div className="flex items-center justify-between py-5 px-4 sm:px-8">
-        <div>
-          <div className="font-bold text-xl text-slate-900">Sravani Polina</div>
+        <a href="#top" onClick={scrollToTop} className="cursor-pointer group">
+          <div className="font-bold text-xl text-slate-900 group-hover:text-indigo-700 transition">Sravani Polina</div>
           <div className="text-xs text-gray-500 mt-1 hidden sm:block">Independent Strategy &amp; Finance Advisor</div>
-        </div>
+        </a>
         <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden text-slate-900 focus:outline-none">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isOpen ? (
