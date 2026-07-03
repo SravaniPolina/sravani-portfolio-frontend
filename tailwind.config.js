@@ -12,19 +12,20 @@ module.exports = {
         sans: ["Inter", "system-ui", "sans-serif"]
       },
       colors: {
-        // New black/gold design system
         brand: {
-          black: "#0A0A0A",
-          darkbg: "#111111",
-          cardbg: "#1A1A1A",
-          border: "#2A2A2A",
+          midnight: "#191970",
+          "midnight-light": "#1E1E80",
+          "midnight-card": "#22227A",
+          "midnight-border": "#2E2E90",
+          green: "#0D3B2E",
+          "green-dark": "#092A20",
           gold: "#C89D3C",
           "gold-light": "#E8C46A",
           "gold-dark": "#A67C28",
           beige: "#F5F2EB",
           cream: "#FAF8F4",
-          charcoal: "#2B2B2B",
-          muted: "#9A9A9A"
+          muted: "#B0B0D0",
+          charcoal: "#1A1A1A"
         },
         // Keep existing shadcn/ui HSL system intact
         background: "hsl(var(--background))",
