@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Hero from "./components/Hero";
+import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
 import AboutMe from "./components/AboutMe";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
@@ -21,6 +22,7 @@ function HomePage() {
       <NavBar />
       <main>
         <Hero />
+        <Credentials />
         <StatStrip />
         <AboutMe />
         <StrategicLeadershipServices />
