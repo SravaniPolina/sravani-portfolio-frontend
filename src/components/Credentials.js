@@ -20,10 +20,10 @@ export default function Credentials() {
   ];
 
   return (
-    <section className="bg-[#0A0A0A] py-20">
+    <section className="py-20" style={{background: "var(--background)"}}>
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="rounded-[36px] border border-[#C89D3C]/40 bg-[#111111] px-12 py-16">
+        <div className="rounded-[36px] border border-[#C89D3C]/40 px-12 py-16" style={{background: "var(--cardbg)"}}>
 
           <div className="flex items-center justify-center gap-6 mb-14">
 
