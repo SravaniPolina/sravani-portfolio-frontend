@@ -27,7 +27,7 @@ function HomePage() {
         <AboutMe />
         <StrategicLeadershipServices />
         <Projects />
-        <MyAdvisoryApproach />
+        <LeadershipPhilosophy />
         <ExecutiveTestimonials />
         <ProfessionalJourney />
         <DirectContact />
