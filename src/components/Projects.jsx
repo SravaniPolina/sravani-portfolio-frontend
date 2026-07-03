@@ -1,55 +1,44 @@
 import React from "react";
 
-const stats = [
+const engagements = [
   {
-    number: "14+",
-    label: "Years of Cross-Industry Leadership",
+    title: "Business Model Transformation",
+    outcome: "₹200M+ incremental revenue and 80% CapEx reduction.",
   },
   {
-    number: "₹750M+",
-    label: "Business Value Delivered",
+    title: "Chief of Staff Advisory",
+    outcome: "Led strategy, governance and execution across 5 business units.",
   },
   {
-    number: "₹20Bn",
-    label: "Debt Structured",
-  },
-  {
-    number: "110+",
-    label: "Startups Evaluated",
+    title: "Capital & Debt Advisory",
+    outcome: "Structured institutional funding and lender-ready business cases.",
   },
 ];
 
-export default function ProjectCards() {
+export default function Projects() {
   return (
-    <section id="impact" className="py-28 bg-[#0A0A0A]">
+    <section id="projects" className="py-28 bg-[var(--background)]">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-20">
+        <p className="uppercase tracking-[3px] text-[var(--gold)] text-sm font-semibold">
+          FEATURED ENGAGEMENTS
+        </p>
 
-          <p className="uppercase tracking-[3px] text-[var(--gold)] text-sm font-semibold">
-            IMPACT
-          </p>
+        <h2 className="text-5xl text-white mt-4 mb-16">
+          Selected business transformations.
+        </h2>
 
-          <h2 className="text-5xl text-white mt-4">
-            Measurable business outcomes.
-          </h2>
+        <div className="grid lg:grid-cols-3 gap-8">
 
-        </div>
+          {engagements.map((item) => (
+            <div key={item.title} className="glass p-10 rounded-3xl">
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-
-          {stats.map((item) => (
-            <div
-              key={item.number}
-              className="glass rounded-3xl p-10 text-center"
-            >
-              <h3 className="text-5xl font-bold gold-text mb-4">
-                {item.number}
+              <h3 className="text-2xl text-white mb-6">
+                {item.title}
               </h3>
 
-              <p className="text-sm">
-                {item.label}
-              </p>
+              <p>{item.outcome}</p>
+
             </div>
           ))}
 
