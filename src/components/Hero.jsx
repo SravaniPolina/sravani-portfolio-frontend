@@ -45,7 +45,7 @@ export default function Hero() {
 
             <div>
 
-              <h1 className="font-serif text-white leading-[1.22] font-normal text-[58px] lg:text-[68px] max-w-[700px]">
+              <h1 className="font-serif text-white leading-[1.22] font-normal text-[40px] lg:text-[50px] max-w-[500px]">
 
                 Helping businesses and leaders
 
