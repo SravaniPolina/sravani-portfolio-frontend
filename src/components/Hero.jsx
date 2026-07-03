@@ -2,105 +2,107 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#050505]">
+    <section className="relative bg-[#050505] overflow-hidden">
 
-      {/* Gold Background Lines */}
-      <div className="absolute inset-0 opacity-20">
+      {/* Background Glow */}
+      <div className="absolute inset-0">
         <div
-          className="absolute right-0 top-0 w-[900px] h-[900px]"
+          className="absolute right-0 top-0 w-[900px] h-[900px] opacity-30"
           style={{
             background:
-              "radial-gradient(circle at 100% 50%, rgba(212,166,58,.35), transparent 65%)",
+              "radial-gradient(circle at 100% 50%, rgba(212,166,58,.22), transparent 70%)",
           }}
         />
       </div>
 
-      <div className="container mx-auto px-8 lg:px-16 pt-24 pb-20 relative z-10">
+      {/* Decorative Gold Lines */}
+      <svg
+        className="absolute right-0 bottom-0 w-[900px] opacity-20"
+        viewBox="0 0 900 700"
+        fill="none"
+      >
+        {[0, 30, 60, 90, 120, 150].map((i) => (
+          <path
+            key={i}
+            d={`M900 ${650 - i} C650 ${600 - i},500 ${500 - i},250 ${
+              650 - i
+            }`}
+            stroke="#D4A63A"
+            strokeWidth="2"
+          />
+        ))}
+      </svg>
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-8 lg:px-10 py-20 relative z-10">
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT */}
 
-          <div>
+          <div className="flex">
 
-            <div className="flex">
+            <div className="w-[3px] bg-[#D4A63A] mr-10 rounded-full"></div>
 
-              <div className="w-[3px] bg-[#D4A63A] mr-8 rounded-full"></div>
+            <div>
 
-              <div>
+              <h1 className="font-serif text-white leading-[1.22] font-normal text-[58px] lg:text-[68px] max-w-[700px]">
 
-                <h1 className="font-serif leading-[1.1] text-white text-5xl lg:text-7xl">
+                Helping businesses and leaders
 
-                  Helping businesses and leaders
+                <br />
 
-                  <br />
+                make better decisions,
 
-                  make better decisions,
+                <br />
 
-                  <br />
+                <span className="text-[#D4A63A]">
+                  build value,
+                </span>
 
-                  <span className="text-[#D4A63A]">
-                    build value,
+                {" "}and scale with clarity.
+
+              </h1>
+
+              <div className="mt-12">
+
+                <a
+                  href="https://topmate.io/sravani_polina"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-5 border border-[#D4A63A] rounded-xl px-10 py-5 text-[#D4A63A] uppercase tracking-[2px] text-lg hover:bg-[#D4A63A] hover:text-black transition"
+                >
+                  LET'S CONNECT
+
+                  <span className="text-3xl">
+                    →
                   </span>
 
-                  {" "}and scale with clarity.
+                </a>
 
-                </h1>
+              </div>
 
-                <p className="mt-10 text-xl leading-9 text-gray-300 max-w-xl">
+              <div className="grid grid-cols-2 gap-6 mt-20 max-w-xl">
 
-                  Strategy. Finance. Business Transformation.
-                  AI-enabled execution.
+                <div className="glass p-8">
 
-                  Helping founders, investors and leadership
-                  teams solve complex business challenges.
+                  <div className="gold-text font-serif text-5xl">
+                    ₹750M+
+                  </div>
 
-                </p>
-
-                <div className="mt-12 flex gap-5 flex-wrap">
-
-                  <a
-                    href="https://topmate.io/sravani_polina"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="primary-btn"
-                  >
-                    LET'S CONNECT →
-                  </a>
-
-                  <a
-                    href="#projects"
-                    className="secondary-btn"
-                  >
-                    EXPLORE MY WORK
-                  </a>
+                  <div className="mt-3 text-gray-300">
+                    Business Value Delivered
+                  </div>
 
                 </div>
 
-                <div className="grid grid-cols-2 gap-6 mt-20">
+                <div className="glass p-8">
 
-                  <div className="glass p-8">
-
-                    <h3 className="gold-text text-5xl font-serif">
-                      ₹750M+
-                    </h3>
-
-                    <p className="mt-3 text-gray-300">
-                      Business Value Delivered
-                    </p>
-
+                  <div className="gold-text font-serif text-5xl">
+                    14+
                   </div>
 
-                  <div className="glass p-8">
-
-                    <h3 className="gold-text text-5xl font-serif">
-                      14+
-                    </h3>
-
-                    <p className="mt-3 text-gray-300">
-                      Years Experience
-                    </p>
-
+                  <div className="mt-3 text-gray-300">
+                    Years Experience
                   </div>
 
                 </div>
@@ -113,12 +115,12 @@ export default function Hero() {
 
           {/* RIGHT */}
 
-          <div className="flex justify-center">
+          <div className="flex justify-end">
 
             <img
               src="/Aragon-Headshot-70.jpg"
               alt="Sravani Polina"
-              className="w-full max-w-[560px] rounded-[36px] object-cover shadow-2xl border border-[#D4A63A]/20"
+              className="w-full max-w-[560px] rounded-[40px] object-cover border border-[#D4A63A]/20 shadow-2xl"
             />
 
           </div>
