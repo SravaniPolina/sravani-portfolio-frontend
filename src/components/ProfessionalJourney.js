@@ -30,7 +30,7 @@ const experience = [
 
 export default function ProfessionalJourney() {
   return (
-    <section className="py-28 bg-[#0A0A0A]">
+    <section className="py-28" style={{background: "var(--background)"}}>
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -38,7 +38,7 @@ export default function ProfessionalJourney() {
           EXPERIENCE
         </p>
 
-        <h2 className="text-5xl text-white mt-4 mb-16">
+       <h2 className="font-serif text-5xl text-white mt-4 mb-16">
           14+ years across strategy, finance and business transformation.
         </h2>
 
@@ -58,7 +58,7 @@ export default function ProfessionalJourney() {
                   {item.period}
                 </p>
 
-                <h3 className="text-white text-2xl mb-1">
+                <h3 className="font-serif text-2xl text-white mb-1">
                   {item.role}
                 </h3>
 
