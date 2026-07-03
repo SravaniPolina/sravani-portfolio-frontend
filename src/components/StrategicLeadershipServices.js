@@ -76,7 +76,7 @@ export default function StrategicLeadershipServices() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-[#131313] border border-[#D4A63A]/15 rounded-3xl p-8 hover:border-[#D4A63A] hover:-translate-y-2 transition-all duration-300"
+              className="border border-[#D4A63A]/15 rounded-3xl p-8 hover:border-[#D4A63A] hover:-translate-y-2 transition-all duration-300" style={{background: "var(--cardbg)"}}
             >
 
               <div className="mb-6">
