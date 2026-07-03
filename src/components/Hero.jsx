@@ -17,18 +17,13 @@ export default function Hero() {
             Strategy Advisor
           </span>
 
-          <h1 className="mt-6 text-5xl lg:text-7xl leading-tight">
-
+          <h1 className="text-5xl lg:text-7xl font-serif leading-[1.05] tracking-tight text-white">
             Strategy.
-
             <br />
-
             Execution.
-
             <br />
-
-            <span className="gold-text">
-              Transformation.
+            <span className="text-[var(--gold)]">
+            Transformation.
             </span>
 
           </h1>
