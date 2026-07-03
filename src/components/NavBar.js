@@ -16,7 +16,7 @@ export default function NavBar() {
             className="flex items-center gap-5"
           >
             <div className="text-[#D4A63A] font-serif text-6xl leading-none">
-              Sp
+              SP
             </div>
 
             <div>
