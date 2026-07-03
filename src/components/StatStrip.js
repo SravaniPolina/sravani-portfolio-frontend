@@ -2,57 +2,52 @@ import React from "react";
 
 const stats = [
   {
-    value: "14+",
+    number: "14+",
     label: "Years of Cross-Industry Leadership",
   },
   {
-    value: "₹200M+",
-    label: "Incremental Revenue Delivered",
+    number: "₹750M+",
+    label: "Business Value Delivered",
   },
   {
-    value: "110+",
+    number: "₹20Bn",
+    label: "Debt Structured",
+  },
+  {
+    number: "110+",
     label: "Startups Evaluated",
-  },
-  {
-    value: "5",
-    label: "Business Units Led",
   },
 ];
 
-export default function StatStrip() {
+export default function ProjectCards() {
   return (
-    <section
-      id="impact"
-      className="bg-[#081E1E] py-24 border-y border-white/5"
-    >
+    <section id="impact" className="py-28 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
 
           <p className="uppercase tracking-[3px] text-[var(--gold)] text-sm font-semibold">
             IMPACT
           </p>
 
-          <h2 className="text-4xl lg:text-5xl text-white mt-4">
-            Business outcomes,
-            <br />
-            not just advice.
+          <h2 className="text-5xl text-white mt-4">
+            Measurable business outcomes.
           </h2>
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
 
           {stats.map((item) => (
             <div
-              key={item.value}
-              className="glass text-center p-10 hover:-translate-y-2 transition duration-500"
+              key={item.number}
+              className="glass rounded-3xl p-10 text-center"
             >
               <h3 className="text-5xl font-bold gold-text mb-4">
-                {item.value}
+                {item.number}
               </h3>
 
-              <p className="text-sm leading-7">
+              <p className="text-sm">
                 {item.label}
               </p>
             </div>
