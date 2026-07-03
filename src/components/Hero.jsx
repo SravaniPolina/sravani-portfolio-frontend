@@ -67,7 +67,7 @@ export default function Hero() {
 
               <h3 className="text-4xl font-bold gold-text">
 
-                ₹200M+
+                ₹750M+
 
               </h3>
 
@@ -83,7 +83,7 @@ export default function Hero() {
 
               <h3 className="text-4xl font-bold gold-text">
 
-                12+
+                14+
 
               </h3>
 
