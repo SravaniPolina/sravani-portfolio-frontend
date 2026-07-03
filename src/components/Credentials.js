@@ -8,7 +8,7 @@ export default function Credentials() {
   ];
 
   return (
-    <section className="py-12" style={{background: "var(--green)"}}>
+    <section id="credentials" className="py-12" style={{background: "var(--green)"}}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="rounded-2xl px-8 py-10" style={{border: "1px solid rgba(200,157,60,0.3)", background: "rgba(255,255,255,0.06)"}}>
           <div className="flex items-center justify-center gap-6 mb-10">
