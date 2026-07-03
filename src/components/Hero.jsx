@@ -7,21 +7,21 @@ export default function Hero() {
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div
-          className="absolute right-0 top-0 w-[900px] h-[900px] opacity-30"
+          className="absolute right-0 top-0 w-[900px] h-[900px] opacity-20"
           style={{
             background:
-              "radial-gradient(circle at 100% 50%, rgba(212,166,58,.22), transparent 70%)",
+              "radial-gradient(circle at 100% 50%, rgba(212,166,58,.18), transparent 70%)",
           }}
         />
       </div>
 
-      {/* Decorative Gold Lines */}
+      {/* Gold Curves */}
       <svg
-        className="absolute right-0 bottom-0 w-[900px] opacity-20"
+        className="absolute right-0 bottom-0 w-[900px] opacity-15"
         viewBox="0 0 900 700"
         fill="none"
       >
-        {[0, 30, 60, 90, 120, 150].map((i) => (
+        {[0, 35, 70, 105, 140].map((i) => (
           <path
             key={i}
             d={`M900 ${650 - i} C650 ${600 - i},500 ${500 - i},250 ${
@@ -33,19 +33,19 @@ export default function Hero() {
         ))}
       </svg>
 
-      <div className="max-w-7xl mx-auto px-8 lg:px-10 py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 lg:px-10 pt-12 pb-10 relative z-10">
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT */}
 
           <div className="flex">
 
-            <div className="w-[3px] bg-[#D4A63A] mr-10 rounded-full"></div>
+            <div className="w-[2px] bg-[#D4A63A] mr-8 rounded-full"></div>
 
             <div>
 
-              <h1 className="font-serif text-white leading-[1.22] font-normal text-[36px] lg:text-[44px] max-w-[400px]">
+              <h1 className="font-serif text-white text-[34px] md:text-[40px] lg:text-[46px] leading-[1.18] font-normal max-w-[560px]">
 
                 Helping businesses and leaders
 
@@ -57,51 +57,51 @@ export default function Hero() {
 
                 <span className="text-[#D4A63A]">
                   build value,
-                </span>
-
-                {" "}and scale with clarity.
+                </span>{" "}
+                and scale with clarity.
 
               </h1>
 
-              <div className="mt-12">
+              <p className="mt-6 text-lg text-gray-300 max-w-[520px] leading-8">
+
+                Strategy. Finance. Business Transformation. AI-enabled execution.
+
+              </p>
+
+              <div className="mt-8">
 
                 <a
                   href="https://topmate.io/sravani_polina"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-5 border border-[#D4A63A] rounded-xl px-10 py-5 text-[#D4A63A] uppercase tracking-[2px] text-lg hover:bg-[#D4A63A] hover:text-black transition"
+                  className="primary-btn"
                 >
-                  LET'S CONNECT
-
-                  <span className="text-3xl">
-                    →
-                  </span>
-
+                  LET'S CONNECT →
                 </a>
 
               </div>
 
-              <div className="grid grid-cols-2 gap-6 mt-20 max-w-xl">
+              <div className="grid grid-cols-2 gap-5 mt-12 max-w-md">
 
-                <div className="glass p-8">
+                <div className="glass p-6">
 
-                  <div className="gold-text font-serif text-5xl">
+                  <div className="gold-text font-serif text-4xl">
                     ₹750M+
                   </div>
 
-                  <div className="mt-3 text-gray-300">
+                  <div className="mt-2 text-sm text-gray-300">
                     Business Value Delivered
                   </div>
 
                 </div>
 
-                <div className="glass p-8">
+                <div className="glass p-6">
 
-                  <div className="gold-text font-serif text-5xl">
+                  <div className="gold-text font-serif text-4xl">
                     14+
                   </div>
 
-                  <div className="mt-3 text-gray-300">
+                  <div className="mt-2 text-sm text-gray-300">
                     Years Experience
                   </div>
 
@@ -120,7 +120,7 @@ export default function Hero() {
             <img
               src="/Aragon-Headshot-70.jpg"
               alt="Sravani Polina"
-              className="w-full max-w-[560px] rounded-[40px] object-cover border border-[#D4A63A]/20 shadow-2xl"
+              className="w-full max-w-[460px] rounded-[32px] object-cover border border-[#D4A63A]/20 shadow-2xl"
             />
 
           </div>
