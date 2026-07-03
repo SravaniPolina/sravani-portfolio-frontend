@@ -13,10 +13,10 @@ module.exports = {
       },
       colors: {
         brand: {
-          midnight: "#191970",
-          "midnight-light": "#1E1E80",
-          "midnight-card": "#22227A",
-          "midnight-border": "#2E2E90",
+          midnight: "#0A1628",
+          "midnight-light": "#0D1E35",
+          "midnight-card": "#112040",
+          "midnight-border": "#1E3050",
           green: "#0D3B2E",
           "green-dark": "#092A20",
           gold: "#C89D3C",
