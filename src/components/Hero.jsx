@@ -6,19 +6,19 @@ export default function Hero() {
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
         <div className="flex-1 lg:pr-12">
           <span className="inline-block px-4 py-2 mb-3 rounded-full bg-white border text-gray-700 font-medium text-sm">
-            Independent Strategy & Finance Advisor
+            Strategy & Finance Advisor
           </span>
           <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 mb-3 leading-tight">
             Sravani Polina
           </h1>
           <h2 className="text-xl lg:text-2xl font-light text-slate-700 mb-5">
-            Fractional CFO. Deal advisor. Strategy &amp; PMO.
+            Fractional CFO | Deal advisor | Strategy &amp; PMO.
           </h2>
           <p className="text-base lg:text-lg text-slate-700 mb-4 leading-relaxed">
-            I work with founders and CEOs on the problems that don't fit neatly into one function: financial models that need to inform real decisions, PMOs that need to actually deliver, and debt and deal structures that need to hold up under scrutiny.
+            I work with founders and CEOs to provide financial guidance and on the problems that don't fit neatly into one function: financial models that need to inform real decisions, PMOs that need to actually deliver, and debt and deal structures that need to hold up under scrutiny.
           </p>
           <p className="text-sm text-slate-500 mb-8 hidden sm:block">
-            12+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
+            14+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 transition text-center">
