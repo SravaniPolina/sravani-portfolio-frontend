@@ -7,7 +7,7 @@ export default function Contact() {
       <p className="text-lg text-slate-600 text-center mb-12">Most engagements start with a 30-minute intro call to scope the problem.</p>
 
       <div className="flex justify-center mb-10">
-        <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-lg bg-indigo-800 text-white font-bold text-lg hover:bg-indigo-900 transition shadow">Book a 30-min call on Topmate</a>
+        <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-lg bg-green-600 text-white font-bold text-lg hover:bg-green-700 transition shadow">Book a 30-min call on Topmate</a>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
