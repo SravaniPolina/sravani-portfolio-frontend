@@ -22,7 +22,7 @@ export default function Hero() {
             14+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-indigo-800 text-white font-medium hover:bg-indigo-900 transition">
+            <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 transition">
               Book a 30-min intro call
             </a>
             <a href="#impact" className="inline-block px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
