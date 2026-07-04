@@ -1,84 +1,176 @@
 import React from "react";
+import {
+  Landmark,
+  Building2,
+  Wheat,
+  Hotel,
+  Rocket,
+  BrainCircuit
+} from "lucide-react";
 
-const engagements = [
+const industries = [
   {
-    tag: "Business Transformation",
-    sector: "Agribusiness",
-    title: "Business Model Transformation",
-    outcome: "₹350M+ incremental bottom line and 80% CapEx reduction.",
-    detail: "Asset-light operating model, contract farming restructure, pricing reset and margin-led sales transformation."
+    icon: <Landmark size={28} className="text-[#D4A63A]" />,
+    industry: "Banking & Financial Services",
+    role: "Relationship Manager",
+    scale: "₹20Bn+ Debt Structured",
+    expertise:
+      "Working Capital • Project Finance • Credit Underwriting • Risk Assessment • Debt Structuring",
   },
   {
-    tag: "Chief of Staff",
-    sector: "Infrastructure & EPC",
-    title: "Chief of Staff Advisory",
-    outcome: "Led strategy, governance and execution across 5 business units.",
-    detail: "PMO design, capex governance, cost optimisation and real-time dashboards for a multi-unit EPC business."
+    icon: <Building2 size={28} className="text-[#D4A63A]" />,
+    industry: "Infrastructure & EPC",
+    role: "Chief of Staff",
+    scale: "5 Business Units",
+    expertise:
+      "Strategy • PMO • Governance • ERP • Cash Flow • Executive Reporting",
   },
   {
-    tag: "Capital Advisory",
-    sector: "Hospitality & Infrastructure",
-    title: "Capital & Debt Advisory",
-    outcome: "Structured institutional funding and lender-ready business cases.",
-    detail: "Five-year financial models, DSCR analysis, bank funding notes and debt syndication for hospitality and infrastructure clients."
-  }
+    icon: <Wheat size={28} className="text-[#D4A63A]" />,
+    industry: "Agribusiness",
+    role: "Business Head",
+    scale: "₹750M+ Business Value",
+    expertise:
+      "Growth Strategy • Pricing • Sales Transformation • Operational Excellence",
+  },
+  {
+    icon: <Hotel size={28} className="text-[#D4A63A]" />,
+    industry: "Hospitality",
+    role: "Fractional CFO",
+    scale: "Investor Ready Businesses",
+    expertise:
+      "Financial Models • MIS • Budgeting • Capital Raise • Revenue Optimisation",
+  },
+  {
+    icon: <Rocket size={28} className="text-[#D4A63A]" />,
+    industry: "Startup Ecosystem",
+    role: "Investment Advisor",
+    scale: "110+ Startups Evaluated",
+    expertise:
+      "Business Models • GTM • Due Diligence • Investment Readiness",
+  },
+  {
+    icon: <BrainCircuit size={28} className="text-[#D4A63A]" />,
+    industry: "AI & Analytics",
+    role: "Strategy Consultant",
+    scale: "Enterprise Decision Support",
+    expertise:
+      "Power BI • AI Adoption • Executive Dashboards • Automation",
+  },
 ];
 
-const quickStats = [
-  { number: "6", label: "Sectors" },
-  { number: "14+", label: "Years" },
-  { number: "3", label: "Featured Engagements" }
+const stats = [
+  "14+ Years",
+  "₹20Bn+ Debt",
+  "₹750M+ Value",
+  "110+ Startups",
+  "6 Industries",
+  "5 Leadership Roles",
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16" style={{ background: "var(--beige)" }}>
+    <section id="industries" className="py-24 bg-[#F7F3EB]">
+
       <div className="max-w-7xl mx-auto px-6">
-        <p className="section-label" style={{ color: "var(--gold)" }}>Featured Engagements</p>
-        <h2 className="font-serif text-5xl mt-4 mb-4" style={{ color: "var(--green)" }}>
-          Selected business transformations.
+
+        <p className="uppercase tracking-[4px] text-sm text-center text-[#C89D3C] font-semibold">
+          EXPERIENCE ACROSS INDUSTRIES
+        </p>
+
+        <h2 className="font-serif text-5xl text-center text-[#12352A] mt-5">
+          Driving business outcomes across diverse sectors.
         </h2>
-        <p className="text-lg mb-8" style={{ color: "#3A3A3A" }}>
-          14+ years across strategy, finance and business transformation.
+
+        <p className="max-w-4xl mx-auto text-center mt-8 text-lg leading-8 text-gray-700">
+          My experience spans financial services, infrastructure,
+          agribusiness, hospitality, startups and AI-led business
+          transformation—bringing strategic thinking together with
+          hands-on execution.
         </p>
 
-        {/* Quick stats row */}
-        <div className="flex flex-wrap gap-10 mb-16">
-          {quickStats.map((stat) => (
-            <div key={stat.label} className="flex items-baseline gap-2">
-              <span className="font-serif text-3xl font-bold" style={{ color: "var(--gold)" }}>{stat.number}</span>
-              <span className="text-sm uppercase tracking-wide" style={{ color: "#3A3A3A" }}>{stat.label}</span>
-            </div>
-          ))}
-        </div>
+        <div className="overflow-hidden rounded-3xl border border-[#D4A63A]/20 mt-20">
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {engagements.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-3xl p-10 flex flex-col gap-4"
-              style={{ background: "var(--green)", border: "1px solid rgba(200,157,60,0.2)" }}
-            >
-              <div className="flex items-center justify-between flex-wrap gap-2">
-                <span className="text-xs uppercase tracking-widest" style={{ color: "var(--gold)" }}>{item.tag}</span>
-                <span
-                  className="text-xs px-3 py-1 rounded-full"
-                  style={{ background: "rgba(212,166,58,0.15)", color: "var(--gold-light)", border: "1px solid rgba(212,166,58,0.3)" }}
+          <table className="w-full">
+
+            <thead className="bg-[#12352A] text-white">
+
+              <tr>
+
+                <th className="text-left p-6">Industry</th>
+
+                <th className="text-left p-6">Role</th>
+
+                <th className="text-left p-6">Scale</th>
+
+                <th className="text-left p-6">Expertise</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              {industries.map((item) => (
+
+                <tr
+                  key={item.industry}
+                  className="border-b border-[#D4A63A]/10 bg-white hover:bg-[#FCFAF5]"
                 >
-                  {item.sector}
-                </span>
-              </div>
-              <h3 className="font-serif text-2xl text-white">{item.title}</h3>
-              <p className="font-semibold" style={{ color: "var(--gold-light)" }}>{item.outcome}</p>
-              <p className="text-sm leading-7" style={{ color: "rgba(255,255,255,0.75)" }}>{item.detail}</p>
-            </div>
-          ))}
+
+                  <td className="p-6">
+
+                    <div className="flex items-center gap-4">
+
+                      {item.icon}
+
+                      <div className="font-semibold">
+                        {item.industry}
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                  <td className="p-6">
+                    {item.role}
+                  </td>
+
+                  <td className="p-6 font-semibold text-[#C89D3C]">
+                    {item.scale}
+                  </td>
+
+                  <td className="p-6 text-gray-700">
+                    {item.expertise}
+                  </td>
+
+                </tr>
+
+              ))}
+
+            </tbody>
+
+          </table>
+
         </div>
 
-        <p className="text-center text-sm mt-16" style={{ color: "var(--text-muted)" }}>
-          Detailed engagement notes available on request.
-        </p>
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-5 mt-16">
+
+          {stats.map((item) => (
+
+            <div
+              key={item}
+              className="bg-white rounded-2xl p-6 text-center border border-[#D4A63A]/15 font-semibold text-[#12352A]"
+            >
+              {item}
+            </div>
+
+          ))}
+
+        </div>
+
       </div>
+
     </section>
   );
 }
