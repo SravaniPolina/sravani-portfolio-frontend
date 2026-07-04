@@ -23,7 +23,7 @@ const engagements = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-28" style={{background: "var(--beige)"}}>
+    <section id="projects" className="py-16" style={{background: "var(--beige)"}}>
       <div className="max-w-7xl mx-auto px-6">
         <p className="section-label" style={{color: "var(--gold)"}}>Featured Engagements</p>
        <h2 className="font-serif text-5xl mt-4 mb-4" style={{color: "var(--green)"}}>
