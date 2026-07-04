@@ -10,7 +10,6 @@ import StrategicLeadershipServices from "./components/StrategicLeadershipService
 import Projects from "./components/Projects";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
-import ProfessionalJourney from "./components/ProfessionalJourney";
 import DirectContact from "./components/DirectContact";
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
@@ -29,7 +28,6 @@ function HomePage() {
         <Projects />
         <LeadershipPhilosophy />
         <ExecutiveTestimonials />
-        <ProfessionalJourney />
         <DirectContact />
         <BackToTop />
       </main>
