@@ -1,51 +1,49 @@
 import React, { useState } from "react";
-
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const scrollToTop = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
     setIsOpen(false);
   };
-
   return (
-    <nav className="w-full bg-white shadow sticky top-0 z-50">
-      <div className="flex items-center justify-between py-5 px-4 sm:px-8">
-        <a href="#top" onClick={scrollToTop} className="cursor-pointer group">
-          <div className="font-bold text-xl text-slate-900 group-hover:text-indigo-700 transition">Sravani Polina</div>
-          <div className="text-xs text-gray-500 mt-1 hidden sm:block">Independent Strategy &amp; Finance Advisor</div>
-        </a>
-        <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden text-slate-900 focus:outline-none">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {isOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-        <div className="hidden sm:flex gap-6 text-base text-slate-700">
-          <a href="#about" className="hover:text-indigo-600">About</a>
-          <a href="#services" className="hover:text-indigo-600">What I do</a>
-          <a href="#impact" className="hover:text-indigo-600">Impact</a>
-          <a href="#how" className="hover:text-indigo-600">How I work</a>
-          <a href="#testimonials" className="hover:text-indigo-600">Testimonials</a>
-          <a href="#contact" className="hover:text-indigo-600">Contact</a>
+    <header className="sticky top-0 z-50 bg-[#0D3B2E]/95 backdrop-blur border-b border-[#D4A63A]/15">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex items-center justify-between h-24">
+          <a href="#top" onClick={scrollToTop} className="flex items-center gap-5 cursor-pointer group">
+            <div className="text-[#D4A63A] font-serif text-6xl leading-none">SP</div>
+            <div>
+              <div className="uppercase text-white tracking-[2px] font-serif text-3xl leading-none group-hover:text-[#D4A63A] transition">SRAVANI POLINA</div>
+              <div className="uppercase text-[#D4A63A] tracking-[3px] text-xs mt-2 font-medium">STRATEGY. FINANCE. PMO. TRANSFORMATION.</div>
+            </div>
+          </a>
+          <nav className="hidden lg:flex items-center gap-8">
+            <a href="#top" onClick={scrollToTop} className="text-[#D4A63A] uppercase tracking-wide text-sm font-medium relative">
+              HOME
+              <span className="absolute left-0 -bottom-4 h-[2px] w-full bg-[#D4A63A]" />
+            </a>
+            <a href="#about" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">ABOUT</a>
+            <a href="#services" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">SERVICES</a>
+            <a href="#impact" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">IMPACT</a>
+            <a href="#projects" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">WORK</a>
+            <a href="#testimonials" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">TESTIMONIALS</a>
+            <a href="#contact" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">CONTACT</a>
+          </nav>
+          <a href="#consultation" className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-6 py-2.5 rounded-lg text-sm hover:scale-105 transition whitespace-nowrap ml-8">Let's Talk</a>
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white">☰</button>
         </div>
-        <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="hidden sm:block px-4 py-2 rounded bg-green-600 text-white font-bold hover:bg-green-700 transition">Book a Call</a>
       </div>
       {isOpen && (
-        <div className="sm:hidden bg-white border-t border-gray-200 px-4 py-4 space-y-3">
-          <a href="#about" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>About</a>
-          <a href="#services" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>What I do</a>
-          <a href="#impact" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Impact</a>
-          <a href="#how" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>How I work</a>
-          <a href="#testimonials" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Testimonials</a>
-          <a href="#contact" className="block text-slate-700 hover:text-indigo-600" onClick={() => setIsOpen(false)}>Contact</a>
-          <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="block w-full text-center px-4 py-2 rounded bg-green-600 text-white font-bold hover:bg-green-700 transition" onClick={() => setIsOpen(false)}>Book a Call</a>
+        <div className="lg:hidden bg-[#0D3B2E] border-t border-[#D4A63A]/20">
+          <a href="#about" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>About</a>
+          <a href="#services" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Services</a>
+          <a href="#impact" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Impact</a>
+          <a href="#projects" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Work</a>
+          <a href="#testimonials" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Testimonials</a>
+          <a href="#contact" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Contact</a>
+          <a href="#consultation" className="block px-8 py-4 text-[#D4A63A] font-semibold" onClick={() => setIsOpen(false)}>Let's Talk →</a>
         </div>
       )}
-    </nav>
+    </header>
   );
 }

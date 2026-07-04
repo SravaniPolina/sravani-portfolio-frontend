@@ -2,37 +2,129 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-white py-16">
-      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
-        <div className="flex-1 lg:pr-12">
-          <span className="inline-block px-4 py-2 mb-3 rounded-full bg-white border text-gray-700 font-medium text-sm">
-            Strategy & Finance Advisor
-          </span>
-          <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 mb-3 leading-tight">
-            Sravani Polina
-          </h1>
-          <h2 className="text-xl lg:text-2xl font-light text-slate-700 mb-5">
-            Fractional CFO | Deal advisor | Strategy &amp; PMO.
-          </h2>
-          <p className="text-base lg:text-lg text-slate-700 mb-4 leading-relaxed">
-            I work with founders and CEOs to provide financial guidance and on the problems that don't fit neatly into one function: financial models that need to inform real decisions, PMOs that need to actually deliver, and debt and deal structures that need to hold up under scrutiny.
-          </p>
-          <p className="text-sm text-slate-500 mb-8 hidden sm:block">
-            14+ years across banking, agribusiness, infrastructure, and hospitality. IIM Lucknow. Based in Hyderabad, working with clients across India.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 rounded-lg bg-green-600 text-white font-medium hover:bg-green-700 transition text-center">
-              Book a 30-min intro call
-            </a>
-            <a href="#impact" className="inline-block px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition text-center">
-              See recent work
-            </a>
-          </div>
-        </div>
-        <div className="flex-1 flex flex-col items-center mt-10 lg:mt-0">
-          <img src="/Aragon-Headshot-70.jpg" alt="Sravani Polina" className="w-56 h-56 lg:w-72 lg:h-72 object-cover object-top rounded-xl border-4 border-white shadow-lg" />
-        </div>
+    <section className="relative bg-[#0D3B2E] overflow-hidden">
+
+      {/* Background Glow */}
+      <div className="absolute inset-0">
+        <div
+          className="absolute right-0 top-0 w-[900px] h-[900px] opacity-20"
+          style={{
+            background:
+              "radial-gradient(circle at 100% 50%, rgba(212,166,58,.18), transparent 70%)",
+          }}
+        />
       </div>
+
+      {/* Gold Curves */}
+      <svg
+        className="absolute right-0 bottom-0 w-[900px] opacity-15"
+        viewBox="0 0 900 700"
+        fill="none"
+      >
+        {[0, 35, 70, 105, 140].map((i) => (
+          <path
+            key={i}
+            d={`M900 ${650 - i} C650 ${600 - i},500 ${500 - i},250 ${
+              650 - i
+            }`}
+            stroke="#D4A63A"
+            strokeWidth="2"
+          />
+        ))}
+      </svg>
+
+      <div className="max-w-7xl mx-auto px-8 lg:px-10 pt-12 pb-10 relative z-10">
+
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* LEFT */}
+
+          <div className="flex">
+
+            <div className="w-[2px] bg-[#D4A63A] mr-8 rounded-full"></div>
+
+            <div>
+
+              <h1 className="font-serif text-white text-[28px] md:text-[36px] lg:text-[40px] leading-[1.18] font-normal max-w-[360px]">
+
+                Helping businesses and leaders make better decisions,
+
+                <br />
+
+                <span className="text-[#D4A63A]">
+                  build value,
+                </span>{" "}
+                and scale with clarity.
+
+              </h1>
+
+              <p className="mt-6 text-lg text-gray-300 max-w-[520px] leading-8">
+
+                Strategy. Finance. Business Transformation. AI-enabled execution.
+
+              </p>
+
+              <div className="mt-8">
+
+                <a
+                  href="https://topmate.io/sravani_polina"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="primary-btn"
+                >
+                  LET'S CONNECT →
+                </a>
+
+              </div>
+
+              <div className="grid grid-cols-2 gap-5 mt-12 max-w-md">
+
+                <div className="p-6 rounded-2xl" style={{background: "var(--beige)", border: "1px solid rgba(200,157,60,0.2)"}}>
+
+                  <div className="gold-text font-serif text-4xl">
+                    ₹750M+
+                  </div>
+
+                  <div className="mt-2 text-sm" style={{color: "#3A3A3A"}}>
+                    Business Value Delivered
+                  </div>
+
+                </div>
+
+                <div className="p-6 rounded-2xl" style={{background: "var(--beige)", border: "1px solid rgba(200,157,60,0.2)"}}>
+
+                  <div className="gold-text font-serif text-4xl">
+                    14+
+                  </div>
+
+                <div className="mt-2 text-sm" style={{color: "#3A3A3A"}}>
+                    Years Experience
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT */}
+
+          <div className="flex justify-end">
+
+            <img
+              src="/Aragon-Headshot-70.jpg"
+              alt="Sravani Polina"
+              className="w-full max-w-[460px] rounded-[32px] object-cover border border-[#D4A63A]/20 shadow-2xl"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
   );
 }

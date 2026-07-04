@@ -3,34 +3,33 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Hero from "./components/Hero";
-import CredentialsStrip from "./components/CredentialsStrip";
+import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
 import AboutMe from "./components/AboutMe";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import Projects from "./components/Projects";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
-import ProfessionalJourney from "./components/ProfessionalJourney";
 import DirectContact from "./components/DirectContact";
+import ConsultationForm from "./components/ConsultationForm";
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
-import ConsultationForm from "./components/ConsultationForm";
 
 function HomePage() {
   return (
-    <div className="antialiased text-slate-800">
+    <div className="antialiased" style={{background: "var(--background)", color: "var(--text)"}}>
       <NavBar />
       <main>
         <Hero />
-        <CredentialsStrip />
+        <Credentials />
         <StatStrip />
         <AboutMe />
         <StrategicLeadershipServices />
         <Projects />
         <LeadershipPhilosophy />
         <ExecutiveTestimonials />
-        <ProfessionalJourney />
         <DirectContact />
+        <ConsultationForm />
         <BackToTop />
       </main>
       <Footer />

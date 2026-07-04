@@ -1,36 +1,64 @@
 import React from "react";
 
 const principles = [
-  { num: "3", title: "One advisor, not a team behind a slide", description: "You get me, not a junior associate doing the work." },
-  { num: "2", title: "Models you'll actually use", description: "Every spreadsheet I hand over is structured for the person who'll open it next month, not just for the deliverable." },
-  { num: "1", title: "Tech-fluent foundation", description: "From Power BI dashboards to AI-driven analysis, I use the tools that deliver results 50% faster, without making them the headline." }
+  {
+    number: "01",
+    title: "One Advisor",
+    description: "Every engagement is led directly by me. No hand-offs, no junior consultants, just focused execution and accountability."
+  },
+  {
+    number: "02",
+    title: "Practical Frameworks",
+    description: "Every financial model, dashboard and strategy document is designed to be used long after the engagement ends."
+  },
+  {
+    number: "03",
+    title: "Technology-Enabled",
+    description: "I combine business expertise with AI, automation and analytics to improve speed, decision-making and execution."
+  }
 ];
 
 export default function LeadershipPhilosophy() {
   return (
-    <section id="how" className="py-16 px-4 sm:px-8 bg-slate-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="hidden md:flex justify-center">
-          <img
-            src="/HowIWork_Pyramid.jpg"
-            alt="How I work, built from the ground up: tech-fluent foundation, models you'll use, one accountable advisor"
-            className="w-full max-w-5xl rounded-2xl shadow-lg"
-          />
-        </div>
-        <div className="md:hidden">
-          <h2 className="text-3xl font-bold text-center mb-2">How I work</h2>
-          <p className="text-sm text-slate-600 text-center mb-8">Built from the ground up.</p>
-          <div className="space-y-4">
-            {principles.map((p, idx) => (
-              <div key={idx} className="bg-white rounded-xl p-5 shadow-sm border flex gap-4 items-start">
-                <div className="w-8 h-8 rounded-full bg-indigo-800 text-white font-bold flex items-center justify-center text-sm flex-shrink-0">{p.num}</div>
-                <div>
-                  <div className="font-bold text-indigo-800 text-base mb-1">{p.title}</div>
-                  <div className="text-slate-600 text-sm leading-relaxed">{p.description}</div>
-                </div>
+    <section
+      id="how"
+      className="relative py-24 bg-cover bg-center"
+      style={{ backgroundImage: `url('/ChartsImage.jpg')` }}
+    >
+      {/* Dark overlay for text readability, matches Services gradient direction */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, rgba(10,22,16,0.93) 0%, rgba(13,59,46,0.85) 40%, rgba(13,59,46,0.92) 100%)"
+        }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6">
+        <p className="uppercase tracking-[3px] text-[#D4A63A] text-sm font-semibold">How I work</p>
+        <h2 className="font-serif text-5xl text-white mt-4 mb-16">
+          A simple engagement philosophy.
+        </h2>
+
+        <div className="space-y-6">
+          {principles.map((item) => (
+            <div
+              key={item.number}
+              className="rounded-2xl p-8 lg:p-10 flex flex-col lg:flex-row lg:items-center gap-8 backdrop-blur-md hover:-translate-y-1 transition-all duration-300"
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(212,166,58,0.35)",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.25)"
+              }}
+            >
+              <div className="font-serif text-6xl font-bold min-w-[100px]" style={{ color: "#D4A63A" }}>
+                {item.number}
               </div>
-            ))}
-          </div>
+              <div className="flex-1">
+                <h3 className="font-serif text-3xl text-white mb-4">{item.title}</h3>
+                <p style={{ color: "rgba(255,255,255,0.8)" }}>{item.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
