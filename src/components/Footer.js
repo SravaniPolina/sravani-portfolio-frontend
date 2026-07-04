@@ -34,7 +34,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:text-[var(--gold)]"
-              >
+              <div>
                 LinkedIn →
               </a>
             </div>
