@@ -20,7 +20,7 @@ const principles = [
 
 export default function LeadershipPhilosophy() {
   return (
-    <section id="how" className="py-28" style={{background: "var(--green)"}}>
+    <section id="how" className="py-16" style={{background: "var(--green)"}}>
       <div className="max-w-7xl mx-auto px-6">
         <p className="uppercase tracking-[3px] text-[#D4A63A] text-sm font-semibold">How I work</p>
         <h2 className="font-serif text-5xl text-white mt-4 mb-16">
