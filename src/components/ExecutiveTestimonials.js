@@ -25,7 +25,7 @@ const testimonials = [
 
 export default function ExecutiveTestimonials() {
   return (
-    <section id="testimonials" className="py-28" style={{background: "var(--beige)"}}>
+    <section id="testimonials" className="py-16" style={{background: "var(--beige)"}}>
       <div className="max-w-7xl mx-auto px-6">
         <p className="section-label" style={{color: "var(--gold)"}}>Testimonials</p>
         <h2 className="font-serif text-5xl mt-4 mb-16" style={{color: "var(--green)"}}>
