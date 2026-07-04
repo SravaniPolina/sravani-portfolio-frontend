@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="relative py-24 bg-cover bg-center"
+      className="relative py-28 bg-cover bg-center"
       style={{ backgroundImage: `url('/AboutMe.png')` }}
     >
       {/* Overlay for text readability over the illustration */}
