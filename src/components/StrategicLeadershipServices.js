@@ -41,7 +41,6 @@ export default function StrategicLeadershipServices() {
       className="relative py-24 bg-cover bg-center"
       style={{ backgroundImage: `url('/Financial Planning.jpg')` }}
     >
-      {/* Dark overlay for text readability */}
       <div
         className="absolute inset-0"
         style={{
@@ -55,7 +54,7 @@ export default function StrategicLeadershipServices() {
           <h2 className="font-serif text-4xl lg:text-5xl text-white mt-4">
             Advisory services built around business outcomes.
           </h2>
-          <p className="mt-6 leading-8" style={{ color: "rgba(255,255,255,0.8)" }}>
+          <p className="mt-6 leading-8 text-justify" style={{ color: "rgba(255,255,255,0.8)" }}>
             I work alongside founders, investors and leadership teams to solve strategic, financial and operational challenges with measurable impact.
           </p>
         </div>
@@ -73,7 +72,7 @@ export default function StrategicLeadershipServices() {
             >
               <div className="mb-5">{service.icon}</div>
               <h3 className="font-serif text-white text-xl mb-3">{service.title}</h3>
-              <p className="leading-7 text-sm" style={{ color: "rgba(255,255,255,0.78)" }}>
+              <p className="leading-7 text-sm text-justify" style={{ color: "rgba(255,255,255,0.78)" }}>
                 {service.description}
               </p>
             </div>
