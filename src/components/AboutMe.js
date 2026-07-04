@@ -23,17 +23,17 @@ export default function AboutMe() {
         </h2>
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <p className="mb-6 text-lg leading-8" style={{ color: "#3A3A3A" }}>
+            <p className="mb-6 text-lg leading-8 text-justify" style={{ color: "#3A3A3A" }}>
               I partner with founders, investors and leadership teams to solve
               complex business challenges across strategy, finance, business
               transformation and AI-enabled execution.
             </p>
-            <p className="mb-6 text-lg leading-8" style={{ color: "#3A3A3A" }}>
+            <p className="mb-6 text-lg leading-8 text-justify" style={{ color: "#3A3A3A" }}>
               My experience spans Banking, Agribusiness, Infrastructure,
               Hospitality, Startups and Consulting, allowing me to connect
               commercial strategy with practical execution.
             </p>
-            <p className="text-lg leading-8" style={{ color: "#3A3A3A" }}>
+            <p className="text-lg leading-8 text-justify" style={{ color: "#3A3A3A" }}>
               Every engagement is outcome-focused: whether that means raising
               capital, improving operational performance, supporting M&A,
               designing governance structures or helping organisations scale
