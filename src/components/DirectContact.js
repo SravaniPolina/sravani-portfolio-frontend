@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DirectContact() {
   return (
-    <section id="contact" className="py-28" style={{background: "var(--beige)"}}>
+    <section id="contact" className="py-16" style={{background: "var(--beige)"}}>
       <div className="max-w-5xl mx-auto px-6">
         <div className="rounded-[36px] p-14 text-center" style={{background: "white", border: "1px solid rgba(13,59,46,0.15)"}}>
           <p className="uppercase tracking-[3px] text-sm font-semibold" style={{color: "var(--gold)"}}>Let's connect</p>
