@@ -20,25 +20,42 @@ const principles = [
 
 export default function LeadershipPhilosophy() {
   return (
-    <section id="how" className="py-16" style={{background: "var(--green)"}}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="how"
+      className="relative py-24 bg-cover bg-center"
+      style={{ backgroundImage: `url('/ChartsImage.jpg')` }}
+    >
+      {/* Dark overlay for text readability, matches Services gradient direction */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, rgba(10,22,16,0.93) 0%, rgba(13,59,46,0.85) 40%, rgba(13,59,46,0.92) 100%)"
+        }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6">
         <p className="uppercase tracking-[3px] text-[#D4A63A] text-sm font-semibold">How I work</p>
         <h2 className="font-serif text-5xl text-white mt-4 mb-16">
           A simple engagement philosophy.
         </h2>
-        <div className="space-y-8">
+
+        <div className="space-y-6">
           {principles.map((item) => (
             <div
               key={item.number}
-              className="rounded-3xl p-10 flex flex-col lg:flex-row lg:items-center gap-8"
-              style={{background: "rgba(255,255,255,0.07)", border: "1px solid rgba(200,157,60,0.2)"}}
+              className="rounded-2xl p-8 lg:p-10 flex flex-col lg:flex-row lg:items-center gap-8 backdrop-blur-md hover:-translate-y-1 transition-all duration-300"
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(212,166,58,0.35)",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.25)"
+              }}
             >
-              <div className="font-serif text-6xl font-bold min-w-[100px]" style={{color: "#D4A63A"}}>
+              <div className="font-serif text-6xl font-bold min-w-[100px]" style={{ color: "#D4A63A" }}>
                 {item.number}
               </div>
               <div className="flex-1">
                 <h3 className="font-serif text-3xl text-white mb-4">{item.title}</h3>
-                <p style={{color: "rgba(255,255,255,0.75)"}}>{item.description}</p>
+                <p style={{ color: "rgba(255,255,255,0.8)" }}>{item.description}</p>
               </div>
             </div>
           ))}
