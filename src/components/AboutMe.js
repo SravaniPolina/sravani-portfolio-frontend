@@ -4,36 +4,36 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="relative py-28 bg-cover bg-center"
+      className="relative py-24 bg-cover bg-center"
       style={{ backgroundImage: `url('/AboutMe.png')` }}
     >
-      {/* Overlay for text readability over the illustration */}
+      {/* Dark overlay, matches Services treatment */}
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(180deg, rgba(245,242,235,0.94) 0%, rgba(245,242,235,0.88) 40%, rgba(245,242,235,0.94) 100%)"
+          background: "linear-gradient(180deg, rgba(13,59,46,0.92) 0%, rgba(13,59,46,0.85) 40%, rgba(10,22,16,0.93) 100%)"
         }}
       />
 
       <div className="relative max-w-6xl mx-auto px-6">
-        <p className="section-label">About</p>
-        <h2 className="font-serif text-5xl mt-4 mb-10 leading-tight" style={{ color: "var(--green)" }}>
+        <p className="uppercase tracking-[4px] text-[#D4A63A] text-sm font-semibold">About</p>
+        <h2 className="font-serif text-4xl lg:text-5xl text-white mt-4 mb-10 leading-tight">
           Helping businesses navigate
           complexity with clarity.
         </h2>
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <p className="mb-6 text-lg leading-8 text-justify" style={{ color: "#3A3A3A" }}>
+            <p className="mb-6 text-lg leading-8 text-justify" style={{ color: "rgba(255,255,255,0.8)" }}>
               I partner with founders, investors and leadership teams to solve
               complex business challenges across strategy, finance, business
               transformation and AI-enabled execution.
             </p>
-            <p className="mb-6 text-lg leading-8 text-justify" style={{ color: "#3A3A3A" }}>
+            <p className="mb-6 text-lg leading-8 text-justify" style={{ color: "rgba(255,255,255,0.8)" }}>
               My experience spans Banking, Agribusiness, Infrastructure,
               Hospitality, Startups and Consulting, allowing me to connect
               commercial strategy with practical execution.
             </p>
-            <p className="text-lg leading-8 text-justify" style={{ color: "#3A3A3A" }}>
+            <p className="text-lg leading-8 text-justify" style={{ color: "rgba(255,255,255,0.8)" }}>
               Every engagement is outcome-focused: whether that means raising
               capital, improving operational performance, supporting M&A,
               designing governance structures or helping organisations scale
@@ -42,8 +42,12 @@ export default function AboutMe() {
           </div>
 
           <div
-            className="p-10 rounded-3xl backdrop-blur-md"
-            style={{ background: "rgba(13,59,46,0.9)", border: "1px solid rgba(200,157,60,0.25)" }}
+            className="p-10 rounded-2xl backdrop-blur-md"
+            style={{
+              background: "rgba(255,255,255,0.08)",
+              border: "1px solid rgba(212,166,58,0.35)",
+              boxShadow: "0 8px 24px rgba(0,0,0,0.25)"
+            }}
           >
             <h3 className="font-serif text-2xl text-white mb-6">Areas of Expertise</h3>
             <div className="grid grid-cols-2 gap-4">
