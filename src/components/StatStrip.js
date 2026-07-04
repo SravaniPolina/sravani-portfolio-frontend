@@ -9,7 +9,7 @@ const stats = [
 
 export default function StatStrip() {
   return (
-    <section id="impact" className="py-28" style={{background: "var(--beige)"}}>
+    <section id="impact" className="py-16" style={{background: "var(--beige)"}}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <p className="uppercase tracking-[3px] text-sm font-semibold" style={{color: "var(--gold)"}}>Impact</p>
