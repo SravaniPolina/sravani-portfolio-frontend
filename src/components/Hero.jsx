@@ -79,25 +79,25 @@ export default function Hero() {
 
               <div className="grid grid-cols-2 gap-5 mt-12 max-w-md">
 
-                <div className="glass p-6">
+                <div className="p-6 rounded-2xl" style={{background: "var(--beige)", border: "1px solid rgba(200,157,60,0.2)"}}>
 
                   <div className="gold-text font-serif text-4xl">
                     ₹750M+
                   </div>
 
-                  <div className="mt-2 text-sm text-gray-300">
+                  <div className="mt-2 text-sm" style={{color: "#3A3A3A"}}>
                     Business Value Delivered
                   </div>
 
                 </div>
 
-                <div className="glass p-6">
+                <div className="p-6 rounded-2xl" style={{background: "var(--beige)", border: "1px solid rgba(200,157,60,0.2)"}}>
 
                   <div className="gold-text font-serif text-4xl">
                     14+
                   </div>
 
-                  <div className="mt-2 text-sm text-gray-300">
+                <div className="mt-2 text-sm" style={{color: "#3A3A3A"}}>
                     Years Experience
                   </div>
 
