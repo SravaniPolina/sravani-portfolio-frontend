@@ -1,5 +1,4 @@
 import React from "react";
-
 const testimonials = [
   {
     quote: "Sravani's expertise in financial strategy, cash flow management and forecasting has been instrumental in strengthening our financial operations. She consistently goes beyond scope and creates measurable business value.",
@@ -22,7 +21,6 @@ const testimonials = [
     role: "GM, IDBI Bank (Retired)"
   }
 ];
-
 export default function ExecutiveTestimonials() {
   return (
     <section id="testimonials" className="py-16" style={{background: "var(--beige)"}}>
@@ -34,7 +32,7 @@ export default function ExecutiveTestimonials() {
         <div className="grid lg:grid-cols-2 gap-8">
           {testimonials.map((item) => (
             <div key={item.name} className="rounded-3xl p-10 flex flex-col" style={{background: "var(--green)", border: "1px solid rgba(200,157,60,0.2)"}}>
-              <div className="font-serif text-5xl mb-6" style={{color: "var(--gold)"}}>
+              <div className="font-serif text-5xl leading-none mb-2" style={{color: "var(--gold)"}}>
                 "
               </div>
               <p className="mb-10 leading-8" style={{color: "rgba(255,255,255,0.85)"}}>
