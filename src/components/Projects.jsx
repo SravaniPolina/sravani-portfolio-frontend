@@ -18,24 +18,24 @@ const engagements = [
     title: "Capital & Debt Advisory",
     outcome: "Structured institutional funding and lender-ready business cases.",
     detail: "Five-year financial models, DSCR analysis, bank funding notes and debt syndication for hospitality and infrastructure clients."
-  },
+  }
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-28" style={{background: "var(--background)"}}>
+    <section id="projects" className="py-28" style={{background: "var(--beige)"}}>
       <div className="max-w-7xl mx-auto px-6">
-        <p className="section-label">Featured Engagements</p>
-        <h2 className="font-serif text-5xl text-white mt-4 mb-16">
+        <p className="section-label" style={{color: "var(--gold)"}}>Featured Engagements</p>
+        <h2 className="font-serif text-5xl mt-4 mb-16" style={{color: "var(--green)"}}>
           Selected business transformations.
         </h2>
         <div className="grid lg:grid-cols-3 gap-8">
           {engagements.map((item) => (
-            <div key={item.title} className="glass p-10 rounded-3xl flex flex-col gap-4">
+            <div key={item.title} className="rounded-3xl p-10 flex flex-col gap-4" style={{background: "var(--green)", border: "1px solid rgba(200,157,60,0.2)"}}>
               <span className="text-xs uppercase tracking-widest" style={{color: "var(--gold)"}}>{item.tag}</span>
               <h3 className="font-serif text-2xl text-white">{item.title}</h3>
               <p className="font-semibold" style={{color: "var(--gold-light)"}}>{item.outcome}</p>
-              <p className="text-sm leading-7 text-gray-400">{item.detail}</p>
+              <p className="text-sm leading-7" style={{color: "rgba(255,255,255,0.75)"}}>{item.detail}</p>
             </div>
           ))}
         </div>
