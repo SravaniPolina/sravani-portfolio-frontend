@@ -91,7 +91,7 @@ export default function Projects() {
                   <td className="p-6">
                     <div className="flex items-center gap-4">
                       {item.icon}
-                      <div className="font-semibold">{item.industry}</div>
+                      <div className="font-semibold text-[#12352A]">{item.industry}</div>
                     </div>
                   </td>
                   <td className="p-6 font-semibold text-[#C89D3C]">
