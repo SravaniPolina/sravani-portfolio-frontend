@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <section id="about" className="py-28" style={{background: "var(--beige)", color: "var(--text-dark)"}}>
+    <section id="about" className="py-16" style={{background: "var(--beige)", color: "var(--text-dark)"}}>
       <div className="max-w-6xl mx-auto px-6">
         <p className="section-label">About</p>
         <h2 className="font-serif text-5xl mt-4 mb-10 leading-tight" style={{color: "var(--green)"}}>
