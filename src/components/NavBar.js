@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const scrollToTop = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
     setIsOpen(false);
   };
-
   return (
     <header className="sticky top-0 z-50 bg-[#0D3B2E]/95 backdrop-blur border-b border-[#D4A63A]/15">
       <div className="max-w-7xl mx-auto px-8">
@@ -32,7 +29,7 @@ export default function NavBar() {
             <a href="#testimonials" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">TESTIMONIALS</a>
             <a href="#contact" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">CONTACT</a>
           </nav>
-          <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-6 py-2.5 rounded-lg text-sm hover:scale-105 transition whitespace-nowrap ml-8">Let's Talk</a>
+          <a href="#consultation" className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-6 py-2.5 rounded-lg text-sm hover:scale-105 transition whitespace-nowrap ml-8">Let's Talk</a>
           <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white">☰</button>
         </div>
       </div>
@@ -44,7 +41,7 @@ export default function NavBar() {
           <a href="#projects" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Work</a>
           <a href="#testimonials" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Testimonials</a>
           <a href="#contact" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Contact</a>
-          <a href="https://topmate.io/sravani_polina" target="_blank" rel="noopener noreferrer" className="block px-8 py-4 text-[#D4A63A] font-semibold" onClick={() => setIsOpen(false)}>Let's Talk →</a>
+          <a href="#consultation" className="block px-8 py-4 text-[#D4A63A] font-semibold" onClick={() => setIsOpen(false)}>Let's Talk →</a>
         </div>
       )}
     </header>
