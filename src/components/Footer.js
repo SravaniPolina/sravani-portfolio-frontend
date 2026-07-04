@@ -22,7 +22,7 @@ export default function Footer() {
             <h3 className="text-white text-xl mb-5">Quick Links</h3>
             <div className="space-y-3">
               <a href="#services" className="block hover:text-[var(--gold)]">Services</a>
-              <a href="#projects" className="block hover:text-[var(--gold)]">Featured Engagements</a>
+              <a href="#industries" className="block hover:text-[var(--gold)]">Featured Engagements</a>
               <a href="#about" className="block hover:text-[var(--gold)]">About</a>
               <a href="#contact" className="block hover:text-[var(--gold)]">Contact</a>
             </div>
