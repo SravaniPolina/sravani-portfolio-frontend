@@ -14,7 +14,6 @@ import DirectContact from "./components/DirectContact";
 import ConsultationForm from "./components/ConsultationForm";
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
-import ConsultationForm from "./components/ConsultationForm";
 
 function HomePage() {
   return (
