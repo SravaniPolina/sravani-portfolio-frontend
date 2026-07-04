@@ -14,15 +14,15 @@ export default function DirectContact() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 pt-10" style={{borderTop: "1px solid rgba(13,59,46,0.15)"}}>
             <div>
-              <h4 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>Email</h4>
+              <h4 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>Email</h3>
               <p style={{color: "#3A3A3A"}}>sravani.polina@iiml.org</p>
             </div>
             <div>
-              <h4 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>Phone</h4>
+              <h4 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>Phone</h3>
               <p style={{color: "#3A3A3A"}}>+91 91330 91112</p>
             </div>
             <div>
-              <h4 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>LinkedIn</h4>
+              <h4 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>LinkedIn</h3>
               <a href="https://www.linkedin.com/in/sravani-polina" target="_blank" rel="noopener noreferrer" style={{color: "#3A3A3A"}} className="hover:text-[#0D3B2E] transition">linkedin.com/in/sravani-polina</a>
             </div>
           </div>
