@@ -26,9 +26,10 @@ export default function Projects() {
     <section id="projects" className="py-28" style={{background: "var(--beige)"}}>
       <div className="max-w-7xl mx-auto px-6">
         <p className="section-label" style={{color: "var(--gold)"}}>Featured Engagements</p>
-        <h2 className="font-serif text-5xl mt-4 mb-16" style={{color: "var(--green)"}}>
+       <h2 className="font-serif text-5xl mt-4 mb-4" style={{color: "var(--green)"}}>
           Selected business transformations.
         </h2>
+        <p className="text-lg mb-16" style={{color: "#3A3A3A"}}>14+ years across strategy, finance and business transformation.</p>
         <div className="grid lg:grid-cols-3 gap-8">
           {engagements.map((item) => (
             <div key={item.title} className="rounded-3xl p-10 flex flex-col gap-4" style={{background: "var(--green)", border: "1px solid rgba(200,157,60,0.2)"}}>
