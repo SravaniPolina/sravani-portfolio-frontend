@@ -47,10 +47,7 @@ export default function Hero() {
                 Strategy. Finance. Business Transformation. AI-enabled execution.
               </p>
               <div className="mt-8">
-                
-                  href="#consultation"
-                  className="primary-btn"
-                >
+                <a href="#consultation" className="primary-btn">
                   LET'S CONNECT →
                 </a>
               </div>
