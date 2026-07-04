@@ -25,7 +25,7 @@ export default function NavBar() {
             <a href="#about" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">ABOUT</a>
             <a href="#services" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">SERVICES</a>
             <a href="#impact" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">IMPACT</a>
-            <a href="#projects" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">WORK</a>
+            <a href="#industries" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">WORK</a>
             <a href="#testimonials" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">TESTIMONIALS</a>
             <a href="#contact" className="text-white uppercase tracking-wide text-sm hover:text-[#D4A63A] transition">CONTACT</a>
           </nav>
@@ -38,7 +38,7 @@ export default function NavBar() {
           <a href="#about" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>About</a>
           <a href="#services" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Services</a>
           <a href="#impact" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Impact</a>
-          <a href="#projects" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Work</a>
+          <a href="#industries" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Work</a>
           <a href="#testimonials" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Testimonials</a>
           <a href="#contact" className="block px-8 py-4 text-white hover:text-[#D4A63A]" onClick={() => setIsOpen(false)}>Contact</a>
           <a href="#consultation" className="block px-8 py-4 text-[#D4A63A] font-semibold" onClick={() => setIsOpen(false)}>Let's Talk →</a>
