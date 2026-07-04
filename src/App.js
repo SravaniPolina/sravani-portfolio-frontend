@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
 import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
 import DirectContact from "./components/DirectContact";
+import ConsultationForm from "./components/ConsultationForm";
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
 import ConsultationForm from "./components/ConsultationForm";
@@ -29,6 +30,7 @@ function HomePage() {
         <LeadershipPhilosophy />
         <ExecutiveTestimonials />
         <DirectContact />
+        <ConsultationForm />
         <BackToTop />
       </main>
       <Footer />
