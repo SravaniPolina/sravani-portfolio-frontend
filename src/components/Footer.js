@@ -14,7 +14,7 @@ export default function Footer() {
 
             <h2 className="text-3xl text-white font-serif mb-4">
               Sravani Polina
-            </h2>
+            <div>
 
             <p className="leading-8">
               Independent Strategy Advisor helping founders, investors and
