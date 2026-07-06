@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Hero from "./components/Hero";
 import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
+import CaseStudies from "./components/CaseStudies";
 import AboutMe from "./components/AboutMe";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import Projects from "./components/Projects";
@@ -23,6 +24,7 @@ function HomePage() {
         <Hero />
         <Credentials />
         <StatStrip />
+        <CaseStudies />
         <AboutMe />
         <StrategicLeadershipServices />
         <Projects />
