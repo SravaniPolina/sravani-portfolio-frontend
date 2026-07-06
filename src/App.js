@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Hero from "./components/Hero";
 import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
-import CaseStudies from "./components/Casestudies";
+import Casestudies from "./components/Casestudies";
 import AboutMe from "./components/AboutMe";
 import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
 import Projects from "./components/Projects";
