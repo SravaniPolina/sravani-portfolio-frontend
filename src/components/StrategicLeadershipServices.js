@@ -1,26 +1,29 @@
 import React from "react";
 import { BriefcaseBusiness, Landmark, TrendingUp, Users, BrainCircuit, Target } from "lucide-react";
 
-const services = [
+const featuredServices = [
   {
-    icon: <TrendingUp size={30} className="text-[#D4A63A]" />,
+    icon: <Users size={36} className="text-[#D4A63A]" />,
+    title: "Fractional CFO",
+    description: "Strategic execution partner for founders and leadership teams, driving alignment, governance and execution."
+  },
+  {
+    icon: <TrendingUp size={36} className="text-[#D4A63A]" />,
     title: "Growth Strategy",
     description: "Business strategy, market expansion, operating models and growth roadmaps aligned with measurable outcomes."
   },
   {
-    icon: <Landmark size={30} className="text-[#D4A63A]" />,
+    icon: <Landmark size={36} className="text-[#D4A63A]" />,
     title: "Capital & Deal Advisory",
     description: "Debt syndication, fundraising support, commercial due diligence and strategic transaction advisory."
-  },
+  }
+];
+
+const otherServices = [
   {
     icon: <BriefcaseBusiness size={30} className="text-[#D4A63A]" />,
     title: "Business Transformation",
     description: "Operational excellence, process optimisation, governance and organisation-wide transformation initiatives."
-  },
-  {
-    icon: <Users size={30} className="text-[#D4A63A]" />,
-    title: "Fractional Chief of Staff",
-    description: "Strategic execution partner for founders and leadership teams, driving alignment, governance and execution."
   },
   {
     icon: <BrainCircuit size={30} className="text-[#D4A63A]" />,
@@ -59,20 +62,42 @@ export default function StrategicLeadershipServices() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
+        {/* Featured: top 3 services */}
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {featuredServices.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl p-7 backdrop-blur-md hover:-translate-y-2 transition-all duration-300"
+              className="rounded-2xl p-9 backdrop-blur-md hover:-translate-y-2 transition-all duration-300"
               style={{
-                background: "rgba(255,255,255,0.08)",
-                border: "1px solid rgba(212,166,58,0.35)",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.25)"
+                background: "rgba(255,255,255,0.1)",
+                border: "1px solid rgba(212,166,58,0.5)",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.3)"
               }}
             >
-              <div className="mb-5">{service.icon}</div>
-              <h3 className="font-serif text-white text-xl mb-3">{service.title}</h3>
-              <p className="leading-7 text-sm text-justify" style={{ color: "rgba(255,255,255,0.78)" }}>
+              <div className="mb-6">{service.icon}</div>
+              <h3 className="font-serif text-white text-2xl mb-3">{service.title}</h3>
+              <p className="leading-7 text-sm text-justify" style={{ color: "rgba(255,255,255,0.82)" }}>
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Remaining services, smaller grid */}
+        <div className="grid md:grid-cols-3 gap-5">
+          {otherServices.map((service) => (
+            <div
+              key={service.title}
+              className="rounded-2xl p-6 backdrop-blur-md hover:-translate-y-1 transition-all duration-300"
+              style={{
+                background: "rgba(255,255,255,0.06)",
+                border: "1px solid rgba(212,166,58,0.25)",
+                boxShadow: "0 6px 18px rgba(0,0,0,0.2)"
+              }}
+            >
+              <div className="mb-4">{service.icon}</div>
+              <h3 className="font-serif text-white text-lg mb-2">{service.title}</h3>
+              <p className="leading-6 text-xs text-justify" style={{ color: "rgba(255,255,255,0.75)" }}>
                 {service.description}
               </p>
             </div>
