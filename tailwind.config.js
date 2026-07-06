@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"]
+        sans: ["Segoe UI", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Arial", "sans-serif"]
       },
       colors: {
         brand: {
@@ -27,7 +27,6 @@ module.exports = {
           muted: "#B0B0D0",
           charcoal: "#1A1A1A"
         },
-        // Keep existing shadcn/ui HSL system intact
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
