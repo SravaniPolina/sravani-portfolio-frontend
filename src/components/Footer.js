@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -9,22 +10,22 @@ export default function Footer() {
 
           <div>
             <div className="text-3xl text-white font-serif mb-4">
-              Sravani Polina
+              SP Growth Advisors
             </div>
             <p className="leading-8">
-              Independent Strategy Advisor helping founders, investors and
-              business leaders solve complex growth, finance and transformation
-              challenges.
+              Strategy and finance advisory for founders, investors and
+              leadership teams, led by Sravani Polina. Fractional CFO,
+              capital advisory, M&A diligence and growth strategy.
             </p>
           </div>
 
           <div>
             <h3 className="text-white text-xl mb-5">Quick Links</h3>
             <div className="space-y-3">
-              <a href="#services" className="block hover:text-[var(--gold)]">Services</a>
-              <a href="#industries" className="block hover:text-[var(--gold)]">Featured Engagements</a>
-              <a href="#about" className="block hover:text-[var(--gold)]">About</a>
-              <a href="#contact" className="block hover:text-[var(--gold)]">Contact</a>
+              <Link to="/services" className="block hover:text-[var(--gold)]">Services</Link>
+              <Link to="/work" className="block hover:text-[var(--gold)]">Case Studies</Link>
+              <Link to="/about" className="block hover:text-[var(--gold)]">About</Link>
+              <Link to="/contact" className="block hover:text-[var(--gold)]">Contact</Link>
             </div>
           </div>
 
@@ -41,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">© 2026 Sravani Polina. All rights reserved.</p>
+          <p className="text-sm">© 2026 SP Growth Advisors. All rights reserved.</p>
           <p className="text-sm mt-4 md:mt-0">Designed with Strategy. Built for Impact.</p>
         </div>
 
