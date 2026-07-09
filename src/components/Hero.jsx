@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="relative bg-[#0D3B2E] overflow-hidden">
@@ -35,6 +36,9 @@ export default function Hero() {
           <div className="flex">
             <div className="w-[2px] bg-[#D4A63A] mr-8 rounded-full"></div>
             <div>
+              <p className="uppercase tracking-[3px] text-[#D4A63A] text-sm font-semibold mb-4">
+                SP Growth Advisors
+              </p>
               <h1 className="font-serif text-white text-[28px] md:text-[36px] lg:text-[40px] leading-[1.18] font-normal max-w-[360px]">
                 Helping businesses and leaders make better decisions,
                 <br />
@@ -47,9 +51,9 @@ export default function Hero() {
                 Strategy. Finance. Business Transformation. AI-enabled execution.
               </p>
               <div className="mt-8">
-                <a href="#consultation" className="primary-btn">
+                <Link to="/contact" className="primary-btn">
                   LET'S CONNECT →
-                </a>
+                </Link>
               </div>
               <div className="grid grid-cols-2 gap-4 lg:gap-5 mt-12 max-w-md">
                 <div className="p-4 lg:p-6 rounded-2xl overflow-hidden" style={{background: "var(--beige)", border: "1px solid rgba(200,157,60,0.2)"}}>
