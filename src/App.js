@@ -1,39 +1,29 @@
 import './index.css';
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import NavBar from './components/NavBar';
-import Hero from "./components/Hero";
-import Credentials from "./components/Credentials";
-import StatStrip from "./components/StatStrip";
-import Casestudies from "./components/Casestudies";
-import AboutMe from "./components/AboutMe";
-import StrategicLeadershipServices from "./components/StrategicLeadershipServices";
-import Projects from "./components/Projects";
-import LeadershipPhilosophy from "./components/LeadershipPhilosophy";
-import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
-import DirectContact from "./components/DirectContact";
-import ConsultationForm from "./components/ConsultationForm";
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Work from "./pages/Work";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
-function HomePage() {
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+  }, [pathname]);
+  return null;
+}
+
+function Layout({ children }) {
   return (
-    <div className="antialiased" style={{background: "var(--background)", color: "var(--text)"}}>
+    <div className="antialiased" style={{ background: "var(--background)", color: "var(--text)" }}>
       <NavBar />
-      <main>
-        <Hero />
-        <Credentials />
-        <StatStrip />
-        <Casestudies />
-        <AboutMe />
-        <StrategicLeadershipServices />
-        <Projects />
-        <LeadershipPhilosophy />
-        <ExecutiveTestimonials />
-        <DirectContact />
-        <ConsultationForm />
-        <BackToTop />
-      </main>
+      <main>{children}</main>
+      <BackToTop />
       <Footer />
     </div>
   );
@@ -42,9 +32,13 @@ function HomePage() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/consultation" element={<ConsultationForm />} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/services" element={<Layout><Services /></Layout>} />
+        <Route path="/work" element={<Layout><Work /></Layout>} />
+        <Route path="/about" element={<Layout><About /></Layout>} />
+        <Route path="/contact" element={<Layout><Contact /></Layout>} />
       </Routes>
     </Router>
   );
