@@ -26,7 +26,11 @@ export default function NavBar() {
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 lg:gap-5 cursor-pointer group"
           >
-            <div className="text-[#D4A63A] font-serif text-4xl lg:text-6xl leading-none">SP</div>
+            <img
+              src="/sp-logo-mark.png"
+              alt="SP Growth Advisors logo"
+              className="h-12 w-12 lg:h-16 lg:w-16 object-contain flex-shrink-0"
+            />
             <div>
               <div className="uppercase text-white tracking-[1px] lg:tracking-[2px] font-serif text-lg lg:text-3xl leading-tight lg:leading-none group-hover:text-[#D4A63A] transition">
                 SP GROWTH ADVISORS
