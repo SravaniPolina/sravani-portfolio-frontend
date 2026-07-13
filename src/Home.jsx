@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "./components/Hero";
-import ClientsStrip from "./components/ClientStrip";
+import ClientStrip from "./components/ClientStrip";
 import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
 import TestimonialsStrip from "./components/TestimonialsStrip";
