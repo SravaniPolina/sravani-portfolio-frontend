@@ -1,10 +1,10 @@
 import React from "react";
 
 const organizations = [
-  "IDBI Bank",
-  "Srinivasa Farms",
-  "Mahathi Infra Services",
-  "Nivara Stays",
+  { name: "IDBI Bank", logo: "/idbi-logo.png" },
+  { name: "Srinivasa Farms", logo: "/srinivasa-farms-logo.png" },
+  { name: "Mahathi Infra Services", logo: "/mahathi-logo.png" },
+  { name: "Nivara Stays", logo: "/nivara-stays-logo.png" },
 ];
 
 export default function ClientsStrip() {
@@ -12,25 +12,30 @@ export default function ClientsStrip() {
 
   return (
     <section className="py-10 overflow-hidden" style={{ background: "var(--green)", borderTop: "1px solid rgba(200,157,60,0.15)", borderBottom: "1px solid rgba(200,157,60,0.15)" }}>
-      <p className="text-center uppercase tracking-[3px] text-xs font-semibold mb-6" style={{ color: "var(--gold)" }}>
+      <p className="text-center uppercase tracking-[3px] text-xs font-semibold mb-8" style={{ color: "var(--gold)" }}>
         Experience Across
       </p>
       <div className="relative w-full">
-        <div className="marquee-track flex items-center gap-16 whitespace-nowrap w-max">
-          {track.map((name, i) => (
-            <span
-              key={`${name}-${i}`}
-              className="font-serif text-xl lg:text-2xl"
-              style={{ color: "rgba(255,255,255,0.75)" }}
+        <div className="marquee-track flex items-center gap-14 whitespace-nowrap w-max">
+          {track.map((org, i) => (
+            <div
+              key={`${org.name}-${i}`}
+              className="flex items-center justify-center px-6 py-3 rounded-xl"
+              style={{ background: "rgba(255,255,255,0.9)", border: "1px solid rgba(200,157,60,0.15)" }}
             >
-              {name}
-            </span>
+              <img
+                src={org.logo}
+                alt={org.name}
+                className="h-9 w-auto object-contain"
+                style={{ maxWidth: "160px" }}
+              />
+            </div>
           ))}
         </div>
       </div>
       <style>{`
         .marquee-track {
-          animation: marquee-scroll 28s linear infinite;
+          animation: marquee-scroll 26s linear infinite;
         }
         @keyframes marquee-scroll {
           from { transform: translateX(0); }
