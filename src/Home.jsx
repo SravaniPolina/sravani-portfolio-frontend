@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Hero from "../components/Hero";
-import Credentials from "../components/Credentials";
-import StatStrip from "../components/StatStrip";
-import ExecutiveTestimonials from "../components/ExecutiveTestimonials";
+import Hero from "./components/Hero";
+import Credentials from "./components/Credentials";
+import StatStrip from "./components/StatStrip";
+import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
 
 function HomeCTA() {
   return (
