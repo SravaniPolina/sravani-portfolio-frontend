@@ -14,7 +14,7 @@ export default function DirectContact() {
           <div className="grid md:grid-cols-3 gap-8 pt-10" style={{borderTop: "1px solid rgba(13,59,46,0.15)"}}>
             <div>
               <h3 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>Email</h3>
-              <p style={{color: "#3A3A3A"}}>sravani.polina@iiml.org</p>
+              <p style={{color: "#3A3A3A"}}>sravani.polina@spgrwothadvisors.in</p>
             </div>
             <div>
               <h3 className="mb-2 font-semibold" style={{color: "var(--gold)"}}>Phone</h3>
