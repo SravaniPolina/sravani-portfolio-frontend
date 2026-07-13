@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "./components/Hero";
-import ClientsStrip from "./components/ClientsStrip";
+import ClientsStrip from "./components/ClientStrip";
 import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
 import TestimonialsStrip from "./components/TestimonialsStrip";
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ClientsStrip />
+      <ClientStrip />
       <StatStrip />
       <Credentials />
       <TestimonialsStrip />
