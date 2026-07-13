@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "./components/Hero";
-import ClientStrip from "./components/ClientStrip";
+import ClientsStrip from "./components/ClientsStrip";
 import Credentials from "./components/Credentials";
 import StatStrip from "./components/StatStrip";
-import ExecutiveTestimonials from "./components/ExecutiveTestimonials";
+import TestimonialsStrip from "./components/TestimonialsStrip";
 
 function HomeCTA() {
   return (
@@ -37,10 +37,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ClientStrip />
+      <ClientsStrip />
       <StatStrip />
       <Credentials />
-      <ExecutiveTestimonials />
+      <TestimonialsStrip />
       <HomeCTA />
     </>
   );
