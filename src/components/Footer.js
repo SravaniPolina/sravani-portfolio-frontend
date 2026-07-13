@@ -32,7 +32,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-xl mb-5">Connect</h3>
             <div className="space-y-3">
-              <p>📧 sravani.polina@iiml.org</p>
+              <p>📧 sravani.polina@spgrowthadvisors.in</p>
               <p>📱 +91 91330 91112</p>
               <p>📍 Hyderabad, India</p>
               <a href="https://www.linkedin.com/in/sravani-polina" target="_blank" rel="noopener noreferrer" className="block hover:text-[var(--gold)]">LinkedIn →</a>
