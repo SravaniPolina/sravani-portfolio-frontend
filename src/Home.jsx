@@ -37,6 +37,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ClientStrip />
       <StatStrip />
       <Credentials />
       <ExecutiveTestimonials />
