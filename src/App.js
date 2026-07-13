@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Work from "./pages/Work";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./Home";
+import Services from "./Services";
+import Work from "./Work";
+import About from "./About";
+import Contact from "./Contact";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
