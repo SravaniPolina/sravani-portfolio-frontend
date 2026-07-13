@@ -7,7 +7,7 @@ const organizations = [
   { name: "Nivara Stays", logo: "/nivara-stays-logo.png" },
 ];
 
-export default function ClientsStrip() {
+export default function ClientStrip() {
   const track = [...organizations, ...organizations];
 
   return (
