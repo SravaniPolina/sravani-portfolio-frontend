@@ -14,11 +14,11 @@ export default function NavBar() {
 
   const linkClass = ({ isActive }) =>
     `uppercase tracking-wide text-sm transition ${
-      isActive ? "text-[#D4A63A]" : "text-white hover:text-[#D4A63A]"
+      isActive ? "text-[#B8860B]" : "text-[#0D3B2E] hover:text-[#B8860B]"
     }`;
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0D3B2E]/95 backdrop-blur border-b border-[#D4A63A]/15">
+    <header className="sticky top-0 z-50 bg-[#F5F2EB]/95 backdrop-blur border-b border-[#D4A63A]/25">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-auto min-h-[72px] py-3 lg:h-24 lg:py-0">
           <Link
@@ -32,10 +32,10 @@ export default function NavBar() {
               className="h-12 w-12 lg:h-16 lg:w-16 object-contain flex-shrink-0"
             />
             <div>
-              <div className="uppercase text-white tracking-[1px] lg:tracking-[2px] font-serif text-lg lg:text-3xl leading-tight lg:leading-none group-hover:text-[#D4A63A] transition">
+              <div className="uppercase text-[#0D3B2E] tracking-[1px] lg:tracking-[2px] font-serif text-lg lg:text-3xl leading-tight lg:leading-none group-hover:text-[#B8860B] transition">
                 SP GROWTH ADVISORS
               </div>
-              <div className="hidden lg:block uppercase text-[#D4A63A] tracking-[3px] text-xs mt-2 font-medium">
+              <div className="hidden lg:block uppercase text-[#B8860B] tracking-[3px] text-xs mt-2 font-medium">
                 STRATEGY. FINANCE. PMO. TRANSFORMATION.
               </div>
             </div>
@@ -51,22 +51,22 @@ export default function NavBar() {
 
           <Link
             to="/contact"
-            className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-6 py-2.5 rounded-lg text-sm hover:scale-105 transition whitespace-nowrap ml-8"
+            className="hidden lg:flex items-center justify-center bg-[#0D3B2E] text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:scale-105 hover:bg-[#B8860B] hover:text-[#111] transition whitespace-nowrap ml-8"
           >
             Let's Talk
           </Link>
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white text-2xl flex-shrink-0">
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-[#0D3B2E] text-2xl flex-shrink-0">
             ☰
           </button>
         </div>
       </div>
       {isOpen && (
-        <div className="lg:hidden bg-[#0D3B2E] border-t border-[#D4A63A]/20">
+        <div className="lg:hidden bg-[#F5F2EB] border-t border-[#D4A63A]/25">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="block px-8 py-4 text-white hover:text-[#D4A63A]"
+              className="block px-8 py-4 text-[#0D3B2E] hover:text-[#B8860B]"
               onClick={() => setIsOpen(false)}
             >
               {link.label}
@@ -74,7 +74,7 @@ export default function NavBar() {
           ))}
           <Link
             to="/contact"
-            className="block px-8 py-4 text-[#D4A63A] font-semibold"
+            className="block px-8 py-4 text-[#B8860B] font-semibold"
             onClick={() => setIsOpen(false)}
           >
             Let's Talk →
