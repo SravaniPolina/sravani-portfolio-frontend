@@ -9,7 +9,7 @@ export default function DirectContact() {
           <p className="max-w-2xl mx-auto text-lg mb-12" style={{color: "#3A3A3A"}}>Whether you're scaling a business, evaluating an investment, raising capital or transforming operations, I'd be happy to explore how I can help.</p>
           <div className="flex flex-wrap justify-center gap-5 mb-16">
             <a href="#consultation" className="primary-btn" style={{borderColor: "var(--green)", color: "var(--green)"}}>Book a Strategy Call</a>
-            <a href="mailto:sravani.polina@iiml.org" className="secondary-btn" style={{borderColor: "rgba(13,59,46,0.3)", color: "#3A3A3A"}}>Email Me</a>
+            <a href="mailto:sravani.polina@spgrowthadvisors.in" className="secondary-btn" style={{borderColor: "rgba(13,59,46,0.3)", color: "#3A3A3A"}}>Email Me</a>
           </div>
           <div className="grid md:grid-cols-3 gap-8 pt-10" style={{borderTop: "1px solid rgba(13,59,46,0.15)"}}>
             <div>
