@@ -1,6 +1,7 @@
 import './index.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import ClientsStrip from "./components/ClientsStrip";
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import BackToTop from "./components/BackToTop";
