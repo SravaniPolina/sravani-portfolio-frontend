@@ -1,47 +1,82 @@
-import './index.css';
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import BackToTop from "./components/BackToTop";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Work from "./pages/Work";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  React.useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
-  }, [pathname]);
-  return null;
-}
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/services", label: "Services" },
+  { to: "/work", label: "Work" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
+];
 
-function Layout({ children }) {
+export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const linkClass = ({ isActive }) =>
+    `uppercase tracking-wide text-sm transition ${
+      isActive ? "text-[#D4A63A]" : "text-white hover:text-[#D4A63A]"
+    }`;
+
   return (
-    <div className="antialiased" style={{ background: "var(--background)", color: "var(--text)" }}>
-      <NavBar />
-      <main>{children}</main>
-      <BackToTop />
-      <Footer />
-    </div>
+    <header className="sticky top-0 z-50 bg-[#0D3B2E]/95 backdrop-blur border-b border-[#D4A63A]/15">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-auto min-h-[72px] py-3 lg:h-24 lg:py-0">
+          <Link
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 lg:gap-5 cursor-pointer group"
+          >
+            <div className="text-[#D4A63A] font-serif text-4xl lg:text-6xl leading-none">SP</div>
+            <div>
+              <div className="uppercase text-white tracking-[1px] lg:tracking-[2px] font-serif text-lg lg:text-3xl leading-tight lg:leading-none group-hover:text-[#D4A63A] transition">
+                SP GROWTH ADVISORS
+              </div>
+              <div className="hidden lg:block uppercase text-[#D4A63A] tracking-[3px] text-xs mt-2 font-medium">
+                STRATEGY. FINANCE. PMO. TRANSFORMATION.
+              </div>
+            </div>
+          </Link>
+
+          <nav className="hidden lg:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <NavLink key={link.to} to={link.to} end={link.to === "/"} className={linkClass}>
+                {link.label.toUpperCase()}
+              </NavLink>
+            ))}
+          </nav>
+
+          <Link
+            to="/contact"
+            className="hidden lg:flex items-center justify-center bg-[#D4A63A] text-[#111] font-semibold px-6 py-2.5 rounded-lg text-sm hover:scale-105 transition whitespace-nowrap ml-8"
+          >
+            Let's Talk
+          </Link>
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white text-2xl flex-shrink-0">
+            ☰
+          </button>
+        </div>
+      </div>
+      {isOpen && (
+        <div className="lg:hidden bg-[#0D3B2E] border-t border-[#D4A63A]/20">
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="block px-8 py-4 text-white hover:text-[#D4A63A]"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            to="/contact"
+            className="block px-8 py-4 text-[#D4A63A] font-semibold"
+            onClick={() => setIsOpen(false)}
+          >
+            Let's Talk →
+          </Link>
+        </div>
+      )}
+    </header>
   );
 }
-
-function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Layout><Home /></Layout>} />
-        <Route path="/services" element={<Layout><Services /></Layout>} />
-        <Route path="/work" element={<Layout><Work /></Layout>} />
-        <Route path="/about" element={<Layout><About /></Layout>} />
-        <Route path="/contact" element={<Layout><Contact /></Layout>} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
